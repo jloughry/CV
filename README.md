@@ -19,7 +19,15 @@ Keywords are in no particular order, just arranged for even line length and colo
 
 #### Ligatures
 Ligatures look great on the printed page but they can be a barrier to copy & paste.  *Certification*
-comes out **Certi cation** in plain text and that doesn't match a naïve regex.
+comes out **Certi cation** in plain text and that doesn't match a naïve regex.  The solution is to
+load the `cmap` package like this:
+
+    \usepackage[resetfonts]{cmap}
+
+The `resetfonts` option is required when used with CMR fonts which by default are a little too
+clever with ligatures.  Remember, the goal here is to make things as easy as possible for keyword
+filters used by HR.  CMAP tables can do other useful tricks like transforming curly quotation marks
+to straight ones on copy to plain text.
 
 ### Machine-Readable Formatting
 It's a PDF file, but PDF is basically PostScript and we can do some things to make the resulting

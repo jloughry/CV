@@ -15,12 +15,22 @@
 
 \documentclass[letterpaper]{article}
 \usepackage{url}
+
+% The geometry package lets me control the page margins.
 \usepackage[margin=1in]{geometry}
+
+% The cmap package avoids the problem of ligatures like 'ffi' disappearing
+% from a copy and paste operation into plain text.  This is important when
+% sending out résumés in PDF if you want keywords to be spotted by automated
+% filters used by HR.  Without the `resetfonts' option it doesn't do the
+% trick with Computer Modern Roman.
+\usepackage[resetfonts]{cmap}
 
 % The titling package lets me control white space at the top of the first page.
 \usepackage{titling}
 \setlength{\droptitle}{-0.85in}
 
+% Turn off page numbers
 \pagestyle{empty}
 
 \textheight=9in
