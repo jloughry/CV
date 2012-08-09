@@ -5,7 +5,7 @@ latex_cmd = pdflatex
 counter_file = build_counter.txt
 pdf_file = $(target).pdf
 
-temporary_files = $(target).log $(target).aux .pdf
+temporary_files = $(target).log $(target).aux .pdf $(target).out
 
 $(pdf_file): $(source) Makefile
 	@echo $$(($$(cat $(counter_file)) + 1)) > $(counter_file)
