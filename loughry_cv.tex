@@ -4,13 +4,9 @@
 % Format: LaTeX
 %
 % For information about this file, contact the author by email at
-% joe.loughry@lmco.com, or by telephone: +1 303 224 9618 (home), or
-% +1 303 203 2067 (pager) or +1 303 203 2067 (office).  The time zone is
-% GMT minus 7 hours.
-%
-% modified 20061011 by Joe Loughry.
-% 20071030.1026 (rjl) updated with U.K. addresses and Oxford in progress
-% 20080814.1940 (rjl) added new invention disclosures and proposal win
+% mailto:rjl@applied-math.org or telephone: +1 303 221 4380.  The
+% time zone is GMT minus seven hours.  Mobile when I am in the UK
+% is +44 (0)7984 147 430.
 %
 
 \documentclass[letterpaper]{article}
@@ -19,19 +15,22 @@
 % The geometry package lets me control the page margins.
 \usepackage[margin=1in]{geometry}
 
-% The cmap package avoids the problem of ligatures like 'ffi' disappearing
-% from a copy and paste operation into plain text.  This is important when
-% sending out résumés in PDF if you want keywords to be spotted by automated
-% filters used by HR.  Without the `resetfonts' option it doesn't do the
-% trick with Computer Modern Roman.
+% The cmap package avoids the problem of ligatures like 'ffi' disappearing from a
+% copy and paste operation where the destination is plain text.  This is important
+% when sending out résumés in PDF if you want keywords to be spotted by automated
+% filters used by HR.  Without the `resetfonts' option it doesn't do the trick with
+% Computer Modern Roman.
 \usepackage[resetfonts]{cmap}
 
 % The titling package lets me control white space at the top of the first page.
 \usepackage{titling}
 \setlength{\droptitle}{-0.95in}
 
-% The hyperref package makes links work in generated PDF files.
+% The hyperref package makes links show up in generated PDF files.
 \usepackage{hyperref}
+
+% The xcolor package is used to grey out text in the Social Networking section at the end.
+\usepackage{xcolor}
 
 \textheight=9in
 \raggedbottom
@@ -53,20 +52,37 @@
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 	6214 South Krameria Street       & St Cross College \\
 	Centennial, CO 80111-4243        & St Giles \\
-	USA                              & Oxford, Oxon\ \ OX1 3LZ\ UK \\
+	USA                              & Oxford, Oxon\ OX1 3LZ\ UK \\
 	\url{mailto:rjl@applied-math.org} & \url{mailto:joe.loughry@stx.ox.ac.uk} \\
-	Home: (303) 221-4380             & Mobile: +44 (0)798 414 7430 \\
+	Home: (303) 221-4380             & Mobile: +44 (0)7984 147 430 \\
 \end{tabular*}
 
 \section*{Keywords for Regexes} % FINE TUNE THIS SECTION!
 
-Certification and Accreditation (C\&A) of cross domain systems, Certification Test \&
-Evaluation (CT\&E), Security Test and Evaluation (ST\&E), Assessment and Authorization (A\&A)
-in classified environments, penetration testing,
-Common Criteria, DIACAP, DCID 6/3, Compartmented Mode Workstation (CMW) programming,
-UNIX, Trusted Solaris v2.5--8, software development, R\&D, principal investigator,
-technical writing, U.S.\ citizen, TS/SCI clearance, DoD 8570.01 certified CISSP-ISSEP,
-lived overseas, publications, patents, public speaking, funding, and teaching experience.
+Certification and Accreditation (C\&A) of cross domain systems,
+Assessment and Authorization (A\&A) in classified environments,
+Certification Test \& Evaluation (CT\&E),
+Security Test and Evaluation (ST\&E),
+penetration testing,
+DIACAP,
+Common Criteria,
+DCID 6/3,
+Compartmented Mode Workstation (CMW) programming,
+UNIX,
+Trusted Solaris v2.5--8,
+software development,
+R\&D,
+principal investigator,
+technical writing,
+U.S.\ citizen,
+TS/SCI clearance,
+DoD 8570.01 certified CISSP-ISSEP,
+lived overseas,
+publications,
+patents,
+public speaking,
+funding,
+and teaching experience.
 
 \section*{Work Experience} % most recent first
 
@@ -135,6 +151,13 @@ lived overseas, publications, patents, public speaking, funding, and teaching ex
 		Colorado / Boulder, Colorado (1986).
 \end{itemize}
 
+\section*{Security Clearance}
+
+\begin{itemize}
+	\item TS/SCI is current; last investigation date: 5th August 2009 (SSBI PR);
+		last CI poly 26th May 2010.
+\end{itemize}
+
 \section*{Refereed Journal Publications} % most recent first
 
 \begin{itemize}
@@ -177,14 +200,14 @@ lived overseas, publications, patents, public speaking, funding, and teaching ex
 \section*{Other Published Reports} % most recent first
 
 \begin{itemize}
-	\item `Probabilistic Redaction' Final Technical Report. Air Force Research
+	\item `Probabilistic Redaction' final technical report. Air Force Research
 		Laboratory (AFRL), Rome, New York, 2012.  Available from the Defense Technical
 		Information Centre (DTIC), Washington, D.C.
 
 	\item `Subsets of an 8-element set in order by number of elements in each
 		subset'. \emph{On-line Encyclopedia of Integer Sequences}, AT\&T Research, 2003.
 
-	\item `Efficiently Enumerating the Subsets of a Set' by J. Loughry, J. von Hemert,
+	\item `Efficiently enumerating the subsets of a set' by J. Loughry, J. von Hemert,
 		and L. Schoofs (1998).  In preparation.
 
     \item Sun Microsystems security advisory (software): \redacted\ classified S//NF, 1999.
@@ -192,10 +215,9 @@ lived overseas, publications, patents, public speaking, funding, and teaching ex
 	\item Sun Microsystems security advisory (software): \redacted\ classified S//NF, 1998.
 	\item Sun Microsystems security advisory (software): \redacted\ classified SI TK B, 1998.
 
-    \item RISKS (\emph{ACM Forum on Risks to the Public in Computers
-    and Related Systems}) Vols 17.31, 21.94--5, 22.81, 24.07,
+    \item RISKS \emph{(ACM Forum on Risks to the Public in Computers
+    and Related Systems)} vols 17.31, 21.94--5, 22.81, 24.07,
     24.22--3, 24.55, 24.87, 25.73, and 26.46.
-
 \end{itemize}
 
 \section*{DoD 8570.01 Certifications}
@@ -203,13 +225,6 @@ lived overseas, publications, patents, public speaking, funding, and teaching ex
 \begin{itemize}
 	\item CISSP-ISSEP certificate no.\ 10411, current and satisfies IAT Level III,
 		IAM Level III, and IASAE III.
-\end{itemize}
-
-\section*{Security Clearance}
-
-\begin{itemize}
-	\item TS/SCI is current; last investigation date: 5th August 2009 (SSBI PR);
-		last CI poly 26th May 2010.
 \end{itemize}
 
 \section*{Patents} % most recent first
@@ -301,31 +316,40 @@ lived overseas, publications, patents, public speaking, funding, and teaching ex
 	\item Member of the COMLAB-CS-2010 Conference Programme Committee.
 	\item Member of the COMLAB-CS-2009 Conference Programme Committee.
 	\item 2007--09: Treasurer of the Oxford Lyceum.
-\end{itemize}
-
-\section*{Community Involvement} % most recent first
-
-\begin{itemize}
 	\item Science fair judge for the Ricks Centre at the University of Denver (2012).
-    \item Contributor of code to the following Open Source Projects:
-		\begin{itemize}
-			\item OpenSolaris: \url{http://www.opensolaris.org} (2006)
-			\item FreeBSD: \url{http://www.freebsd.org} (1999)
-			\item Fetchmail: \url{http://fetchmail.berlios.de} (1998)
-		\end{itemize}
 \end{itemize}
 
-\section*{Social Networks} % I wish I could progressively grey out the lesser used ones.
+\definecolor{grey}{rgb}{0.6,0.6,0.6}
 
-% TODO: Maybe use PSTricks to grey out Twitter and Facebook?
+\section*{Social Networking {\small (lesser used social networks are \textcolor{grey}{greyed out})}}
+
+% The following progression colours look good on screen but the latter ones print too faintly:
+% \definecolor{grey}{rgb}{0.5,0.5,0.5}
+% \definecolor{lightgrey}{rgb}{0.75,0.75,0.75}
+% \definecolor{verylightgrey}{rgb}{0.875,0.875,0.875}
+
+% The following colours print well but are too similar on screen:
+% \definecolor{grey}{rgb}{0.3,0.3,0.3}
+% \definecolor{lightgrey}{rgb}{0.4,0.4,0.4}
+% \definecolor{verylightgrey}{rgb}{0.5,0.5,0.5}
 
 \begin{itemize}
 	\item Google Scholar: \url{http://scholar.google.com/citations?hl=en&user=PX_U29EAAAAJ}
 	\item LinkedIn: \url{http://www.linkedin.com/in/jloughry}
 	\item GitHub: \url{https://github.com/jloughry}
-	\item Twitter: \url{https://twitter.com/jloughry}
-	\item Google+: \url{https://plus.google.com/u/0/115779672587479359864/}
-	\item Facebook: \url{https://www.facebook.com/joe.loughry.oxford}
+	{\color{grey}
+		\item Twitter: \url{https://twitter.com/jloughry}
+		\item Google+: \url{https://plus.google.com/u/0/115779672587479359864/}
+		\item Facebook: \url{https://www.facebook.com/joe.loughry.oxford}
+	}
+\end{itemize}
+
+\section*{Code Contributor to these Open Source Projects}
+
+\begin{itemize}
+	\item OpenSolaris: \url{http://www.opensolaris.org} (2006)
+	\item The FreeBSD Project: \url{http://www.freebsd.org} (1999)
+	\item Fetchmail: \url{http://fetchmail.berlios.de} (1998)
 \end{itemize}
 
 \vfill
