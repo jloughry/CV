@@ -23,6 +23,12 @@ vi:
 spell:
 	aspell --lang=EN_GB check $(source)
 
+notes:
+	(cd ~/Documents/thesis/tex/dissertation && make notes)
+
+bibtex:
+	(cd ../bibtex && make vi)
+
 clean:
 	rm -f $(temporary_files)
 
