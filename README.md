@@ -1,20 +1,20 @@
 [Joe Loughry] (joe.loughry@stx.ox.ac.uk)
 ============
 
-Certification and Accrediation of Cross Domain Systems
-------------------------------------------------------
+Formatting a Tactical Résumé
+----------------------------
 
 ### Concept
 Trying something different here, let's put all the keywords up front where automated résumé filters
 are sure to find them.  Keywords are separated by commas; formatting is kept to a minimum.
 
-	Certification and Accreditation (C\&A) of cross domain systems, Assessment and
-	Authorization (A\&A) for classified environments, Certification Test and Evaluation
-	(CT\&E), Security Test and Evaluation (ST\&E), penetration testing, DIACAP, the
+	Certification and Accreditation (C&A) of cross domain systems, Assessment and
+	Authorization (A&A) for classified environments, Certification Test and Evaluation
+	(CT&E), Security Test and Evaluation (ST&E), penetration testing, DIACAP, the
 	Common Criteria, DCID 6/3, programming in C and assembly language with a strong
 	interest in Lisp derived languages, Compartmented Mode Workstation (CMW) programming,
-	UNIX, Trusted Solaris versions 2.5--8, software development, R\&D, principal
-	investigator, U.S.\ citizen with TS/SCI clearance, technical writing, CISSP-ISSEP
+	UNIX, Trusted Solaris versions 2.5 to 8, software development, R&D, principal
+	investigator, U.S. citizen with TS/SCI clearance, technical writing, CISSP-ISSEP
 	for DoD 8570.01 compliance, experience living overseas, programming, publications,
 	patents, public speaking, funding, research, and teaching experience.
 
@@ -53,8 +53,8 @@ interleave the columns (a legacy of PDF's ancestry in the PostScript language).
 
 Another problem with pasting into plain text is that &#8220;proper quotation marks&#8221;
 sometimes paste as Unicode characters, and that can confuse a straightforward keyword search.
-To make sure `grep` finds my keywords, I further altered the CMAP in
-the `MiKTeX/2.9/tex/latex/cmap/ot1.cmap` file to replace all instances of `<201C>` (Unicode
+To make sure `grep` finds my keywords, I further altered the CMAP table that gets compiled
+into the PDF: `MiKTeX/2.9/tex/latex/cmap/ot1.cmap` replacing all instances of `<201C>` (Unicode
 left double quotation mark) and `<201D>` (Unicode right double quotation mark) with `<0022>`
 (ASCII double quote) and all instances of `<2018>` (Unicode left single quotation mark) and
 `<2019>` (Unicode right single quotation mark) with `<0027>` (ASCII single quotation mark).
