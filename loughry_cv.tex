@@ -21,6 +21,15 @@
 % when sending out résumés in PDF if you want keywords to be spotted by automated
 % filters used by HR.  Without the `resetfonts' option it doesn't do the trick with
 % Computer Modern Roman.
+%
+% I also edited the ot1.cmap file in the MiKTeX/2.9/tex/latex/cmap/ directory to
+% replace all instances of <201C> (Unicode left double quotation mark) and <201D>
+% (Unicode right double quotation mark) with <0022> (ASCII double quote) and all
+% instances of <2018> (Unicode left single quotation mark) and <2019> (Unicode
+% right single quotation mark) with <0027> (ASCII single quotation mark).  This
+% makes single and double quotation marks in the resulting PDF cut and paste as
+% straight quotes, to make it more likely that simple keyword searches will work
+% as intended.
 \usepackage[resetfonts]{cmap}
 
 % The titling package lets me control white space at the top of the first page.
@@ -43,7 +52,7 @@
 \def\nodate{\@makedatefalse}
 \date{}
 
-\title{\textsc{Joe Loughry}\vspace{-5mm}}
+\title{\textsc{Joe Loughry}\vspace{-3mm}}
 \author{\hspace{-4mm}\vspace{-5mm}\emph{Cross Domain System Certification and Accreditation (C\&A),
 	Computer Security Research}
 }
@@ -52,15 +61,6 @@
 
 \begin{document}
 \maketitle
-
-% \vspace{-10mm}\hspace{-3mm}
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-% 	6214 South Krameria Street        & St Cross College \\
-% 	Centennial, CO 80111-4243         & St Giles \\
-% 	USA                               & Oxford, Oxon\ OX1 3LZ\ UK \\
-% 	\url{mailto:rjl@applied-math.org} & \url{mailto:joe.loughry@stx.ox.ac.uk} \\
-% 	Home: (303) 221-4380              & Mobile: +44 (0)7984 147 430 \\
-% \end{tabular*}
 
 \vspace*{-1.25cm}
 \hfill 6214 S.\ Krameria Street \\
