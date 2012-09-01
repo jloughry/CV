@@ -8,12 +8,15 @@ Certification and Accrediation of Cross Domain Systems
 Trying something different here, let's put all the keywords up front where automated résumé filters
 are sure to find them.  Keywords are separated by commas; formatting is kept to a minimum.
 
-    Certification and Accreditation (C&A) of cross domain systems, Certification Test & Evaluation (CT&E),
-    Security Test and Evaluation (ST&E), Assessment and Authorization (A&A) in classified environments,
-    penetration testing, Common Criteria, DIACAP, DCID 6/3, Compartmented Mode Workstation (CMW)
-    programming, UNIX, Trusted Solaris v2.5--8, software development, R&D, principal investigator, technical
-    writing, U.S. citizen, TS/SCI clearance, DoD 8570.01 certified CISSP-ISSEP, lived overseas, publications,
-    patents, public speaking, funding, and teaching experience.
+	Certification and Accreditation (C\&A) of cross domain systems, Assessment and
+	Authorization (A\&A) for classified environments, Certification Test and Evaluation
+	(CT\&E), Security Test and Evaluation (ST\&E), penetration testing, DIACAP, the
+	Common Criteria, DCID 6/3, programming in C and assembly language with a strong
+	interest in Lisp derived languages, Compartmented Mode Workstation (CMW) programming,
+	UNIX, Trusted Solaris versions 2.5--8, software development, R\&D, principal
+	investigator, U.S.\ citizen with TS/SCI clearance, technical writing, CISSP-ISSEP
+	for DoD 8570.01 compliance, experience living overseas, programming, publications,
+	patents, public speaking, funding, research, and teaching experience.
 
 Keywords are in no particular order, just arranged for even line length and colour when printed.
 
@@ -44,6 +47,20 @@ of something like this:
     St Cross College, St Giles, Oxford, Oxon, OX1 3LZ, UK
     mailto:joe.loughry@stx.ox.ac.uk
     tel:+44 (0)798 414 7430
+
+The problem with multiple columns in a PDF is that copy and paste into plain text tends to
+interleave the columns (a legacy of PDF's ancestry in the PostScript language).
+
+Another problem with pasting into plain text is that &#8220;proper quotation marks&#8221;
+sometimes paste as Unicode characters, and that can confuse a straightforward keyword search.
+To make sure `grep` finds my keywords, I further altered the CMAP in
+the `MiKTeX/2.9/tex/latex/cmap/ot1.cmap` file to replace all instances of `<201C>` (Unicode
+left double quotation mark) and `<201D>` (Unicode right double quotation mark) with `<0022>`
+(ASCII double quote) and all instances of `<2018>` (Unicode left single quotation mark) and
+`<2019>` (Unicode right single quotation mark) with `<0027>` (ASCII single quotation mark).
+This makes single and double quotation marks in the resulting PDF cut and paste as straight
+quotes.  The result is 7-bit clean and displays correctly no matter what encoding is used
+on the recipient's machine.
 
 ### Build Instructions
 Make targets include the default to emit a PDF, **vi** to quickly edit the file, **clean** to remove
