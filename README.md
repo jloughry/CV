@@ -6,19 +6,22 @@ Formatting a Tactical Résumé
 
 ### Concept
 Trying something different here, let's put all the keywords up front where automated résumé filters
-are sure to find them.  Keywords are separated by commas; formatting is kept to a minimum.
+are sure to find them.  Keywords are separated by commas and formatting is deliberately simple:
 
 	Certification and Accreditation (C&A) of cross domain systems, Assessment and
 	Authorization (A&A) for classified environments, Certification Test and Evaluation
 	(CT&E), Security Test and Evaluation (ST&E), penetration testing, DIACAP, the
 	Common Criteria, DCID 6/3, programming in C and assembly language with a strong
 	interest in Lisp derived languages, Compartmented Mode Workstation (CMW) programming,
-	UNIX, Trusted Solaris versions 2.5 to 8, software development, R&D, principal
+	UNIX, Trusted Solaris versions 2.5-8, software development, R&D, principal
 	investigator, U.S. citizen with TS/SCI clearance, technical writing, CISSP-ISSEP
 	for DoD 8570.01 compliance, experience living overseas, programming, publications,
 	patents, public speaking, funding, research, and teaching experience.
 
-Keywords are in no particular order, just arranged for even line length and colour when printed.
+Keywords are in no particular order, just arranged for even line length and colour when printed.  I
+thought about making this section invisible, the way SEO companies put `meta` keywords in web pages
+to get them indexed by search engines (and spammers use obfuscated text to evade mail filters) but
+decided that would be dishonest, like malware in a PDF.
 
 #### Ligatures
 Ligatures like *fi* and *ffl* look great on the printed page but they can be a barrier to
