@@ -21,25 +21,24 @@ are sure to find them.  Keywords are separated by commas; formatting is kept to 
 Keywords are in no particular order, just arranged for even line length and colour when printed.
 
 #### Ligatures
-Ligatures look great on the printed page but they can be a barrier to copy & paste.  The word
-*Certification* comes out **Certi cation** in plain text and that doesn't match a naïve regex.
-The solution is to load the `cmap` package like this:
+Ligatures like *fi* and *ffl* look great on the printed page but they can be a barrier to
+copy & paste.  Some PDF readers, notable Adobe Acrobat X, don't handle them correctly when
+pasting to plain text.  The word *Certification* comes out **Certi cation** and that
+doesn't match a naïve regex.  The solution is to load the `cmap` package in LaTeX like this:
 
     \usepackage[resetfonts]{cmap}
 
-The `resetfonts` option is required when used with CMR fonts which by default are a little too
-clever with ligatures.  Remember, the goal here is to make things as easy as possible for keyword
-filters used by HR.  CMAP tables can do other useful tricks like transforming curly quotation marks
-to straight ones on copy to plain text.
-
-Another problem with pasting into plain text is that &#8220;proper quotation marks&#8221; paste
-into plain text as Unicode characters, and that can also confuse a straightforward keyword search.
-(It depends on the PDF reader; Adobe Acrobat X doesn't understand ligatures at all but pastes
-curly quotation marks as unicode characters, but on Mac OS X, the Preview programme gets ligatures
-right when rendering into plain text.)
+The `resetfonts` option is required when used with the Computer Modern fonts which by default
+are a little too clever with ligatures.  Remember, the goal here is to make things as easy
+as possible for keyword filters used by HR.  CMAP tables can do other useful tricks like
+transforming curly quotation marks to straight ones on copy to plain text; &#8220;proper
+quotation marks&#8221; paste into plain text as Unicode, and that can also confuse a
+straightforward keyword search.  (It depends on the PDF reader; Adobe Acrobat X doesn't
+understand ligatures at all but pastes curly quotation marks as unicode characters, but on
+Mac OS X, the Preview programme gets ligatures right when rendering into plain text.)
 
 To make sure `grep` finds my keywords, I altered the default CMAP table that gets compiled
-into the PDF output, replacing all instances of `<201C>` (Unicode left double quotation mark)
+into the PDF output, replacing every instance of `<201C>` (Unicode left double quotation mark)
 and `<201D>` (Unicode right double quotation mark) with `<0022>` (ASCII double quote) and all
 instances of `<2018>` (Unicode left single quotation mark) and `<2019>` (Unicode right single
 quotation mark) with `<0027>` (ASCII single quotation mark).  This makes single and double
@@ -76,9 +75,9 @@ a copy of in the current directory and modified the copy:
 	> <7B> <002D>
 	> <7C> <002D002D>
 
-PDFLaTeX preferentially uses the modified `ot1.cmap` file if it finds it in the current directory.
+PDFLaTeX preferentially uses the modified `ot1.cmap` file if it finds one in the current directory.
 
-The only remaining difficulty was bulleted lists; the \verb,\textbullet, character doesn't appear
+The only remaining difficulty was bulleted lists; the `\textbullet` character doesn't appear
 in TeX's OT1 font encoding and so we can't translate it the same way.  As a workaround, I changed
 my bulleted lists to use asterisks instead.
 
@@ -86,10 +85,10 @@ The resulting plain ASCII text is 7-bit clean and displays correctly no matter w
 is used on the recipient's machine.
 
 ### Machine-Readable Formatting
-It's a PDF file, but PDF is basically PostScript and we can do some things to make the resulting
-binary file easier to parse.  Don't use side-by-side columns; they tend to interleave their text
-in a copy and paste to plain text, or a `grep`.  Small caps render correctly from PDF into plain
-text, I found.
+PDF is basically PostScript and we can do some things to make the resulting binary file easier
+to parse.  Side-by-side columns can be problematic; they tend to interleave their text in a copy
+and paste to plain text, or a `grep`.  Small caps render correctly from PDF into plain text, I
+found.
 
 ### Build Instructions
 Make targets include the default to emit a PDF, **vi** to quickly edit the file, **clean** to remove
