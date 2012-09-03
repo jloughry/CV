@@ -21,11 +21,11 @@ are sure to find them.  Keywords are separated by commas and formatting is delib
 Keywords are in no particular order, just arranged for even line length and colour when printed.  I
 thought about making this section invisible, the way SEO companies put `meta` keywords in web pages
 to get them indexed by search engines (and spammers use obfuscated text to evade mail filters) but
-decided that would be dishonest, like malware in a PDF.
+decided it would be dishonest, like malware in a PDF.
 
 #### Ligatures
 Ligatures like *fi* and *ffl* look great on the printed page but they can be a barrier to
-copy & paste.  Some PDF readers, notable Adobe Acrobat X, don't handle them correctly when
+copy & paste.  Some PDF readers, notably Adobe Acrobat X, don't handle ligatures correctly when
 pasting to plain text.  The word *Certification* comes out **Certi cation** and that
 doesn't match a naïve regex.  The solution is to load the `cmap` package in LaTeX like this:
 
@@ -33,14 +33,15 @@ doesn't match a naïve regex.  The solution is to load the `cmap` package in LaT
 
 The `resetfonts` option is required when used with the Computer Modern fonts which by default
 are a little too clever with ligatures.  Remember, the goal here is to make things as easy
-as possible for keyword filters used by HR.  CMAP tables can do other useful tricks like
-transforming curly quotation marks to straight ones on copy to plain text; &#8220;proper
-quotation marks&#8221; paste into plain text as Unicode, and that can also confuse a
+as possible for keyword filters used by HR.  The same CMAP tables can do other useful tricks
+like transforming curly quotation marks to straight ones on copy to plain text; &#8220;proper
+quotation marks&#8221; tend to paste into plain text as Unicode, and that can also confuse a
 straightforward keyword search.  (It depends on the PDF reader; Adobe Acrobat X doesn't
 understand ligatures at all but pastes curly quotation marks as unicode characters, but on
-Mac OS X, the Preview programme gets ligatures right when rendering into plain text.)
+Mac OS X, the Preview programme gets ligatures right and its search function correctly matches
+quotation marks whether curly or straight.)
 
-To make sure `grep` finds my keywords, I altered the default CMAP table that gets compiled
+To make sure **grep** finds *all* my keywords, I altered the default CMAP table that gets compiled
 into the PDF output, replacing every instance of `<201C>` (Unicode left double quotation mark)
 and `<201D>` (Unicode right double quotation mark) with `<0022>` (ASCII double quote) and all
 instances of `<2018>` (Unicode left single quotation mark) and `<2019>` (Unicode right single
@@ -81,16 +82,16 @@ a copy of in the current directory and modified the copy:
 PDFLaTeX preferentially uses the modified `ot1.cmap` file if it finds one in the current directory.
 
 The only remaining difficulty was bulleted lists; the `\textbullet` character doesn't appear
-in TeX's OT1 font encoding and so we can't translate it the same way.  As a workaround, I changed
+in TeX's OT1 font encoding and so we can't process it the same way.  As a workaround, I changed
 my bulleted lists to use asterisks instead.
 
-The resulting plain ASCII text is 7-bit clean and displays correctly no matter what encoding
-is used on the recipient's machine.
+The resulting plain ASCII when pasted is 7-bit clean and displays correctly no matter what
+international character set encoding is used on the recipient's machine.
 
 ### Machine-Readable Formatting
 PDF is basically PostScript and we can do some things to make the resulting binary file easier
 to parse.  Side-by-side columns can be problematic; they tend to interleave their text in a copy
-and paste to plain text, or a `grep`.  Small caps render correctly from PDF into plain text, I
+and paste to plain text, or a **grep**.  Small caps render correctly from PDF into plain text, I
 found.
 
 ### Build Instructions
