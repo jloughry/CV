@@ -22,19 +22,16 @@
 % filters used by HR.  Without the `resetfonts' option it doesn't do the trick with
 % Computer Modern Roman.
 %
-% I also edited the ot1.cmap file in the MiKTeX/2.9/tex/latex/cmap/ directory to
-% replace all instances of <201C> (Unicode left double quotation mark) and <201D>
-% (Unicode right double quotation mark) with <0022> (ASCII double quote) and all
-% instances of <2018> (Unicode left single quotation mark) and <2019> (Unicode
-% right single quotation mark) with <0027> (ASCII single quotation mark).  This
-% makes single and double quotation marks in the resulting PDF cut and paste as
-% straight quotes, to make it more likely that simple keyword searches will work
-% as intended.
+% I use a modified ot1.cmap file in the current directory to tell PDF in addition
+% to the ligatures mentioned above to also replace curly quotes with straight
+% quotes and en dashes and em dashes with hyphens.  Copy and paste of text from the
+% resulting PDF file will be 7-bit clean ASCII containing no Unicode characters at
+% all.
 \usepackage[resetfonts]{cmap}
 
 % The titling package lets me control white space at the top of the first page.
 \usepackage{titling}
-\setlength{\droptitle}{-0.95in}
+\setlength{\droptitle}{-25mm}
 
 % Used for graphics in the social networking bullets
 \usepackage{graphicx}
@@ -43,7 +40,8 @@
 \usepackage{hyperref}
 \usepackage{url}
 
-% The xcolor package is used to grey out text in the Social Networking section at the end.
+% The xcolor package is used to grey out text in the Social Networking section at
+% the end (although it doesn't grey out the graphic icons on those lines).
 \usepackage{xcolor}
 
 \textheight=9in
@@ -52,7 +50,7 @@
 \def\nodate{\@makedatefalse}
 \date{}
 
-\title{\textsc{Joe Loughry}\vspace{-2mm}}
+\title{\textsc{Joe Loughry}\vspace{-4mm}} %2
 
 % The fontdimen2 parameter squeezes interword spacing on this line only to fit.
 \author{\vspace{-3mm}\emph{\spaceskip=0.825\fontdimen2\font Software Development 
@@ -73,6 +71,7 @@ Tel: (303) 221-4380 (time zone is US/Mountain---GMT minus 7 hours).
 \url{mailto:rjl@applied-math.org} \\
 \url{mailto:joe.loughry@stx.ox.ac.uk}
 
+\vspace{-1mm}
 \section*{Keywords for the Regexp}
 
 Certification and Accreditation (C\&A) of cross domain systems,
@@ -102,11 +101,11 @@ funding,
 research,
 and teaching experience.
 
+\vspace{-1mm}
 \section*{Work Experience} % most recent first
 
 \begin{itemize}
 	\item[*] Graduate Research Student, University of Oxford, England, from January 2012--present.
-
 		\begin{quote}\vspace{-2mm}
 			\emph{Having wrapped up a three-year-long R\&D contract for the Air Force Research
 			Lab in January of 2012, it was necessary to finish writing my dissertation by
@@ -114,7 +113,6 @@ and teaching experience.
 		\end{quote}
 
 	\item[*] Information Assurance Engineer, Lockheed Martin Corporation, from 2006--January 2012.
-
 		\begin{quote}\vspace{-2mm}
 			\emph{Reorganised into the INFOSEC group at Lockheed, I designed a new
 			cryptosystem leading to another patent application and began studying
@@ -124,7 +122,6 @@ and teaching experience.
 		\end{quote}
 
 	\item[*] Software Engineer, Lockheed Martin IS\&GS Western Region, from February 1998--2006.
-
 		\begin{quote}\vspace{-2mm}
 			\emph{The optical TEMPEST research, not yet published in the open literature but of
 			considerable interest to the intelligence community, led to a security clearance and
@@ -135,7 +132,6 @@ and teaching experience.
 
 	\item[*] System Administrator, Wells Fargo \& Company, Seattle, Washington,
 		from 1996--September 1997.
-
 		\begin{quote}\vspace{-2mm}
 			\emph{After being acquired by Wells Fargo, I moved to sysadmin of its network
 			of X terminals, Cisco routers, and structured cabling.  Using the facilities
@@ -143,8 +139,14 @@ and teaching experience.
 			be cited in 14 books on information security.}
 		\end{quote}
 
-	\item[*] Programmer/Analyst II, First Interstate Bank of Washington, Seattle, from 1990--1996.
+	\item[*] Programmer, Safeco Life Insurance Company, Redmond, Washington, for a few months
+		in 1991.
+		\begin{quote}
+			\emph{I maintained a database application for a short time at this company
+				between assignments.}
+		\end{quote}
 
+	\item[*] Programmer/Analyst II, First Interstate Bank of Washington, Seattle, from 1990--1996.
 		\begin{quote}\vspace{-2mm}
 			\emph{Five of us worked on retail bank automation software in machine language
 			(see my GitHub at}
@@ -152,24 +154,21 @@ and teaching experience.
 			\emph{for the reason why).  Network traffic coexisted with IBM 3270 terminals
 			and was limited to one direction only; with no way to back out any changes from
 			production, we were very careful.}
-
-			% with storage in the 4702 controllers.  With no way to back out changes from
-			% production, we were extremely careful how we did it.}
 		\end{quote}
-
 \end{itemize}
 
+\vspace{-5mm}
 \section*{Patents} % most recent first
 
 \begin{itemize}
-    \item[*] US 6,987,461 \emph{System and Method for Addressing Optical
-		Emanations from an Information Processing Device}, issued 17th January 2006.
+    \item[*] 6,987,461 \emph{System and Method for Addressing Optical Emanations
+		from an Information Processing Device}, issued 17th January 2006.
 
 	\item[*] Application 13/355,210 \emph{Nested Digital Signatures with Constant File Size},
 		filed 20th January 2012.
 \end{itemize}
 
-\section*{Proposals Wins and Funding}
+\section*{Proposal Wins and Funding}
 
 \begin{itemize}
 	\item[*] Awarded \$968,412.00 for `Probabilistic Redaction', USAF Rome Lab contract
