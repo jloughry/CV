@@ -1,0 +1,121 @@
+% 3456789012345678901234567890123456789012345678901234567890123456789012
+%        1         2         3         4         5         6         7
+%
+% Format: LaTeX
+%
+% For information about this file, contact the author by email at
+% mailto:rjl@applied-math.org or telephone: +1 303 221 4380.  The
+% time zone is GMT minus seven hours.  Mobile when I am in the UK
+% is +44 (0)7984 147 430.
+%
+% It is presently formatted for 8-1/2x11 inch US-letter paper.
+%
+
+\documentclass[12pt,letterpaper]{article}
+
+% The geometry package lets me control the page margins.
+\usepackage[margin=1in]{geometry}
+
+% The titling package lets me control white space at the top of the first page.
+\usepackage{titling}
+\setlength{\droptitle}{-25mm}
+
+% The cmap package avoids the problem of ligatures like 'ffi' disappearing from a
+% copy and paste operation where the destination is plain text.  This is important
+% when sending out résumés in PDF if you want keywords to be spotted by automated
+% filters used by HR.  Without the `resetfonts' option it doesn't do the trick with
+% Computer Modern Roman.
+%
+% I use a modified ot1.cmap file in the current directory to tell PDF in addition
+% to the ligatures mentioned above to also replace curly quotes with straight
+% quotes and en dashes and em dashes with hyphens.  Copy and paste of text from the
+% resulting PDF file will be 7-bit clean ASCII containing no Unicode characters at
+% all.
+\usepackage[resetfonts]{cmap}
+
+% The url package formats URLs nicely.
+\usepackage{url}
+
+% The hyperref package makes links show up in PDF files and must be loaded last.
+\usepackage{hyperref}
+
+\raggedbottom
+
+\def\nodate{\@makedatefalse}
+\date{}
+
+\title{\textsc{Joe Loughry}\vspace{-7mm}}
+
+\author{\emph{Cross Domain System (CDS) Software Development and C\&A}}
+
+\renewcommand{\labelitemi}{*}
+\renewcommand{\labelitemii}{-}
+\renewcommand{\labelitemiii}{+}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\vspace*{-20mm}
+\section*{R\'esum\'e}
+
+\begin{itemize}
+	\item 1998--2012 at Lockheed Martin Corporation:
+		\begin{itemize}
+			\item \textbf{Information Assurance Engineer} for the last six years; before that,
+				eight years as a \textbf{software engineer on Radiant Mercury}.
+				\begin{itemize}
+					\item Invented constant-space digital signatures (a patent application
+						13/355,210 has been filed but not yet published) used for
+						imagery analysis.
+					\item Proposed and won
+						\href{http://applied-math.org/Probabilistic_Redaction.pdf}{\$968,412.00
+						contract} from Air Force Research Laboratory for a `probabilistic
+						redaction' system while telecommuting from grad school.
+					\item \href{http://applied-math.org/acm_optical_tempest.pdf}{Discoverer}
+						of the optical TEMPEST effect;
+						\href{http://www.google.com/patents/US6987461}{patent no.\ 6,987,461}
+						assigned to Lockheed Martin.
+					\item C and UNIX programmer with Trusted Solaris, DCID 6/3, cross domain,
+						and DIACAP experience.
+				\end{itemize}
+		\end{itemize}
+
+	\item 1990--97 at Wells Fargo \& Company:
+		\begin{itemize}
+			\item Worked as a programmer and sysadmin for the bank for seven years.
+				\begin{itemize}
+					\item Faced with a completely undocumented IBM mainframe application
+						written in
+						\href{https://github.com/jloughry/BANCStar/blob/master/README.md#code-sample}{machine language},
+						solved that problem by writing a
+						\href{https://github.com/jloughry/BANCStar/blob/master/C16LNAPP.pdf?raw=true}{compiler}
+						for the code in spare time.
+				\end{itemize}
+		\end{itemize}
+
+	\item Prior to 1990, was still in school:
+		\begin{itemize}
+			\item B.A.\ (math) from University of Colorado at Boulder.
+			\item M.S.E.\ (software engineering) from Seattle University.
+			\item Currently a doctoral student in computer science at Oxford.
+		\end{itemize}
+
+	\item Has a security clearance and has had all of his DoD 8570.01 shots already.
+\end{itemize}
+
+\section*{Contact Information}
+
+\begin{itemize}
+	\item 6214 S.\ Krameria St. \\
+		Centennial, CO 80111-4243 \\
+		USA
+
+	\item Telephone: (303) 221-4380
+
+	\item Email: \url{mailto:rjl@applied-math.org}
+\end{itemize}
+
+\vfill\noindent{\tiny \LaTeX\ build \input{build_counter.txt}}
+
+\end{document}

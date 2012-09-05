@@ -5,8 +5,25 @@ Formatting a Tactical Résumé
 ----------------------------
 
 ### Concept
-Trying something different here, let's put all the keywords up front where automated résumé filters
-are sure to find them.  Keywords are separated by commas and formatting is deliberately simple:
+Trying something different here, let's make two files: a long-form CV with all the details and
+a short-form résumé that just puts the exciting stuff on a single page.  Right now they are two
+separate LaTeX files, but some day I want to combine them into one source file that generates
+both PDFs and contains no redundant information.
+
+#### Résumé
+The résumé is a single page and not very full at that.  It shows the bare minimum information a
+harried screener wants to see:
+
+ - What positions, at what companies, has this person held?
+
+ - Did he do anything interesting there?
+
+ - Phone number and email address for the candidate.
+
+#### CV
+This file is currently three pages long in PDF and carefully formatted to fit compactly.  Let's
+put all the keywords up front where automated résumé filters are sure to find them.  Keywords
+are separated by commas and formatting is deliberately kept simple:
 
 	Certification and Accreditation (C&A) of cross domain systems, Assessment and
 	Authorization (A&A) for classified environments, Certification Test and Evaluation
@@ -95,9 +112,10 @@ and paste to plain text, or a **grep**.  Small caps render correctly from PDF in
 found.
 
 ### Build Instructions
-Make targets include the default to emit a PDF, **vi** to quickly edit the file, **clean** to remove
-temporary files, **allclean** to remove everything that can be regenerated, and **spell** to check
-spelling against a UK english dictionary.
+Make targets include the default to emit both PDF files, **vir** to quickly edit the résumé file,
+**vic** to edit the CV file, **clean** to remove temporary files (before commit), **allclean**
+to remove everything that can be regenerated, and **spell** to check spelling against a UK
+english dictionary.
 
 ### Example
     % make
