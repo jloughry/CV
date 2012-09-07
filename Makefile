@@ -1,19 +1,19 @@
 CV = loughry_cv
-résumé = loughry_résumé
+resume = loughry_resume
 
 CV_source = $(CV).tex
-résumé_source = $(résumé).tex
+resume_source = $(resume).tex
 
 latex_cmd = pdflatex
 counter_file = build_counter.txt
 
 CV_pdf = $(CV).pdf
-résumé_pdf = $(résumé).pdf
-pdf_files = $(CV_pdf) $(résumé_pdf)
+resume_pdf = $(resume).pdf
+pdf_files = $(CV_pdf) $(resume_pdf)
 
-temporary_files = $(CV).log $(résumé).log $(CV).aux $(résumé).aux .pdf $(CV).out $(résumé).out
+temporary_files = $(CV).log $(resume).log $(CV).aux $(resume).aux .pdf $(CV).out $(resume).out
 
-all: $(CV_pdf) $(résumé_pdf)
+all: $(CV_pdf) $(resume_pdf)
 
 $(CV_pdf): $(CV_source) Makefile
 	@echo $$(($$(cat $(counter_file)) + 1)) > $(counter_file)
@@ -25,25 +25,25 @@ $(CV_pdf): $(CV_source) Makefile
 	@echo "Build `cat $(counter_file)`"
 	chmod a-x,a+r $(CV_pdf)
 
-$(résumé_pdf): $(résumé_source) Makefile
+$(resume_pdf): $(resume_source) Makefile
 	@echo $$(($$(cat $(counter_file)) + 1)) > $(counter_file)
-	$(latex_cmd) $(résumé_source)
+	$(latex_cmd) $(resume_source)
 	while ( \
-		$(latex_cmd) $(résumé) ; \
-		grep "Rerun to get" $(résumé).log > /dev/null \
+		$(latex_cmd) $(resume) ; \
+		grep "Rerun to get" $(resume).log > /dev/null \
 	) do true ; done
 	@echo "Build `cat $(counter_file)`"
-	chmod a-x,a+r $(résumé_pdf)
+	chmod a-x,a+r $(resume_pdf)
 
 vir:
-	vi $(résumé_source)
+	vi $(resume_source)
 
 vic:
 	vi $(CV_source)
 
 spell:
 	aspell --lang=EN_GB check $(CV_source)
-	aspell --lang=EN_GB check $(résumé_source)
+	aspell --lang=EN_GB check $(resume_source)
 
 notes:
 	(cd ~/Documents/thesis/tex/dissertation && make notes)
