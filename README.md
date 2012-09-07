@@ -20,6 +20,9 @@ harried screener wants to see:
 
  - Phone number and email address for the candidate.
 
+To be nice to people trying to process files with automated tools that might not properly
+handle non-ASCII characters in filenames, though, the file is called *resume*, not *résumé*.
+
 #### CV
 This file is currently three pages long in PDF and carefully formatted to fit compactly.  Let's
 put all the keywords up front where automated résumé filters are sure to find them.  Keywords
@@ -96,11 +99,23 @@ a copy of in the current directory and modified the copy:
 	> <7B> <002D>
 	> <7C> <002D002D>
 
-PDFLaTeX preferentially uses the modified `ot1.cmap` file if it finds one in the current directory.
+PDFLaTeX preferentially uses the modified `ot1.cmap` file if it finds one in the current
+directory.
 
-The only remaining difficulty was bulleted lists; the `\textbullet` character doesn't appear
-in TeX's OT1 font encoding and so we can't process it the same way.  As a workaround, I changed
-my bulleted lists to use asterisks instead.
+A similar trick is done with LaTeX's bulleted lists, which use the *math mode* `\bullet`
+because bullets don't appear in TeX's OT1 font encoding.  The following modifications
+to the `oms.cmap` file in the current directory cause bullets in the PDF file to
+automatically turn into asterisks when copied and pasted to plain text.
+
+	$ diff oms.cmap.original oms.cmap
+	42c42
+	< <0F> <2219>
+	---
+	> <0F> <002A>
+
+TODO: handle all four levels of LaTeX itemised lists analogously, turning them into plus
+signs and minus signs or something.  (The TeX font encodings are documented
+[here](http://www.tex.ac.uk/ctan/macros/latex/doc/encguide.pdf).)
 
 The resulting plain ASCII when pasted is 7-bit clean and displays correctly no matter what
 international character set encoding is used on the recipient's machine.

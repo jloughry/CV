@@ -13,21 +13,24 @@
 
 \documentclass[letterpaper]{article}
 
-% The geometry package lets me control the page margins.
-\usepackage[margin=1in]{geometry}
-
 % The cmap package avoids the problem of ligatures like 'ffi' disappearing from a
 % copy and paste operation where the destination is plain text.  This is important
 % when sending out résumés in PDF if you want keywords to be spotted by automated
 % filters used by HR.  Without the `resetfonts' option it doesn't do the trick with
 % Computer Modern Roman.
 %
-% I use a modified ot1.cmap file in the current directory to tell PDF in addition
-% to the ligatures mentioned above to also replace curly quotes with straight
-% quotes and en dashes and em dashes with hyphens.  Copy and paste of text from the
-% resulting PDF file will be 7-bit clean ASCII containing no Unicode characters at
-% all.
+% I use a modified ot1.cmap file and a modified oms.cmap file in the current
+% directory to tell PDF that in addition to the ligatures mentioned above it should
+% also replace curly quotes with straight quotes, en dashes and em dashes with
+% hyphens, and bullets with asterisks.  Copy and paste of text from the resulting
+% PDF file will be 7-bit clean ASCII containing no Unicode characters at all.
+%
+% Be sure to load cmap immediately after the documentclass line so it can see
+% all the fonts as they are loaded.
 \usepackage[resetfonts]{cmap}
+
+% The geometry package lets me control the page margins.
+\usepackage[margin=1in]{geometry}
 
 % The titling package lets me control white space at the top of the first page.
 \usepackage{titling}
@@ -108,14 +111,14 @@ and teaching experience.
 \section*{Work Experience}
 
 \begin{itemize}
-	\item[*] Graduate Research Student, University of Oxford, England, from January 2012--present.
+	\item Graduate Research Student, University of Oxford, England, from January 2012--present.
 		\begin{quote}\vspace{-2mm}
 			\emph{Having wrapped up a three-year-long R\&D contract for the Air Force Research
 			Lab in January of 2012, it was necessary to finish writing my dissertation by
 			the deadline.}
 		\end{quote}
 
-	\item[*] Information Assurance Engineer, Lockheed Martin Corporation, from 2006--January 2012.
+	\item Information Assurance Engineer, Lockheed Martin Corporation, from 2006--January 2012.
 		\begin{quote}\vspace{-2mm}
 			\emph{Reorganised into the INFOSEC group at Lockheed, I designed a new
 			cryptosystem leading to another patent application and began studying
@@ -124,7 +127,7 @@ and teaching experience.
 			proposing and winning an AFRL contract while I was gone.}
 		\end{quote}
 
-	\item[*] Software Engineer, Lockheed Martin IS\&GS Western Region, from February 1998--2006.
+	\item Software Engineer, Lockheed Martin IS\&GS Western Region, from February 1998--2006.
 		\begin{quote}\vspace{-2mm}
 			\emph{The optical TEMPEST research, not yet published in the open literature but of
 			considerable interest to the intelligence community, led to a security clearance and
@@ -133,7 +136,7 @@ and teaching experience.
 			Certification and Accreditation (C\&A) of systems.}
 		\end{quote}
 
-	\item[*] System Administrator, Wells Fargo \& Company, Seattle, Washington,
+	\item System Administrator, Wells Fargo \& Company, Seattle, Washington,
 		from 1996--September 1997.
 		\begin{quote}\vspace{-2mm}
 			\emph{After being acquired by Wells Fargo, I moved to sysadmin of its network
@@ -142,14 +145,14 @@ and teaching experience.
 			be cited in 14 books on information security.}
 		\end{quote}
 
-	\item[*] Programmer, Safeco Life Insurance Company, Redmond, Washington, for a few months
+	\item Programmer, Safeco Life Insurance Company, Redmond, Washington, for a few months
 		in 1991.
 		\begin{quote}\vspace{-2mm}
 			\emph{I maintained a database application for a short time at this company
 				between assignments.}
 		\end{quote}
 
-	\item[*] Programmer/Analyst II, First Interstate Bank of Washington, Seattle,
+	\item Programmer/Analyst II, First Interstate Bank of Washington, Seattle,
 		from 1990--91 and 1991--96.
 		\begin{quote}\vspace{-2mm}
 			\emph{Five of us worked on retail bank automation software in machine language
@@ -165,17 +168,17 @@ and teaching experience.
 \section*{Patents}
 
 \begin{itemize}
-    \item[*] 6,987,461 \emph{System and Method for Addressing Optical Emanations
+    \item 6,987,461 \emph{System and Method for Addressing Optical Emanations
 		from an Information Processing Device}, issued 17th January 2006.
 
-	\item[*] Application 13/355,210 \emph{Nested Digital Signatures with Constant File Size},
+	\item Application 13/355,210 \emph{Nested Digital Signatures with Constant File Size},
 		filed 20th January 2012.
 \end{itemize}
 
 \section*{Proposal Wins and Funding}
 
 \begin{itemize}
-	\item[*] Awarded \$968,412.00 for `Probabilistic Redaction', USAF Rome Lab contract
+	\item Awarded \$968,412.00 for `Probabilistic Redaction', USAF Rome Lab contract
 	no.\ FA8750-09-C-0006, Principal investigator (PI) for period of performance
 	2009--2012, project completed on time.
 \end{itemize}
@@ -183,7 +186,7 @@ and teaching experience.
 \section*{Refereed Journal Publications}
 
 \begin{itemize}
-    \item[*] `Information Leakage from Optical Emanations' by J.\ Loughry
+    \item `Information Leakage from Optical Emanations' by J.\ Loughry
     and D.A.\ Umphress. \emph{ACM Trans.\ Info.\ Sys.\ Security} \textbf{5}(3).
     pp.\ 262--289, 2002.
 \end{itemize}
@@ -191,29 +194,29 @@ and teaching experience.
 \section*{Conference Publications}
 
 \begin{itemize}
-	\item[*] `Information Asymmetry in Classified Cross Domain System Accreditation'.
+	\item `Information Asymmetry in Classified Cross Domain System Accreditation'.
 		\emph{C\&ESAR 2012}, Rennes, France, 20--22 November 2012 (to appear).
 
-	\item[*] `Unsteady Ground: Certification to Unstable Criteria'.
+	\item `Unsteady Ground: Certification to Unstable Criteria'.
 		\emph{Second International Conference on Advances in System Testing
 		and Validation Life Cycle}. Nice, France, 2010. 
 
-	\item[*] `Evaluation of Existing IT Systems Under the Common Criteria
+	\item `Evaluation of Existing IT Systems Under the Common Criteria
 		at Levels Above EAL4'. \emph{Oxford University
 		Computing Laboratory Student Conference}, Oxford, U.K., 2008.
 
-    \item[*] `Use of XML in the Specification and Development of a New High
+    \item `Use of XML in the Specification and Development of a New High
 		Assurance Controlled Interface'. \emph{Network Centric Warfare} conference,
 		Washington, D.C., 2003.
 
-    \item[*] `Optical Remote Interception of Networks (\textsc{Orion})'
+    \item `Optical Remote Interception of Networks (\textsc{Orion})'
 		\emph{InfowarCon '02}, Washington, D.C., 2002.
 
-    \item[*] `\textsc{Radiant Mercury}'. \emph{Cross Domain Solutions
+    \item `\textsc{Radiant Mercury}'. \emph{Cross Domain Solutions
 		Organization}. Johns Hopkins University Applied Physics Laboratory,
 		Laurel, Maryland USA, 2001.
 
-    \item[*] `Performance evaluation for line-drawing recognition systems'
+    \item `Performance evaluation for line-drawing recognition systems'
 		by Ihsin T. Phillips, Frank Chang, Kevin Chang, Bhavani Duggirala,
 		Mike Logan, Joe Loughry, and Jisheng Liang. \emph{Proc.\ SPIE '97
 		Document Imaging IV}. Vol.\ 3027, pp.\ 136--148, March 1997.
@@ -222,22 +225,22 @@ and teaching experience.
 \section*{Other Published Reports}
 
 \begin{itemize}
-	\item[*] `Probabilistic Redaction' final technical report. Air Force Research
+	\item `Probabilistic Redaction' final technical report. Air Force Research
 		Laboratory (AFRL), Rome, New York, 2012.  Available from the Defense Technical
 		Information Centre (DTIC), Washington, D.C.
 
-	\item[*] `Subsets of an 8-element set in order by number of elements in each
+	\item `Subsets of an 8-element set in order by number of elements in each
 		subset'. \emph{On-line Encyclopedia of Integer Sequences}, AT\&T Research, 2003.
 
-	\item[*] `Efficiently enumerating the subsets of a set' by Loughry, von Hemert,
+	\item `Efficiently enumerating the subsets of a set' by Loughry, von Hemert,
 		and Schoofs (in preparation).
 
-    \item[*] Sun Microsystems security advisory (software): \redacted\ classified S//NF, 1999.
-	\item[*] Sun Microsystems security advisory (hardware): \redacted\ classified S//NF, 1998.
-	\item[*] Sun Microsystems security advisory (software): \redacted\ classified S//NF, 1998.
-	\item[*] Sun Microsystems security advisory (software): \redacted\ classified SI TK B, 1998.
+    \item Sun Microsystems security advisory (software): \redacted\ classified S//NF, 1999.
+	\item Sun Microsystems security advisory (hardware): \redacted\ classified S//NF, 1998.
+	\item Sun Microsystems security advisory (software): \redacted\ classified S//NF, 1998.
+	\item Sun Microsystems security advisory (software): \redacted\ classified SI TK B, 1998.
 
-    \item[*] RISKS \emph{(ACM Forum on Risks to the Public in Computers
+    \item RISKS \emph{(ACM Forum on Risks to the Public in Computers
     and Related Systems)} vols 17.31, 21.94--5, 22.81, 24.07,
     24.22--3, 24.55, 24.87, 25.73, and 26.46.
 \end{itemize}
@@ -245,103 +248,103 @@ and teaching experience.
 \section*{Security Clearance}
 
 \begin{itemize}
-	\item[*] TS/SCI is current; last investigation date: 5th August 2009 (SSBI PR);
+	\item TS/SCI is current; last investigation date: 5th August 2009 (SSBI PR);
 		last CI poly 26th May 2010.
 \end{itemize}
 
 \section*{DoD 8570.01 Compliance}
 
 \begin{itemize}
-	\item[*] CISSP-ISSEP no.\ 10411, current and satisfies IAT Level III, IAM Level III,
+	\item CISSP-ISSEP no.\ 10411, current and satisfies IAT Level III, IAM Level III,
 		and IASAE III.
 \end{itemize}
 
 \section*{Education}
 
 \begin{itemize}
-    \item[*] University of Oxford, Department of Computer Science,
+    \item University of Oxford, Department of Computer Science,
 		doctoral student.  Title of dissertation: \emph{Security Test and Evaluation
 		of Cross Domain Systems} (degree expected in 2012).
 
-    \item[*] Master of Software Engineering (M.S.E.), Seattle
+    \item Master of Software Engineering (M.S.E.), Seattle
 		University / Seattle, Washington (1996).
 
-    \item[*] Bachelor of Arts in Mathematics, University of
+    \item Bachelor of Arts in Mathematics, University of
 		Colorado / Boulder, Colorado (1986), followed by some additional
 		postgraduate work through 1989 in the math department and the business school.
 \end{itemize}
 
-% \item[*] `Nested Digital Signatures'. Disclosure ID MG-03529 (2011).
+% \item `Nested Digital Signatures'. Disclosure ID MG-03529 (2011).
 %
-% \item[*] (with Greg Edwards) `Selective denial of wifi in an area'.
+% \item (with Greg Edwards) `Selective denial of wifi in an area'.
 %	Disclosure ID WD-00467 (2008).
 %
-% \item[*] `Probabilistic Redaction'. Disclosure ID WD-00466 (2008).
+% \item `Probabilistic Redaction'. Disclosure ID WD-00466 (2008).
 %
-% \item[*] Lockheed Martin Aeronautics, Ft.\ Worth, TX. `Certification
+% \item Lockheed Martin Aeronautics, Ft.\ Worth, TX. `Certification
 %	and Accreditation Processes in Joint Strike Fighter (JSF)
 %	International Partner Countries' (2006).
 %
-% \item[*] Lockheed Martin Systems Integration, Owego, NY. `Data
+% \item Lockheed Martin Systems Integration, Owego, NY. `Data
 %	Remanance and Declassification Issues in the Netra 240 Server'.
 %	Document SSYR-TRD-10859 (2006).
 %
-% \item[*] United States Navy, Space and Naval Warfare Systems Centre,
+% \item United States Navy, Space and Naval Warfare Systems Centre,
 %	San Diego. `Risk Assessment for Internetwork Connection'. Document
 %	SSYR-TRD-10860 (2006).
 %
-% \item[*] Lockheed Martin Corporation. \emph{RTG 1.0 Descriptive
+% \item Lockheed Martin Corporation. \emph{RTG 1.0 Descriptive
 %	Low-Level Design (Informational Annex)}. Document
 %	SSYR-050-10424-001:47 (2006).
 %
-% \item[*] United States Navy. \emph{\textsc{Radiant Mercury} IAVA
+% \item United States Navy. \emph{\textsc{Radiant Mercury} IAVA
 %	Process}. Document USN-PRO-10640-001 (2006).
 %
-% \item[*] Lockheed Martin Corporation, Integrated Systems and
+% \item Lockheed Martin Corporation, Integrated Systems and
 %	Solutions. \emph{Radiant Trust Gold 1.0 Security Target}.  Document
 %	SSYR-050-10424-000:66 (2006).
 %
-% \item[*] `Method for Applying Digital Signature to Streaming Video
+% \item `Method for Applying Digital Signature to Streaming Video
 %	from a Trusted Source'. Trade Secret Disclosure ID DA-01193 (2005).
 %
-% \item[*] National Security Agency. \emph{Draft U.S. Government
+% \item National Security Agency. \emph{Draft U.S. Government
 %	Protection Profile for Automated Guard and Sanitizer For High
 %	Robustness Environments} (2004).
 %
-% \item[*] Lockheed Martin IS\&S. `High Assurance Layer-1
+% \item Lockheed Martin IS\&S. `High Assurance Layer-1
 %	Cross-Correlation Guard'. U.S. Patent Filing VF-03302 (2004).
 %
-% \item[*] `Cross-Domain Voice-over-IP (VoIP) Guard'. Disclosure ID DA-01112 (2003).
+% \item `Cross-Domain Voice-over-IP (VoIP) Guard'. Disclosure ID DA-01112 (2003).
 %
-% \item[*] `Smart Card with On-Board Guard'. Disclosure ID DA-01113 (2003).
+% \item `Smart Card with On-Board Guard'. Disclosure ID DA-01113 (2003).
 %
-% \item[*] `Visual Identification System for Cables'. Disclosure ID DA-01085 (2003).
+% \item `Visual Identification System for Cables'. Disclosure ID DA-01085 (2003).
 %
-% \item[*] United States Air Force---Air Combat Command. \emph{B-2
+% \item United States Air Force---Air Combat Command. \emph{B-2
 %	Centre Instrument Display Subsystem Block II Upgrade Security
 %	Guard Board Jumpstart Process} (2001).
 %
-% \item[*] Lockheed Martin Space Systems. `Radiant Mercury Imagery
+% \item Lockheed Martin Space Systems. `Radiant Mercury Imagery
 %	Guard Cryptographic Architecture' (1998).
 
 \section*{Teaching Experience}
 
 \begin{itemize}
-    \item[*] University Instructor, CSCE 591 \emph{Computer Networks},
+    \item University Instructor, CSCE 591 \emph{Computer Networks},
     Seattle University, Spring Quarter 1998.
 \end{itemize}
 
 \section*{Officerships and Committee Work}
 \begin{itemize}
-	\item[*] April, 2012: Co-organiser of a public debate on the subject of ageing between
+	\item April, 2012: Co-organiser of a public debate on the subject of ageing between
 		Dr Aubrey de Grey and Prof.\ Colin Blakemore, chaired by Professor Sir Richard Peto,
 		attended by 650 people in the Sheldonian Theatre, Oxford.
-	\item[*] 2009--present: President of the Oxford Lyceum.
-	\item[*] 2009--present: IT Officer, Oxford University Scientific Society.
-	\item[*] Chair of the OXFORD-CS-2011 Conference Programme Committee.
-	\item[*] Member of the COMLAB-CS-2010 and COMLAB-CS-2009 Conference Programme Committees.
-	\item[*] 2007--09: Treasurer of the Oxford Lyceum.
-	\item[*] Science fair judge for the Ricks Centre at the University of Denver (2012).
+	\item 2009--present: President of the Oxford Lyceum.
+	\item 2009--present: IT Officer, Oxford University Scientific Society.
+	\item Chair of the OXFORD-CS-2011 Conference Programme Committee.
+	\item Member of the COMLAB-CS-2010 and COMLAB-CS-2009 Conference Programme Committees.
+	\item 2007--09: Treasurer of the Oxford Lyceum.
+	\item Science fair judge for the Ricks Centre at the University of Denver (2012).
 \end{itemize}
 
 \definecolor{grey}{rgb}{0.55,0.55,0.55}
@@ -378,11 +381,11 @@ and teaching experience.
 \section*{Code contributed to the following Open Source projects}
 
 \begin{itemize}
-	\item[*] OpenSolaris: \url{http://www.opensolaris.org} (2006) \emph{bug in password
+	\item OpenSolaris: \url{http://www.opensolaris.org} (2006) \emph{bug in password
 		retry limit of Trusted Solaris 8}
-	\item[*] The FreeBSD Project: \url{http://www.freebsd.org} (1999) \emph{contributed new
+	\item The FreeBSD Project: \url{http://www.freebsd.org} (1999) \emph{contributed new
 		console screen saver}
-	\item[*] Fetchmail: \url{http://fetchmail.berlios.de} (1998) \emph{patch to handle multi-homed
+	\item Fetchmail: \url{http://fetchmail.berlios.de} (1998) \emph{patch to handle multi-homed
 		machines}
 \end{itemize}
 
