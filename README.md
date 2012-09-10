@@ -133,9 +133,8 @@ and `12pt` options to `\documentclass` as follows:
 	>     OMS/cmsy/m/n/5,OMS/cmsy/m/n/7,OMS/cmsy/m/n/10,OMS/cmsy/m/n/11,OMS/cmsy/m/n/12,%
 	>     OMX/cmex/m/n/10,OMX/cmex/m/n/11,OMX/cmex/m/n/12%
 
-The TeX font encodings are documented
+(The TeX font encodings are documented
 [here](http://www.tex.ac.uk/ctan/macros/latex/doc/encguide.pdf).)
-
 The resulting plain ASCII when pasted is 7-bit clean and displays correctly no matter what
 international character set encoding is used on the recipient's machine.
 
