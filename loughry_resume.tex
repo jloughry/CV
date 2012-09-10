@@ -13,25 +13,28 @@
 
 \documentclass[12pt,letterpaper]{article}
 
-% The geometry package lets me control the page margins.
-\usepackage[margin=1in]{geometry}
-
-% The titling package lets me control white space at the top of the first page.
-\usepackage{titling}
-\setlength{\droptitle}{-25mm}
-
 % The cmap package avoids the problem of ligatures like 'ffi' disappearing from a
 % copy and paste operation where the destination is plain text.  This is important
 % when sending out résumés in PDF if you want keywords to be spotted by automated
 % filters used by HR.  Without the `resetfonts' option it doesn't do the trick with
 % Computer Modern Roman.
 %
-% I use a modified ot1.cmap file in the current directory to tell PDF in addition
-% to the ligatures mentioned above to also replace curly quotes with straight
-% quotes and en dashes and em dashes with hyphens.  Copy and paste of text from the
-% resulting PDF file will be 7-bit clean ASCII containing no Unicode characters at
-% all.
+% I use a modified ot1.cmap and a modified oms.cmap and a modified cmap.sty file
+% in the current directory to tell PDF that in addition to the ligatures mentioned
+% above it should also replace curly quotes with straight quotes, en dashes and em
+% dashes with hyphens, and bullets with asterisks or other ASCII characters.  Copy
+% and paste of text from the resulting PDF file will be 7-bit clean ASCII containing
+% no Unicode characters at all.  Be sure to load cmap immediately after the
+% documentclass line so it can see all the fonts as they are loaded.  This version
+% of cmap.sty works with 11pt and 12pt options to documentclass unlike the original.
 \usepackage[resetfonts]{cmap}
+
+% The geometry package lets me control the page margins.
+\usepackage[margin=1in]{geometry}
+
+% The titling package lets me control white space at the top of the first page.
+\usepackage{titling}
+\setlength{\droptitle}{-25mm}
 
 % The url package formats URLs nicely.
 \usepackage{url}
@@ -48,18 +51,16 @@
 
 \author{\emph{Cross Domain System (CDS) Software Development and C\&A}}
 
-\renewcommand{\labelitemi}{*}
-\renewcommand{\labelitemii}{-}
-\renewcommand{\labelitemiii}{+}
-
 \begin{document}
 \maketitle
 \thispagestyle{empty}
 
 \vspace*{-20mm}
-\section*{R\'esum\'e}
+\section*{One Page Resume}
 
 \begin{itemize}
+	\item At the present time, I am writing a doctoral dissertation on \emph{Security Test and
+		Evaluation of Cross Domain Systems} at the University of Oxford.
 	\item 1998--2012 at Lockheed Martin Corporation:
 		\begin{itemize}
 			\item \textbf{Information Assurance Engineer} for the last six years; before that,
@@ -83,25 +84,24 @@
 
 	\item 1990--97 at Wells Fargo \& Company:
 		\begin{itemize}
-			\item Worked as a programmer and sysadmin for the bank for seven years.
+			\item I worked as a programmer and sysadmin for the bank.
 				\begin{itemize}
-					\item Faced with a completely undocumented IBM mainframe application
-						written in
+					\item Faced with a poorly documented mainframe application written in
 						\href{https://github.com/jloughry/BANCStar/blob/master/README.md#code-sample}{machine language},
-						solved that problem by writing a
-						\href{https://github.com/jloughry/BANCStar/blob/master/C16LNAPP.pdf?raw=true}{compiler}
-						for the code in spare time.
+						I solved that problem once and for all by writing a compiler for it.
+					\item After working for a few years, I enrolled part time for a master's
+						degree in software engineering at Seattle University (M.S.E., 1996).
 				\end{itemize}
 		\end{itemize}
 
-	\item Prior to 1990, was still in school.  Educational credentials:
+	\item Prior to 1990, I was still in school:
 		\begin{itemize}
-			\item B.A.\ (math) from University of Colorado at Boulder.
-			\item M.S.E.\ (software engineering) from Seattle University.
-			\item Currently a doctoral student in computer science at Oxford.
+			\item B.A.\ in math from the University of Colorado at Boulder.
 		\end{itemize}
 
-	\item Has a security clearance and has had all of his DoD 8570.01 shots already.
+	\item I have a security clearance and have had all my DoD 8570.01 shots already.
+		I can satisfy your requirement for IAT Level III, IAM Level III, or IASAE Level III.
+		
 \end{itemize}
 
 \section*{Contact Information}

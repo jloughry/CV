@@ -104,17 +104,36 @@ directory.
 
 A similar trick is done with LaTeX's bulleted lists, which use the *math mode* `\bullet`
 because bullets don't appear in TeX's OT1 font encoding.  The following modifications
-to the `oms.cmap` file in the current directory cause bullets in the PDF file to
-automatically turn into asterisks when copied and pasted to plain text.
+to the `oms.cmap` file in the current directory cause bullets at all four levels of a
+LaTeX itemised list in the PDF file to automatically turn into asterisks, hyphens, or
+plus signs when copied and pasted to plain text.
 
 	$ diff oms.cmap.original oms.cmap
+	28c28
+	< <01> <00B7>
+	---
+	> <01> <002B>
 	42c42
 	< <0F> <2219>
 	---
 	> <0F> <002A>
 
-TODO: handle all four levels of LaTeX itemised lists analogously, turning them into plus
-signs and minus signs or something.  (The TeX font encodings are documented
+I had to modify the distribution version of `cmap.sty` to get it to work with the `11pt`
+and `12pt` options to `\documentclass` as follows:
+
+	$ diff cmap.sty.original cmap.sty
+	18,21c18,21
+	<     OT1/cmr/m/n/5,OT1/cmr/m/n/7,OT1/cmr/m/n/10,%
+	<     OML/cmm/m/it/5,OML/cmm/m/it/7,OML/cmm/m/it/10,%
+	<     OMS/cmsy/m/n/5,OMS/cmsy/m/n/7,OMS/cmsy/m/n/10,%
+	<     OMX/cmex/m/n/10%
+	---
+	>     OT1/cmr/m/n/5,OT1/cmr/m/n/7,OT1/cmr/m/n/10,OT1/cmr/m/n/11,OT1/cmr/m/n/12,%
+	>     OML/cmm/m/it/5,OML/cmm/m/it/7,OML/cmm/m/it/10,OML/cmm/m/it/11,OML/cmm/m/it/12,%
+	>     OMS/cmsy/m/n/5,OMS/cmsy/m/n/7,OMS/cmsy/m/n/10,OMS/cmsy/m/n/11,OMS/cmsy/m/n/12,%
+	>     OMX/cmex/m/n/10,OMX/cmex/m/n/11,OMX/cmex/m/n/12%
+
+The TeX font encodings are documented
 [here](http://www.tex.ac.uk/ctan/macros/latex/doc/encguide.pdf).)
 
 The resulting plain ASCII when pasted is 7-bit clean and displays correctly no matter what
