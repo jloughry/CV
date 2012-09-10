@@ -19,14 +19,14 @@
 % filters used by HR.  Without the `resetfonts' option it doesn't do the trick with
 % Computer Modern Roman.
 %
-% I use a modified ot1.cmap file and a modified oms.cmap file in the current
-% directory to tell PDF that in addition to the ligatures mentioned above it should
-% also replace curly quotes with straight quotes, en dashes and em dashes with
-% hyphens, and bullets with asterisks.  Copy and paste of text from the resulting
-% PDF file will be 7-bit clean ASCII containing no Unicode characters at all.
-%
-% Be sure to load cmap immediately after the documentclass line so it can see
-% all the fonts as they are loaded.
+% I use a modified ot1.cmap and a modified oms.cmap and a modified cmap.sty file
+% in the current directory to tell PDF that in addition to the ligatures mentioned
+% above it should also replace curly quotes with straight quotes, en dashes and em
+% dashes with hyphens, and bullets with asterisks or other ASCII characters.  Copy
+% and paste of text from the resulting PDF file will be 7-bit clean ASCII containing
+% no Unicode characters at all.  Be sure to load cmap immediately after the
+% documentclass line so it can see all the fonts as they are loaded.  This version
+% of cmap.sty works with 11pt and 12pt options to documentclass unlike the original.
 \usepackage[resetfonts]{cmap}
 
 % The geometry package lets me control the page margins.
