@@ -46,10 +46,10 @@ spell:
 	aspell --lang=EN_GB check $(resume_source)
 
 notes:
-	(cd ~/Documents/thesis/tex/dissertation && make notes)
+	(cd ../notes/ && make notes)
 
 bibtex:
-	(cd ../bibtex && make vi)
+	(cd ../bibtex/ && make vi)
 
 clean:
 	rm -f $(temporary_files)
