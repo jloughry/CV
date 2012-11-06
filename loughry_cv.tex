@@ -34,7 +34,7 @@
 
 % The titling package lets me control white space at the top of the first page.
 \usepackage{titling}
-\setlength{\droptitle}{-25mm}
+\setlength{\droptitle}{-30mm}
 
 % Used for graphics in the social networking bullets
 \usepackage{graphicx}
@@ -52,32 +52,28 @@
 \textheight=9in
 \raggedbottom
 \raggedright
+
+\newcommand{\redacted}{\textsc{[title redacted]}}
+
+% Tell \LaTeX\ not to complain about missing date.
 \def\nodate{\@makedatefalse}
 \date{}
 
-\title{\textsc{Joe Loughry}\vspace{-3mm}}
-
-% The fontdimen2 parameter squeezes interword spacing on this line only to fit.
-\author{\vspace{-3mm}\emph{\spaceskip=0.825\fontdimen2\font Software Development 
-	for Cross Domain Systems (CDS) and Computer Security Research}
-}
-
-\newcommand{\redacted}{\textsc{[title redacted]}}
+\title{\textsc{Joe Loughry}}
+\author{}
 
 \begin{document}
 \maketitle
 
-\vspace*{-12mm}
-\hfill 6214 S.\ Krameria Street \\
-\hfill Centennial, CO\ \ 80111-4243
+\vspace{-26mm}
+{\large Software Development for Cross Domain Systems, C\&A, and Information Security Research}
 
-Tel: (303) 221-4380 (time zone is US/Mountain---GMT minus 7 hours).
+\vspace{3mm}
+\url{mailto:rjl@applied-math.org} \hfill \url{mailto:joe.loughry@stx.ox.ac.uk}
 
-\vspace{1mm}
-\url{mailto:rjl@applied-math.org} \\
-\url{mailto:joe.loughry@stx.ox.ac.uk}
+Tel: (303) 221-4380 (time zone is US/Mountain---GMT minus 7 hours)\hfill Centennial, Colorado
 
-\vspace{-1mm}
+\vspace{-3mm}
 \section*{Keywords for the Regexp}
 
 Certification and Accreditation (C\&A) of cross domain systems,
@@ -107,14 +103,14 @@ funding,
 research,
 and teaching experience.
 
-\vspace{-1mm}
+\vspace{-3mm}
 \section*{Work Experience}
 
 \begin{itemize}
 	\item Graduate Research Student, University of Oxford, England, from January 2012--present.
 		\begin{quote}\vspace{-2mm}
 			\emph{Having wrapped up a three-year-long R\&D contract for the Air Force Research
-			Lab in January of 2012, it was necessary to finish writing my dissertation by
+			Laboratory in January of 2012, it was necessary to finish writing my dissertation by
 			the deadline.}
 		\end{quote}
 
@@ -122,7 +118,7 @@ and teaching experience.
 		\begin{quote}\vspace{-2mm}
 			\emph{Reorganised into the INFOSEC group at Lockheed, I designed a new
 			cryptosystem leading to another patent application and began studying
-			government security evaluation standards.  Deciding to solve the C\&A problem,
+			government security evaluation standards.  Meaning to solve the C\&A problem,
 			I took my thesis to the computer science department, telecommuting from the UK and
 			proposing and winning an AFRL contract while I was gone.}
 		\end{quote}
@@ -131,9 +127,9 @@ and teaching experience.
 		\begin{quote}\vspace{-2mm}
 			\emph{The optical TEMPEST research, not yet published in the open literature but of
 			considerable interest to the intelligence community, led to a security clearance and
-			a job writing code for Trusted Solaris.  I travelled around the U.S.\ and Britain
-			writing code and installing systems and got interested along the way in
-			Certification and Accreditation (C\&A) of systems.}
+			a job writing code on RADIANT MERCURY.  Travelled around the U.S.\ and Britain
+			writing code and got interested along the way in Certification and Accreditation
+			(C\&A) of classified systems.}
 		\end{quote}
 
 	\item System Administrator, Wells Fargo \& Company, Seattle, Washington,
@@ -164,7 +160,7 @@ and teaching experience.
 		\end{quote}
 \end{itemize}
 
-\vspace{-5mm}
+\vspace{-8mm}
 \section*{Patents}
 
 \begin{itemize}
@@ -175,12 +171,20 @@ and teaching experience.
 		filed 20th January 2012.
 \end{itemize}
 
+\vspace{-6mm}
 \section*{Proposal Wins and Funding}
 
 \begin{itemize}
 	\item Awarded \$968,412.00 for `Probabilistic Redaction', USAF Rome Lab contract
 	no.\ FA8750-09-C-0006, Principal investigator (PI) for period of performance
-	2009--2012, project completed on time.
+	2009--2012, project completed on schedule.
+\end{itemize}
+
+\section*{Security Clearance}
+
+\begin{itemize}
+	\item TS/SCI is current; last investigation date: 5th August 2009 (SSBI PR);
+		last CI poly 26th May 2010.
 \end{itemize}
 
 \section*{Refereed Journal Publications}
@@ -245,13 +249,6 @@ and teaching experience.
     24.22--3, 24.55, 24.87, 25.73, and 26.46.
 \end{itemize}
 
-\section*{Security Clearance}
-
-\begin{itemize}
-	\item TS/SCI is current; last investigation date: 5th August 2009 (SSBI PR);
-		last CI poly 26th May 2010.
-\end{itemize}
-
 \section*{DoD 8570.01 Compliance}
 
 \begin{itemize}
@@ -263,15 +260,16 @@ and teaching experience.
 
 \begin{itemize}
     \item University of Oxford, Department of Computer Science,
-		doctoral student.  Title of dissertation: \emph{Security Test and Evaluation
-		of Cross Domain Systems} (degree expected in 2012).
+		doctoral student.  Title of dissertation: \emph{Security Test
+		and Evaluation of Cross Domain Systems}, degree expected in early 2013.
 
-    \item Master of Software Engineering (M.S.E.), Seattle
-		University / Seattle, Washington (1996).
+    \item Master of Software Engineering (M.S.E.), Seattle University. % (1996)
 
-    \item Bachelor of Arts in Mathematics, University of
-		Colorado / Boulder, Colorado (1986), followed by some additional
-		postgraduate work through 1989 in the math department and the business school.
+    \item Bachelor of Arts in Mathematics, University of Colorado at Boulder.
+
+		% (1986), followed by some additional postgraduate work through 1989
+		% in the math department and the business school.
+
 \end{itemize}
 
 % \item `Nested Digital Signatures'. Disclosure ID MG-03529 (2011).
