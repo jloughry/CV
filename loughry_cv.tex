@@ -11,7 +11,7 @@
 % It is presently formatted for 8-1/2x11 inch US-letter paper.
 %
 
-\documentclass[letterpaper]{article}
+\documentclass[11pt,letterpaper]{article}
 
 % The cmap package avoids the problem of ligatures like 'ffi' disappearing from a
 % copy and paste operation where the destination is plain text.  This is important
@@ -55,6 +55,11 @@
 
 \newcommand{\redacted}{\textsc{[title redacted]}}
 
+% The following trick changes the margins in a \quote environment.  Source: \url{http://tex\
+% .stackexchange.com/questions/2396/how-can-i-change-the-indentation-in-quote-and-quotation-\
+% environments-and-command}.
+\newenvironment{myquote}{\list{}{\leftmargin=0.3in\rightmargin=0in}\item[]}{\endlist}
+
 % Tell \LaTeX\ not to complain about missing date.
 \def\nodate{\@makedatefalse}
 \date{}
@@ -64,139 +69,105 @@
 
 \begin{document}
 \maketitle
+\thispagestyle{empty}
 
-\vspace{-23mm}
+\vspace{-26mm}
+{\large \emph{Software Development for Cross Domain Systems, Pen Testing, C\&A,
+	Information Security}}
 
-\begin{minipage}[b]{0.827\textwidth}
-{\large Software Developer, Cross Domain Systems, C\&A, and Information Security}
-
-\vspace{2mm}
+\vspace{4mm}
 Tel: (303) 221-4380 (US/Mountain---GMT minus 7 hours)\hfill Centennial, Colorado, USA
 
 \url{mailto:rjl@applied-math.org} \hfill \url{mailto:joe.loughry@stx.ox.ac.uk}
 
-\vspace{6mm}
-\hfill {\scriptsize (vCard 2.1)}
-\end{minipage}
-\begin{minipage}{0.8in}\vspace{-21.5mm}
-\includegraphics[scale=0.85]{J_Loughry_vCard_QR_med.png}
-\end{minipage}
-
-\vspace{-12.5mm}
-\section*{Keywords for the Regexp}
-
-Certification and Accreditation (C\&A) of cross domain systems,
-Assessment and Authorization (A\&A) for classified environments,
-Certification Test and Evaluation (CT\&E),
-Security Test and Evaluation (ST\&E),
-penetration testing,
-DIACAP,
-the Common Criteria,
-DCID 6/3,
-programming in C and assembly language with a strong interest in Lisp derived languages,
-Compartmented Mode Workstation (CMW) programming,
-UNIX,
-Trusted Solaris versions 2.5--8,
-software development,
-R\&D,
-principal investigator,
-U.S.\ citizen with TS/SCI clearance,
-technical writing,
-CISSP-ISSEP for DoD 8570.01 compliance,
-experience living overseas,
-programming,
-publications,
-patents,
-public speaking,
-funding,
-research,
-and teaching experience.
-
-\vspace{-3mm}
-\section*{Work Experience}
-
 \begin{itemize}
-	\item Graduate Research Student, University of Oxford, England, from January 2012--present.
-		\begin{quote}\vspace{-2mm}
-			\emph{Having wrapped up a three-year-long R\&D contract for the Air Force Research
-			Laboratory in January of 2012, it was necessary to finish writing my dissertation by
-			the deadline.}
-		\end{quote}
+	\item Postgraduate Research Student, University of Oxford, January 2012--present.
+		\vspace{-2mm}
+		\begin{myquote}
+			New methods for cutting cost and boosting efficiency of security
+			testing.  Cross domain system C\&A in IC and collateral environments.
+			Thesis: \emph{Security Test and Evaluation of Cross Domain Systems}.
+			U.S.\ citizen, cleared to Top Secret/SCI with
+			counterintelligence polygraph.  Current experience with DIACAP, DCID 6/3
+			and Common Criteria.
+			CISSP and ISSEP satisfy DoD 8570.01 IAT and IAM Level III and IASAE Level III.
+		\end{myquote}
 
-	\item Information Assurance Engineer, Lockheed Martin Corporation, from 2006--January 2012.
-		\begin{quote}\vspace{-2mm}
-			\emph{Reorganised into the INFOSEC group at Lockheed, I designed a new
-			cryptosystem leading to another patent application and began studying
-			government security evaluation standards.  Meaning to solve the C\&A problem,
-			I took my thesis to the computer science department, telecommuting from the UK and
-			proposing and winning an AFRL contract while I was gone.}
-		\end{quote}
+	\item Information Assurance Engineer, Lockheed Martin Corporation, 2006--January 2012.
+		\vspace{-2mm}
+		\begin{myquote}
+			Proposed and won \$968,000 Air Force Research Laboratory contract
+			for probabilistic redaction system; this R\&D project was completed on time
+			and within budget.  Security Target (ST) author for Common Criteria (CC)
+			evaluation of \textsc{Radiant Mercury}.
+		\end{myquote}
 
-	\item Software Engineer / Senior Software Engineer, Lockheed Martin IS\&GS, from
-		February 1998--2006.
-		\begin{quote}\vspace{-2mm}
-			\emph{The optical TEMPEST research, not yet published in the open literature but
-			of considerable interest to the intelligence community, led to a security clearance
-			and a job writing code for RADIANT MERCURY in C/C++.  I travelled around the
-			U.S.\ and U.K.\ writing code and along the way got interested in Certification and
-			Accreditation (C\&A) of classified systems.}
-		\end{quote}
+	\item Senior Software Engineer, Lockheed Martin Missiles \& Space, February 1998--2006.
+		\vspace{-2mm}
+		\begin{myquote}
+			Invented embedded digital signatures for imagery---patent application
+			filed.  Discovered the optical TEMPEST effect and countermeasures for
+			same---U.S.\ patent no.\ 6,987,461.  Staff software developer, security engineer,
+			and security architect on
+			Radiant Mercury.  Expertise with C, C++, X11, XML, HTML, SSH, UNIX, Solaris and
+			Trusted Solaris.
+		\end{myquote}
+	
+	\item System Administrator, Wells Fargo \& Company, Seattle, 1996--1997.
+		\vspace{-2mm}
+		\begin{myquote}
+			Migrated statewide network from Token Ring to Ethernet using thin client X
+			terminals, Cisco routers, IOS configuration, structured cabling, and frame relay
+			WAN installation.
+		\end{myquote}
 
-	\item System Administrator, Wells Fargo \& Company, Seattle, Washington,
-		from 1996--September 1997.
-		\begin{quote}\vspace{-2mm}
-			\emph{After being acquired by Wells Fargo, I moved to sysadmin of its network
-			of X terminals, Cisco routers, and structured cabling.  Using the facilities
-			at Seattle U., I ran experiments in optical TEMPEST that would eventually
-			be cited in 14 books on information security.}
-		\end{quote}
+	\item Programmer, Safeco Life Insurance Company, Redmond, Washington, 1991.
+		\vspace{-2mm}
+		\begin{myquote}
+			Database applications programmer, report design, and business systems analyst.
+		\end{myquote}
 
-	\item Programmer, Safeco Life Insurance Company, Redmond, Washington, for a few months
-		in 1991.
-		\begin{quote}\vspace{-2mm}
-			\emph{I maintained a database application for a short time at this company
-				between assignments.}
-		\end{quote}
-
-	\item Programmer/Analyst II, First Interstate Bank of Washington, Seattle,
-		from 1990--91 and 1991--96.
-		\begin{quote}\vspace{-2mm}
-			\emph{Five of us worked on retail bank automation software in machine language
-			(see my GitHub at}
-			\url{https://github.com/jloughry/BANCStar/blob/master/README.md#code-sample}
-			\emph{for the reason why).  Network traffic coexisted with IBM 3270 terminals
-			and was limited to one direction only; with no way to back out any changes from
-			production, we were very careful.}
-		\end{quote}
+	\item Programmer/Analyst II, First Interstate Bank of Washington, Seattle, 1990--1996.
+		\vspace{-2mm}
+		\begin{myquote}
+			Designed and developed a high-level language interpreter that improved programming
+			team productivity
+			on a machine language application used with IBM mainframes.
+		\end{myquote}
 \end{itemize}
 
 \vspace{-8mm}
 \section*{Patents}
 
+\vspace{-2mm}
 \begin{itemize}
-    \item \href{http://www.google.com/patents/US6987461}{6,987,461} \emph{System and Method
+    \item \href{http://www.google.com/patents/US6987461}{6,987,461} \emph{A System and Method
 		for Addressing Optical Emanations from an Information Processing Device}, issued
 		17th January 2006.
-
-	\item Application 13/355,210 \emph{Nested Digital Signatures with Constant File Size},
-		filed 20th January 2012.
+	\vspace{-1mm}
+	\item U.S.\ and international application 13/355,210 \emph{Nested Digital Signatures with
+		Constant File Size}, filed 20th January 2012.
 \end{itemize}
 
 \vspace{-6mm}
 \section*{Proposal Wins and Funding}
 
+\vspace{-2mm}
 \begin{itemize}
-	\item Awarded \$968,412.00 for `Probabilistic Redaction', USAF Rome Lab contract
-	no.\ FA8750-09-C-0006, Principal investigator (PI) for period of performance
-	2009--2012, project completed on schedule.
+	\item Awarded \$968,412.00 for `Probabilistic Redaction', USAF Rome Labs contract number
+	FA8750-09-C-0006, Principal Investigator (PI) for period of performance 2009--2012.
 \end{itemize}
 
+\vspace{-6mm}
 \section*{Security Clearance}
 
+\vspace{-2mm}
 \begin{itemize}
 	\item TS/SCI is current; last investigation date: 5th August 2009 (SSBI PR);
-		last CI poly 26th May 2010.
+		last CI poly 26th May 2010.  CISSP number 10411.
 \end{itemize}
+
+\input{stop_here.tex}
 
 \section*{Refereed Journal Publications}
 
@@ -204,6 +175,18 @@ and teaching experience.
     \item `\href{http://dl.acm.org/citation.cfm?doid=545186.545189}{Information Leakage
 	from Optical Emanations}' by J.\ Loughry and D.A.\ Umphress. \emph{ACM
 	Trans.\ Info.\ Sys.\ Security} \textbf{5}(3) pp.\ 262--289, 2002.
+\end{itemize}
+
+\section*{Published Security Advisories}
+
+\begin{itemize}
+    \item Sun Microsystems, Inc.\ security advisory (software): [title redacted] classified S//NF,
+		1999.
+	\item Sun Microsystems, Inc.\ security advisory (hardware): [title redacted] classified S//NF,
+		1998.
+	\item Sun Microsystems, Inc.\ security advisory (software): [title redacted] classified S//NF,
+		1998.
+	\item Sun Microsystems, Inc.\ security advisory (software): [redacted] classified SI TK B, 1998.
 \end{itemize}
 
 \section*{Conference Publications}
@@ -253,11 +236,6 @@ and teaching experience.
 	\item `\href{http://www.applied-math.org/subset.pdf}{Efficiently enumerating the
 		subsets of a set}' by Loughry, von Hemert, and Schoofs (in preparation).
 
-    \item Sun Microsystems security advisory (software): \redacted\ classified S//NF, 1999.
-	\item Sun Microsystems security advisory (hardware): \redacted\ classified S//NF, 1998.
-	\item Sun Microsystems security advisory (software): \redacted\ classified S//NF, 1998.
-	\item Sun Microsystems security advisory (software): \redacted\ classified SI TK B, 1998.
-
     \item RISKS \emph{(ACM Forum on Risks to the Public in Computers
     and Related Systems)} vols \href{http://catless.ncl.ac.uk/Risks/17.31.html}{17.31},
 	\href{http://catless.ncl.ac.uk/Risks/21.94.html}{21.94}--\href{http://catless.ncl.ac.uk/Risks/21.95.html}{5},
@@ -270,23 +248,27 @@ and teaching experience.
 	and \href{http://catless.ncl.ac.uk/Risks/26.46.html}{26.46}.
 \end{itemize}
 
-\section*{DoD 8570.01 Compliance}
+\section*{Open Source}
 
 \begin{itemize}
-	\item CISSP-ISSEP no.\ 10411, current and satisfies IAT Level III, IAM Level III,
-		and IASAE III.
+	\item OpenSolaris: \url{http://www.opensolaris.org} (2006) \emph{found a bug in password
+		retry limit of Trusted Solaris 8.}
+	\item The FreeBSD Project: \url{http://www.freebsd.org} (1999) \emph{contributed a new
+		console screen saver to FreeBSD 3.2.}
+	\item Fetchmail: \url{http://fetchmail.berlios.de} (1998) \emph{patch to handle multi-homed
+		machines.}
 \end{itemize}
 
 \section*{Education}
 
 \begin{itemize}
-    \item University of Oxford, Department of Computer Science,
-		doctoral student.  Title of dissertation: \emph{Security Test
-		and Evaluation of Cross Domain Systems}, degree expected in early 2013.
+    \item Doctoral student, University of Oxford, Department of Computer Science.
+		Thesis: \emph{Security Test
+		and Evaluation of Cross Domain Systems}, degree expected in mid 2013.
 
     \item Master of Software Engineering (M.S.E.), Seattle University. % (1996)
 
-    \item Bachelor of Arts in Mathematics, University of Colorado at Boulder.
+    \item Bachelor of Arts (B.A.) in mathematics, University of Colorado at Boulder.
 
 		% (1986), followed by some additional postgraduate work through 1989
 		% in the math department and the business school.
@@ -350,20 +332,21 @@ and teaching experience.
 
 \begin{itemize}
     \item University Instructor, CSSE 591 \emph{Computer Networks},
-    Seattle University, Spring Quarter 1998.
+    Seattle University, Spring 1998.
 \end{itemize}
 
 \section*{Officerships and Committee Work}
 \begin{itemize}
-	\item April, 2012: Co-organiser of a public debate on the subject of ageing between
+	\item April, 2012: Co-organiser of a public debate between
 		Dr Aubrey de Grey and Prof.\ Colin Blakemore, chaired by Professor Sir Richard Peto,
-		attended by 650 people in the Sheldonian Theatre, Oxford.
+		in the Sheldonian Theatre, Oxford.
 	\item 2009--present: President of the Oxford Lyceum.
 	\item 2009--present: IT Officer, Oxford University Scientific Society.
 	\item Chair of the OXFORD-CS-2011 Conference Programme Committee.
-	\item Member of the COMLAB-CS-2010 and COMLAB-CS-2009 Conference Programme Committees.
+	\item Member of the COMLAB-CS-2010 and COMLAB-CS-2009 Programme Committees.
 	\item 2007--09: Treasurer of the Oxford Lyceum.
-	\item Science fair judge for the Ricks Centre at the University of Denver (2012).
+	\item Science fair judge for the Ricks Centre at the University of Denver, 2012.
+	% \item Athena Swan Award committee, `Work-Life Balance', Oxford University, 2013.
 \end{itemize}
 
 \definecolor{grey}{rgb}{0.55,0.55,0.55}
@@ -397,16 +380,41 @@ and teaching experience.
 	}
 \end{itemize}
 
-\section*{Open Source}
+\section*{Affiliations}
 
 \begin{itemize}
-	\item OpenSolaris: \url{http://www.opensolaris.org} (2006) \emph{bug in password
-		retry limit of Trusted Solaris 8}
-	\item The FreeBSD Project: \url{http://www.freebsd.org} (1999) \emph{contributed new
-		console screen saver}
-	\item Fetchmail: \url{http://fetchmail.berlios.de} (1998) \emph{patch to handle multi-homed
-		machines}
+	\item ACM, IEEE, (ISC)$^2$, ISACA.
 \end{itemize}
+
+\section*{Some more keywords for the regexp to find}
+
+Certification and Accreditation (C\&A) of cross domain systems,
+Assessment and Authorization (A\&A) for classified environments,
+Certification Test and Evaluation (CT\&E),
+Security Test and Evaluation (ST\&E),
+penetration testing,
+DIACAP,
+Common Criteria,
+DCID 6/3,
+programming in C and assembly language with a strong interest in Lisp derived languages,
+Compartmented Mode Workstation (CMW) programming,
+UNIX,
+Trusted Solaris versions 2.5--8,
+software development,
+R\&D,
+principal investigator,
+U.S.\ citizen with TS/SCI clearance,
+technical writing,
+CISSP-ISSEP for DoD 8570.01 IAT, IAM, and IASAE Level III compliance required for software
+development that crosses multiple enclaves,
+experience living overseas,
+programming,
+publications,
+patents,
+public speaking,
+funding,
+research,
+and teaching experience.
 
 \vfill
 {\tiny \LaTeX\ build \input{build_counter.txt}}

@@ -1,49 +1,63 @@
 CV = loughry_cv
-resume = loughry_resume
 
 CV_source = $(CV).tex
-resume_source = $(resume).tex
+distribution_filename = Joe.Loughry_information_security.pdf
 
 latex_cmd = pdflatex
 counter_file = build_counter.txt
+stop_here_file = stop_here.tex
 
-CV_pdf = $(CV).pdf
-resume_pdf = $(resume).pdf
-pdf_files = $(CV_pdf) $(resume_pdf)
+CV_pdf_file = $(CV).pdf
 
-temporary_files = $(CV).log $(resume).log $(CV).aux $(resume).aux .pdf $(CV).out $(resume).out
+pdf_files = $(CV_pdf_file) $(distribution_filename)
 
-all: $(CV_pdf) $(resume_pdf)
+temporary_files = $(CV).log $(CV).aux .pdf $(CV).out $(stop_here_file)
 
-$(CV_pdf): $(CV_source) Makefile
+all: cv
+
+help:
+	@echo "'make resume' makes a one-page resume"
+	@echo "'make cv' makes full CV"
+
+increment_build_counter:
 	@echo $$(($$(cat $(counter_file)) + 1)) > $(counter_file)
+
+set_résumé_flag:
+	@echo "\end{document}" > $(stop_here_file)
+
+clear_résumé_flag:
+	@echo > $(stop_here_file)
+
+rename:
+	mv $(CV_pdf_file) $(distribution_filename)
+	chmod a-x,a+r $(distribution_filename)
+
+resume: $(CV_source) Makefile
+	make set_résumé_flag
+	make $(CV_pdf_file)
+
+cv: $(CV_source) Makefile
+	make clear_résumé_flag
+	make $(CV_pdf_file)
+
+$(CV_pdf_file): $(CV_source)
+	make increment_build_counter
 	$(latex_cmd) $(CV_source)
 	while ( \
 		$(latex_cmd) $(CV) ; \
 		grep "Rerun to get" $(CV).log > /dev/null \
 	) do true ; done
+	make rename
 	@echo "Build `cat $(counter_file)`"
-	chmod a-x,a+r $(CV_pdf)
 
-$(resume_pdf): $(resume_source) Makefile
-	@echo $$(($$(cat $(counter_file)) + 1)) > $(counter_file)
-	$(latex_cmd) $(resume_source)
-	while ( \
-		$(latex_cmd) $(resume) ; \
-		grep "Rerun to get" $(resume).log > /dev/null \
-	) do true ; done
-	@echo "Build `cat $(counter_file)`"
-	chmod a-x,a+r $(resume_pdf)
+vi:
+	vi $(CV_source)
 
-vir:
-	vi $(resume_source)
-
-vic:
+edit:
 	vi $(CV_source)
 
 spell:
 	aspell --lang=EN_GB check $(CV_source)
-	aspell --lang=EN_GB check $(resume_source)
 
 notes:
 	(cd ../notes/ && make notes)
