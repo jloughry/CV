@@ -6,9 +6,13 @@ Formatting a Tactical Résumé
 
 ### Concept
 Trying something different here, let's make two files: a long-form CV with all the details and
-a short-form résumé that just puts the exciting stuff on a single page.  Right now they are two
-separate LaTeX files, but some day I want to combine them into one source file that generates
-both PDFs and contains no redundant information.
+a short-form résumé that just puts the exciting stuff on a single page.  Both are generated
+from a single LaTeX source file.
+
+It's not straightforward to pass parameters to a LaTeX document to accomplish something like
+conditional compilation in C.  Here we use the most reliable technique, where the LaTeX source
+file unconditionally `\input`s a file that is dynamically created by the `makefile` just before
+it's needed.
 
 #### Résumé
 The résumé is a single page and not very full at that.  It shows the bare minimum information a
@@ -24,19 +28,21 @@ To be nice to people trying to process files with automated tools that might not
 handle non-ASCII characters in filenames, though, the file is called *resume*, not *résumé*.
 
 #### CV
-This file is currently three pages long in PDF and carefully formatted to fit compactly.  Let's
-put all the keywords up front where automated résumé filters are sure to find them.  Keywords
-are separated by commas and formatting is deliberately kept simple:
+This file is currently four pages long in PDF.  The first page is the résumé.  Keywords are
+relegated to the last page where automated résumé filters will still find them, but they won't
+distract human readers.  Keywords are separated by commas and formatting is deliberately kept
+simple:
 
 	Certification and Accreditation (C&A) of cross domain systems, Assessment and
 	Authorization (A&A) for classified environments, Certification Test and Evaluation
-	(CT&E), Security Test and Evaluation (ST&E), penetration testing, DIACAP, the
-	Common Criteria, DCID 6/3, programming in C and assembly language with a strong
+	(CT&E), Security Test and Evaluation (ST&E), penetration testing, DIACAP, Common
+	Criteria, DCID 6/3, programming in C and assembly language with a strong
 	interest in Lisp derived languages, Compartmented Mode Workstation (CMW) programming,
 	UNIX, Trusted Solaris versions 2.5-8, software development, R&D, principal
 	investigator, U.S. citizen with TS/SCI clearance, technical writing, CISSP-ISSEP
-	for DoD 8570.01 compliance, experience living overseas, programming, publications,
-	patents, public speaking, funding, research, and teaching experience.
+	for DoD 8570.01 IAT, IAM, and IASAE Level III compliance required for software
+	development that crosses multiple enclaves, experience living overseas, programming,
+	publications, patents, public speaking, funding, research, and teaching experience.
 
 Keywords are in no particular order, just arranged for even line length and colour when printed.  I
 thought about making this section invisible, the way SEO companies put `meta` keywords in web pages
@@ -145,10 +151,10 @@ and paste to plain text, or a **grep**.  Small caps render correctly from PDF in
 found.
 
 ### Build Instructions
-Make targets include the default to emit both PDF files, **vir** to quickly edit the résumé file,
-**vic** to edit the CV file, **clean** to remove temporary files (before commit), **allclean**
-to remove everything that can be regenerated, and **spell** to check spelling against a UK
-english dictionary.
+Make targets include the default **all** to emit the long-form CV, **edit** to quickly edit
+the source file, **resume** to emit the short form résumé, **clean** to remove temporary files
+(before commit), **allclean** to remove everything that can be regenerated, **help** give a
+quick overview of options, and **spell** to check spelling against a UK english dictionary.
 
 ### Example
     % make
