@@ -15,12 +15,12 @@ temporary_files = $(CV).log $(CV).aux .pdf $(CV).out $(stop_here_file)
 
 all: cv
 
+increment_build_counter:
+	@echo $$(($$(cat $(counter_file)) + 1)) > $(counter_file)
+
 help:
 	@echo "'make resume' makes a one-page resume"
 	@echo "'make cv' makes full CV"
-
-increment_build_counter:
-	@echo $$(($$(cat $(counter_file)) + 1)) > $(counter_file)
 
 set_résumé_flag:
 	@echo "\end{document}" > $(stop_here_file)
@@ -41,13 +41,13 @@ cv: $(CV_source) Makefile
 	make $(CV_pdf_file)
 
 $(CV_pdf_file): $(CV_source)
-	make increment_build_counter
 	$(latex_cmd) $(CV_source)
 	while ( \
 		$(latex_cmd) $(CV) ; \
 		grep "Rerun to get" $(CV).log > /dev/null \
 	) do true ; done
 	make rename
+	make increment_build_counter
 	@echo "Build `cat $(counter_file)`"
 
 vi:
@@ -60,7 +60,10 @@ spell:
 	aspell --lang=EN_GB check $(CV_source)
 
 notes:
-	(cd ../notes/ && make notes)
+	(cd ../notes/ && make vi)
+
+quotes:
+	(cd ../notes/ && make quotes)
 
 bibtex:
 	(cd ../bibtex/ && make vi)

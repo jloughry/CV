@@ -11,7 +11,7 @@
 % It is presently formatted for 8-1/2x11 inch US-letter paper.
 %
 
-\documentclass[11pt,letterpaper]{article}
+\documentclass[12pt,letterpaper]{article}
 
 % The cmap package avoids the problem of ligatures like 'ffi' disappearing from a
 % copy and paste operation where the destination is plain text.  This is important
@@ -30,11 +30,11 @@
 \usepackage[resetfonts]{cmap}
 
 % The geometry package lets me control the page margins.
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=0.75in]{geometry}
 
 % The titling package lets me control white space at the top of the first page.
 \usepackage{titling}
-\setlength{\droptitle}{-30mm}
+\setlength{\droptitle}{-25mm}
 
 % Used for graphics in the social networking bullets
 \usepackage{graphicx}
@@ -49,7 +49,7 @@
 % The hyperref package makes links show up in generated PDF files.
 \usepackage{hyperref}
 
-\textheight=9in
+\textheight=9.5in
 \raggedbottom
 \raggedright
 
@@ -58,7 +58,7 @@
 % The following trick changes the margins in a \quote environment.  Source: \url{http://tex\
 % .stackexchange.com/questions/2396/how-can-i-change-the-indentation-in-quote-and-quotation-\
 % environments-and-command}.
-\newenvironment{myquote}{\list{}{\leftmargin=0.3in\rightmargin=0in}\item[]}{\endlist}
+\newenvironment{myquote}{\list{}{\leftmargin=0.25in\rightmargin=0in}\item[]}{\endlist}
 
 % Tell \LaTeX\ not to complain about missing date.
 \def\nodate{\@makedatefalse}
@@ -71,48 +71,50 @@
 \maketitle
 \thispagestyle{empty}
 
-\vspace{-26mm}
-{\large \emph{Software Development for Cross Domain Systems, Pen Testing, C\&A,
-	Information Security}}
+\vspace{-32mm}
+{\emph{Software Development for Cross Domain Systems, Pen Testing, C\&A, and Information Security}}
 
 \vspace{4mm}
-Tel: (303) 221-4380 (US/Mountain---GMT minus 7 hours)\hfill Centennial, Colorado, USA
+Tel.\ (720) 277-7800 (US/Mountain---GMT minus 7 hours)\hfill Centennial, Colorado, USA
 
-\url{mailto:rjl@applied-math.org} \hfill \url{mailto:joe.loughry@stx.ox.ac.uk}
+Email: \href{mailto:joe.loughry@gmail.com}{\url{joe.loughry@gmail.com}}\hfill
+\hfill or\hfill \href{mailto:joe.loughry@stx.ox.ac.uk}{\url{joe.loughry@stx.ox.ac.uk}}
 
 \begin{itemize}
 	\item Postgraduate Research Student, University of Oxford, January 2012--present.
 		\vspace{-2mm}
 		\begin{myquote}
-			New methods for cutting cost and boosting efficiency of security
-			testing.  Cross domain system C\&A in IC and collateral environments.
-			Thesis: \emph{Security Test and Evaluation of Cross Domain Systems}.
-			U.S.\ citizen, cleared to Top Secret/SCI with
-			counterintelligence polygraph.  Current experience with DIACAP, DCID 6/3
-			and Common Criteria.
-			CISSP and ISSEP satisfy DoD 8570.01 IAT and IAM Level III and IASAE Level III.
+			My thesis problem was to solve the high cost and inefficiency of cross domain
+			C\&A for intelligence community (IC) and collateral environments.  Title of dissertation:
+			\emph{Security Test and Evaluation of Cross Domain Systems}.
+			U.S.\ citizen, cleared to Top Secret/SCI with counterintelligence polygraph.
+			Current experience with DIACAP, DCID 6/3 and Common Criteria.
+			CISSP-ISSEP for DoD 8570.01 IAT and IAM Level III and IASAE.
 		\end{myquote}
 
+\vspace{-2.5mm}
 	\item Information Assurance Engineer, Lockheed Martin Corporation, 2006--January 2012.
 		\vspace{-2mm}
 		\begin{myquote}
-			Proposed and won \$968,000 Air Force Research Laboratory contract
-			for probabilistic redaction system; this R\&D project was completed on time
-			and within budget.  Security Target (ST) author for Common Criteria (CC)
+			Proposed and won a \$968,000 Air Force Research Laboratory contract
+			for probabilistic redaction system; R\&D project was completed on time
+			and in budget.  Security Target (ST) author for Common Criteria (CC)
 			evaluation of \textsc{Radiant Mercury}.
 		\end{myquote}
 
+\vspace{-2.5mm}
 	\item Senior Software Engineer, Lockheed Martin Missiles \& Space, February 1998--2006.
 		\vspace{-2mm}
 		\begin{myquote}
-			Invented embedded digital signatures for imagery---patent application
-			filed.  Discovered the optical TEMPEST effect and countermeasures for
-			same---U.S.\ patent no.\ 6,987,461.  Staff software developer, security engineer,
-			and security architect on
-			Radiant Mercury.  Expertise with C, C++, X11, XML, HTML, SSH, UNIX, Solaris and
-			Trusted Solaris.
+			Invented nested digital signatures for imagery files---patent application filed.
+			Discovered the optical TEMPEST effect and its
+			countermeasures---U.S.\ patent no.\ 6,987,461 issued.  Staff software developer,
+			security engineer, and security architect for
+			Radiant Mercury.  Experienced programmer in C and C++ on X11, UNIX, Solaris and
+			Trusted Solaris OS.
 		\end{myquote}
 	
+\vspace{-2.5mm}
 	\item System Administrator, Wells Fargo \& Company, Seattle, 1996--1997.
 		\vspace{-2mm}
 		\begin{myquote}
@@ -121,18 +123,18 @@ Tel: (303) 221-4380 (US/Mountain---GMT minus 7 hours)\hfill Centennial, Colorado
 			WAN installation.
 		\end{myquote}
 
+\vspace{-2.5mm}
 	\item Programmer, Safeco Life Insurance Company, Redmond, Washington, 1991.
 		\vspace{-2mm}
 		\begin{myquote}
 			Database applications programmer, report design, and business systems analyst.
 		\end{myquote}
 
+\vspace{-2.5mm}
 	\item Programmer/Analyst II, First Interstate Bank of Washington, Seattle, 1990--1996.
 		\vspace{-2mm}
 		\begin{myquote}
-			Designed and developed a high-level language interpreter that improved programming
-			team productivity
-			on a machine language application used with IBM mainframes.
+			Introduced use of high-level meta-interpreter for mainframe programmer productivity.
 		\end{myquote}
 \end{itemize}
 
@@ -141,15 +143,20 @@ Tel: (303) 221-4380 (US/Mountain---GMT minus 7 hours)\hfill Centennial, Colorado
 
 \vspace{-2mm}
 \begin{itemize}
-    \item \href{http://www.google.com/patents/US6987461}{6,987,461} \emph{A System and Method
-		for Addressing Optical Emanations from an Information Processing Device}, issued
-		17th January 2006.
-	\vspace{-1mm}
+    \item \href{http://www.google.com/patents/US6987461}{U.S.\ 6,987,461} \emph{System and Method
+		for Addressing Optical Emanations from an Information Processing Device}, assigned to
+		Lockheed Martin, 2006.
+
+	\vspace{-2mm}
 	\item U.S.\ and international application 13/355,210 \emph{Nested Digital Signatures with
-		Constant File Size}, filed 20th January 2012.
+		Constant File Size}, in progress, filed January 2012.
+
+	% \vspace{-2mm}
+	% \item Provisional application 61/774,539 \emph{Method for controlling schedule and cost of
+	%	security certification testing}, filed 7th March 2013.
 \end{itemize}
 
-\vspace{-6mm}
+\vspace{-8mm}
 \section*{Proposal Wins and Funding}
 
 \vspace{-2mm}
@@ -158,7 +165,7 @@ Tel: (303) 221-4380 (US/Mountain---GMT minus 7 hours)\hfill Centennial, Colorado
 	FA8750-09-C-0006, Principal Investigator (PI) for period of performance 2009--2012.
 \end{itemize}
 
-\vspace{-6mm}
+\vspace{-8mm}
 \section*{Security Clearance}
 
 \vspace{-2mm}
@@ -177,24 +184,32 @@ Tel: (303) 221-4380 (US/Mountain---GMT minus 7 hours)\hfill Centennial, Colorado
 	Trans.\ Info.\ Sys.\ Security} \textbf{5}(3) pp.\ 262--289, 2002.
 \end{itemize}
 
-\section*{Published Security Advisories}
+\vspace{-8mm}
+\section*{Security Advisories}
 
 \begin{itemize}
     \item Sun Microsystems, Inc.\ security advisory (software): [title redacted] classified S//NF,
 		1999.
-	\item Sun Microsystems, Inc.\ security advisory (hardware): [title redacted] classified S//NF,
+	\vspace{-2mm}
+	\item Sun Microsystems, Inc.\ security advisory (hardware): [redacted] classified S//NF,
 		1998.
+	\vspace{-2mm}
 	\item Sun Microsystems, Inc.\ security advisory (software): [title redacted] classified S//NF,
 		1998.
+	\vspace{-2mm}
 	\item Sun Microsystems, Inc.\ security advisory (software): [redacted] classified SI TK B, 1998.
 \end{itemize}
 
+\vspace{-8mm}
 \section*{Conference Publications}
 
 \begin{itemize}
+	\item `A Model of Certifier and Accreditor Risk Calculation for Multi-Level Systems',
+		in prep.
+
 	\item `\href{http://applied-math.org/CESAR2012_information_asymmetry.pdf}{Information
-		Asymmetry in Classified Cross Domain System Accreditation}'.  \emph{C\&ESAR 2012},
-		Rennes, France, 20--22 November 2012, pp.\ 19--28, 2012.
+		Asymmetry in Classified Cross Domain System Accreditation}'.  \emph{C\&ESAR 2012}
+		conference, Rennes, France, 20--22 November 2012, pp.\ 19--28, 2012.
 
 	\item `\href{http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5617171&tag=1}{Unsteady
 		Ground: Certification to Unstable Criteria}'.  \emph{Second International Conference
@@ -209,7 +224,7 @@ Tel: (303) 221-4380 (US/Mountain---GMT minus 7 hours)\hfill Centennial, Colorado
 		\emph{Network Centric Warfare} conference, Washington, D.C., 2003.
 
     \item `Optical Remote Interception of Networks (\textsc{Orion})'
-		\emph{InfowarCon '02}, Washington, D.C., 2002.
+		\emph{InfowarCon}, Washington, D.C., 2002.
 
     \item `\textsc{Radiant Mercury}'. \emph{Cross Domain Solutions
 		Organization}. Johns Hopkins University Applied Physics Laboratory,
@@ -222,6 +237,7 @@ Tel: (303) 221-4380 (US/Mountain---GMT minus 7 hours)\hfill Centennial, Colorado
 		Document Imaging IV}. Vol.\ 3027, pp.\ 136--148, March 1997.
 \end{itemize}
 
+\vspace{-8mm}
 \section*{Other Published Reports}
 
 \begin{itemize}
@@ -245,7 +261,8 @@ Tel: (303) 221-4380 (US/Mountain---GMT minus 7 hours)\hfill Centennial, Colorado
 	\href{http://catless.ncl.ac.uk/Risks/24.55.html}{24.55},
 	\href{http://catless.ncl.ac.uk/Risks/24.87.html}{24.87},
 	\href{http://catless.ncl.ac.uk/Risks/25.73.html}{25.73},
-	and \href{http://catless.ncl.ac.uk/Risks/26.46.html}{26.46}.
+	\href{http://catless.ncl.ac.uk/Risks/26.46.html}{26.46},
+	and \href{http://catless.ncl.ac.uk/Risks/27.19.html}{27.19}.
 \end{itemize}
 
 \section*{Open Source}
@@ -259,6 +276,7 @@ Tel: (303) 221-4380 (US/Mountain---GMT minus 7 hours)\hfill Centennial, Colorado
 		machines.}
 \end{itemize}
 
+\vspace{-8mm}
 \section*{Education}
 
 \begin{itemize}
@@ -328,6 +346,7 @@ Tel: (303) 221-4380 (US/Mountain---GMT minus 7 hours)\hfill Centennial, Colorado
 % \item Lockheed Martin Space Systems. `Radiant Mercury Imagery
 %	Guard Cryptographic Architecture' (1998).
 
+\vspace{-8mm}
 \section*{Teaching Experience}
 
 \begin{itemize}
@@ -335,6 +354,7 @@ Tel: (303) 221-4380 (US/Mountain---GMT minus 7 hours)\hfill Centennial, Colorado
     Seattle University, Spring 1998.
 \end{itemize}
 
+\vspace{-8mm}
 \section*{Officerships and Committee Work}
 \begin{itemize}
 	\item April, 2012: Co-organiser of a public debate between
@@ -351,6 +371,7 @@ Tel: (303) 221-4380 (US/Mountain---GMT minus 7 hours)\hfill Centennial, Colorado
 
 \definecolor{grey}{rgb}{0.55,0.55,0.55}
 
+\vspace{-8mm}
 \section*{Social Networking {\small (lesser used social networks are \textcolor{grey}{greyed out})}}
 
 % The following progression colours look good on screen but the latter ones print too faintly:
@@ -364,15 +385,13 @@ Tel: (303) 221-4380 (US/Mountain---GMT minus 7 hours)\hfill Centennial, Colorado
 % \definecolor{verylightgrey}{rgb}{0.5,0.5,0.5}
 
 \begin{itemize}
+	\item[{\includegraphics[width=1em]{github.png}}] GitHub: \url{https://github.com/jloughry}
 	\item[{\includegraphics[width=1em]{google.png}}] Google Scholar:
 		\url{http://scholar.google.com/citations?hl=en&user=PX_U29EAAAAJ}
-	\item[{\includegraphics[width=1em]{github.png}}] GitHub:
-		\url{https://github.com/jloughry}
 	\item[{\includegraphics[width=1em]{linkedin.png}}] LinkedIn:
 		\url{http://www.linkedin.com/in/jloughry}
+	\item[{\includegraphics[width=1em]{twitter.png}}] Twitter: \url{https://twitter.com/jloughry}
 	{\color{grey}
-		\item[{\includegraphics[width=1em]{twitter-grey.png}}] Twitter:
-			\url{https://twitter.com/jloughry}
 		\item[{\includegraphics[width=1em]{google-plus-grey.png}}] Google+:
 			\url{https://plus.google.com/u/0/115779672587479359864/}
 		\item[{\includegraphics[width=1em]{facebook-grey.png}}] Facebook:
@@ -386,35 +405,36 @@ Tel: (303) 221-4380 (US/Mountain---GMT minus 7 hours)\hfill Centennial, Colorado
 	\item ACM, IEEE, (ISC)$^2$, ISACA.
 \end{itemize}
 
-\section*{Some more keywords for the regexp to find}
+\section*{Some more keywords for HR's regexp to find}
 
-Certification and Accreditation (C\&A) of cross domain systems,
-Assessment and Authorization (A\&A) for classified environments,
-Certification Test and Evaluation (CT\&E),
-Security Test and Evaluation (ST\&E),
-penetration testing,
-DIACAP,
-Common Criteria,
-DCID 6/3,
-programming in C and assembly language with a strong interest in Lisp derived languages,
-Compartmented Mode Workstation (CMW) programming,
-UNIX,
-Trusted Solaris versions 2.5--8,
-software development,
-R\&D,
-principal investigator,
-U.S.\ citizen with TS/SCI clearance,
-technical writing,
-CISSP-ISSEP for DoD 8570.01 IAT, IAM, and IASAE Level III compliance required for software
-development that crosses multiple enclaves,
-experience living overseas,
-programming,
-publications,
-patents,
-public speaking,
-funding,
-research,
-and teaching experience.
+\begin{itemize}
+\item Certification and Accreditation (C\&A) of cross domain systems,
+\item Assessment and Authorization (A\&A) for classified environments,
+\item Certification Test and Evaluation (CT\&E),
+\item Security Test and Evaluation (ST\&E),
+\item penetration testing,
+\item DIACAP, Common Criteria, and DCID 6/3,
+\item programming in C and assembly language with a strong interest in Lisp derived languages,
+\item Compartmented Mode Workstation (CMW) programming,
+\item UNIX,
+\item Trusted Solaris versions 2.5--8,
+\item software development,
+\item R\&D,
+\item principal investigator,
+\item U.S.\ citizen with TS/SCI clearance,
+\item technical writing,
+\item CISSP-ISSEP for compliance with DoD 8570.01 certification requirements for IAT Level III,
+	IAM Level III, and especially IASAE Level III for doing software development that crosses
+	multiple enclaves,
+\item experience living overseas,
+\item programming,
+\item publications,
+\item patents,
+\item public speaking,
+\item funding,
+\item research,
+\item and teaching experience.
+\end{itemize}
 
 \vfill
 {\tiny \LaTeX\ build \input{build_counter.txt}}
