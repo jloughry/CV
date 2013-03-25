@@ -144,6 +144,11 @@ and `12pt` options to `\documentclass` as follows:
 The resulting plain ASCII when pasted is 7-bit clean and displays correctly no matter what
 international character set encoding is used on the recipient's machine.
 
+For some reason this works at with the `10pt` and `12pt` options in LaTeX, but not `11pt`.
+Diffing the log files doesn't suggest any obvious reason why that should happen.  For now,
+I'm just going to rewrite the résumé to look good in 12pt type.  It's easier to read for
+the hiring manager in that size anyway.
+
 ### Machine-Readable Formatting
 PDF is basically PostScript and we can do some things to make the resulting binary file easier
 to parse.  Side-by-side columns can be problematic; they tend to interleave their text in a copy
