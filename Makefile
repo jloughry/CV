@@ -46,6 +46,9 @@ cv: $(CV_source) Makefile
 	make clear_résumé_flag
 	make $(CV_pdf_file)
 
+references:
+	vi $(references_source)
+
 $(CV_pdf_file): $(CV_source)
 	$(latex_cmd) $(CV_source)
 	while ( \
