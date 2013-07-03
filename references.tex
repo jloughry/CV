@@ -1,0 +1,110 @@
+% 3456789012345678901234567890123456789012345678901234567890123456789012
+%        1         2         3         4         5         6         7
+%
+% Format: LaTeX
+%
+% For information about this file, contact the author by email at
+% mailto:rjl@applied-math.org or telephone: +1 303 221 4380.  The
+% time zone is GMT minus seven hours.  Mobile when I am in the UK
+% is +44 (0)7984 147 430.
+%
+% It is presently formatted for 8-1/2x11 inch US-letter paper.
+%
+
+\documentclass[12pt,letterpaper]{article}
+
+% The cmap package avoids the problem of ligatures like 'ffi' disappearing from a
+% copy and paste operation where the destination is plain text.  This is important
+% when sending out résumés in PDF if you want keywords to be spotted by automated
+% filters used by HR.  Without the `resetfonts' option it doesn't do the trick with
+% Computer Modern Roman.
+%
+% I use a modified ot1.cmap and a modified oms.cmap and a modified cmap.sty file
+% in the current directory to tell PDF that in addition to the ligatures mentioned
+% above it should also replace curly quotes with straight quotes, en dashes and em
+% dashes with hyphens, and bullets with asterisks or other ASCII characters.  Copy
+% and paste of text from the resulting PDF file will be 7-bit clean ASCII containing
+% no Unicode characters at all.  Be sure to load cmap immediately after the
+% documentclass line so it can see all the fonts as they are loaded.  This version
+% of cmap.sty works with 11pt and 12pt options to documentclass unlike the original.
+\usepackage[resetfonts]{cmap}
+
+% The geometry package lets me control the page margins.
+\usepackage[margin=0.75in]{geometry}
+
+% The titling package lets me control white space at the top of the first page.
+\usepackage{titling}
+\setlength{\droptitle}{-25mm}
+
+% Used for graphics in the social networking bullets
+\usepackage{graphicx}
+
+% The xcolor package is used to grey out text in the Social Networking section at
+% the end (although it doesn't grey out the graphic icons on those lines).
+\usepackage{xcolor}
+
+% The url package formats URLs and works with hyperref (which must be loaded last).
+\usepackage{url}
+
+% The hyperref package makes links show up in generated PDF files.
+\usepackage{hyperref}
+
+\textheight=9.5in
+\raggedbottom
+\raggedright
+
+\newcommand{\redacted}{\textsc{[title redacted]}}
+
+% The following trick changes the margins in a \quote environment.  Source: \url{http://tex\
+% .stackexchange.com/questions/2396/how-can-i-change-the-indentation-in-quote-and-quotation-\
+% environments-and-command}.
+\newenvironment{myquote}{\list{}{\leftmargin=0.25in\rightmargin=0in}\item[]}{\endlist}
+
+% Tell \LaTeX\ not to complain about missing date.
+\def\nodate{\@makedatefalse}
+\date{}
+
+\title{\textsc{Joe Loughry's References}}
+\author{}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\begin{enumerate}
+
+	\item Mr Chip Auten \\
+		Email \href{mailto:chip.auten@comcast.net}{\nolinkurl{chip.auten@comcast.net}} \\
+		Tel.\ 303-932-4316
+
+	\item Mr Larry S.~Brown \\
+		Lockheed Martin Corporation \\
+		Email \href{mailto:larry.s.brown@lmco.com}{\nolinkurl{larry.s.brown@lmco.com}} \\
+		Tel.\ 303-875-9171
+
+	\item Ms Annie Cruz \\
+		Expediters, Inc. \\
+		Email \href{mailto:anniecruz13@gmail.com}{\nolinkurl{anniecruz13@gmail.com}} \\
+		Tel.\ 425-888-2861
+
+	\item Lt Col.\ Tom A.~Flaherty, U.S.M.C.~(ret.) \\
+		Lockheed Martin Corporation \\
+		Email \href{mailto:tom.a.flaherty@lmco.com}{\nolinkurl{tom.a.flaherty@lmco.com}} \\
+		Tel.\ 303-932-5084
+
+	\item Mr Eduard L.~Telders \\
+		Washington State Department of Social and Health Services \\
+		Email \href{mailto:???}{\nolinkurl{???}} \\
+		Tel.\ 
+
+	\item Prof.\ David Umphress \\
+		Auburn University \\
+		Email \href{mailto:david.umphress@auburn.edu}{\nolinkurl{david.umphress@auburn.edu}} \\
+		Tel.\ 334-844-6335 
+
+\end{enumerate}
+
+\vfill
+{\tiny \LaTeX\ build \input{build_counter.txt}}
+
+\end{document}
