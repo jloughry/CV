@@ -39,6 +39,10 @@
 % Used for graphics in the social networking bullets
 \usepackage{graphicx}
 
+% Used to typeset a plus sign that looks right in text mode, not math mode. Source:
+% \url{http://tex.stackexchange.com/questions/52503/sign-in-international-phone-numbers}.
+\newcommand{\plus}{\raisebox{.4\height}{\scalebox{.6}{+}}}
+
 % The xcolor package is used to grey out text in the Social Networking section at
 % the end (although it doesn't grey out the graphic icons on those lines).
 \usepackage{xcolor}
@@ -72,10 +76,11 @@
 \thispagestyle{empty}
 
 \vspace{-32mm}
-{\emph{Project lead, CDS C\&A, Software development for Cross Domain Systems, Information security}}
+{\emph{Project lead, CDS C\&A, Software development for Cross Domain Systems, \& Information
+security}}
 
 \vspace{4mm}
-Tel.\ (720) 277-7800 (US/Mountain---GMT minus 7 hours)\hfill Centennial, Colorado, USA
+Tel.\ (720) 277-7800 (timezone US/Mountain---GMT minus 7 hours)\hfill Centennial, Colorado, USA
 
 % Note: don't put the second part of a mailto: link inside \url{} because
 % the resulting hyperlink in the PDF will not point to the right place (it
@@ -101,14 +106,14 @@ Email: \href{mailto:joe.loughry@gmail.com}{\nolinkurl{joe.loughry@gmail.com}}\hf
 	\item Information Assurance Engineer, Lockheed Martin Corporation, 2006--January 2012.
 		\vspace{-2mm}
 		\begin{myquote}
-			Proposed and won a \$968,000 Air Force Research Laboratory contract
+			Proposed and won \$900,000\texttt{+} Air Force Research Laboratory contract
 			for probabilistic redaction system; R\&D project was completed on time
 			and in budget.  Security Target (ST) author for Common Criteria (CC)
 			evaluation of \textsc{Radiant Mercury}.
 		\end{myquote}
 
 \vspace{-2.5mm}
-	\item Senior Software Engineer, Lockheed Martin Missiles \& Space, February 1998--2006.
+	\item Senior Software Engineer, Lockheed Martin Missiles \& Space Co., February 1998--2006.
 		\vspace{-2mm}
 		\begin{myquote}
 			Invented nested digital signatures for imagery files---patent application filed.
@@ -129,10 +134,10 @@ Email: \href{mailto:joe.loughry@gmail.com}{\nolinkurl{joe.loughry@gmail.com}}\hf
 		\end{myquote}
 
 \vspace{-2.5mm}
-	\item Programmer, Safeco Life Insurance Company, Redmond, Washington, 1991.
+	\item Programmer, Safeco Life Insurance Company, Redmond, Washington, mid 1991.
 		\vspace{-2mm}
 		\begin{myquote}
-			Database applications programmer, report design, and business systems analyst.
+			Database applications programmer, report design, business systems analyst.
 		\end{myquote}
 
 \vspace{-2.5mm}
@@ -140,7 +145,7 @@ Email: \href{mailto:joe.loughry@gmail.com}{\nolinkurl{joe.loughry@gmail.com}}\hf
 		\vspace{-2mm}
 		\begin{myquote}
 			Introduced first use of a high-level machine code interpreter and cross-referencer
-			(BANCStar LIST) to improve mainframe programmer productivity.
+			(BANCStar LIST) to improve mainframe programmer productivity at the bank.
 		\end{myquote}
 \end{itemize}
 
@@ -155,7 +160,7 @@ Email: \href{mailto:joe.loughry@gmail.com}{\nolinkurl{joe.loughry@gmail.com}}\hf
 
 	\vspace{-2mm}
 	\item U.S.\ and international application 13/355,210 \emph{Nested Digital Signatures with
-		Constant File Size}, in progress, filed January 2012.
+		Constant File Size}, in progress, filed January 2012, published July 2013.
 
 	% \vspace{-2mm}
 	% \item Provisional application 61/774,539 \emph{Method for controlling schedule and cost of
@@ -252,7 +257,7 @@ Email: \href{mailto:joe.loughry@gmail.com}{\nolinkurl{joe.loughry@gmail.com}}\hf
 		Available from the Defense Technical Information Centre (DTIC), Washington, D.C.
 
 	\item `\href{http://oeis.org/A047869}{Subsets of an 8-element set in order by number
-		of elements in each subset}'. \emph{On-line Encyclopedia of Integer Sequences},
+		of elements in each subset}'. \emph{The On-line Encyclopedia of Integer Sequences},
 		AT\&T Research, 2003.
 
 	\item `\href{http://www.applied-math.org/subset.pdf}{Efficiently enumerating the
@@ -275,7 +280,7 @@ Email: \href{mailto:joe.loughry@gmail.com}{\nolinkurl{joe.loughry@gmail.com}}\hf
 
 \begin{itemize}
 	\item OpenSolaris: \url{http://www.opensolaris.org} (2006) \emph{found a bug in password
-		retry limit of Trusted Solaris 8.}
+		retry limit of Trusted Solaris 8}, patch accepted.
 	\item The FreeBSD Project: \url{http://www.freebsd.org} (1999) \emph{contributed a new
 		console screen saver to FreeBSD 3.2.}
 	\item Fetchmail: \url{http://fetchmail.berlios.de} (1998) \emph{patch to handle multi-homed
@@ -288,7 +293,7 @@ Email: \href{mailto:joe.loughry@gmail.com}{\nolinkurl{joe.loughry@gmail.com}}\hf
 \begin{itemize}
     \item Doctoral student, University of Oxford, Department of Computer Science.
 		Thesis: \emph{Security Test
-		and Evaluation of Cross Domain Systems}, degree expected in mid 2013.
+		and Evaluation of Cross Domain Systems}, degree expected in 2013.
 
     \item Master of Software Engineering (M.S.E.), Seattle University. % (1996)
 
@@ -391,12 +396,15 @@ Email: \href{mailto:joe.loughry@gmail.com}{\nolinkurl{joe.loughry@gmail.com}}\hf
 % \definecolor{verylightgrey}{rgb}{0.5,0.5,0.5}
 
 \begin{itemize}
-	\item[{\includegraphics[width=1em]{github.png}}] GitHub: \url{https://github.com/jloughry}
+	% \item[{\includegraphics[width=1em]{Octocat.png}}] GitHub: \url{https://github.com/jloughry}
+	\item[{\includegraphics[width=1em]{GitHub-Mark-120px-plus.png}}] GitHub:
+		\url{https://github.com/jloughry}
 	\item[{\includegraphics[width=1em]{google.png}}] Google Scholar:
 		\url{http://scholar.google.com/citations?hl=en&user=PX_U29EAAAAJ}
 	\item[{\includegraphics[width=1em]{linkedin.png}}] LinkedIn:
 		\url{http://www.linkedin.com/in/jloughry}
-	\item[{\includegraphics[width=1em]{twitter.png}}] Twitter: \url{https://twitter.com/jloughry}
+	\item[{\includegraphics[width=1em]{twitter-bird-white-on-blue.png}}] Twitter:
+		\url{https://twitter.com/jloughry}
 	{\color{grey}
 		\item[{\includegraphics[width=1em]{google-plus-grey.png}}] Google+:
 			\url{https://plus.google.com/u/0/115779672587479359864/}
