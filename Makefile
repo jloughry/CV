@@ -17,7 +17,21 @@ pdf_files = $(CV_pdf_file) $(distribution_filename) $(references_distribution_fi
 temporary_files = $(CV).log $(CV).aux .pdf $(CV).out $(stop_here_file) \
 	$(references).aux $(references).log $(references).out texput.log
 
+#
+# Note: make requires that we set the value of a variable OUTSIDE any rules.
+#
+timestamp = `date +%Y%m%d.%H%M`
+
 all: cv
+
+commit:
+	make clean
+	git add .
+	git commit -am "commit from Makefile $(timestamp)"
+
+sync:
+	git pull --rebase
+	git push
 
 increment_build_counter:
 	@echo $$(($$(cat $(counter_file)) + 1)) > $(counter_file)
