@@ -1,7 +1,7 @@
 [Joe Loughry] (joe.loughry@stx.ox.ac.uk)
 ============
 
-Formatting a Tactical Résumé
+Formatting a tactical résumé
 ----------------------------
 
 ### Concept
@@ -9,26 +9,26 @@ Trying something different here, let's make two files: a long-form CV with all t
 a short-form résumé that just puts the exciting stuff on a single page.  Both are generated
 from a single LaTeX source file.
 
-It's not straightforward to pass parameters to a LaTeX document to accomplish something like
-conditional compilation in C.  Here we use the most reliable technique, where the LaTeX source
-file unconditionally `\input`s a file that is dynamically created by the `makefile` just before
+It's not straightforward to pass parameters from the command line to TeX to accomplish something
+like conditional compilation in C.  Here we use the most reliable technique, where the LaTeX source
+file unconditionally `\input`s a file that is dynamically created by the `Makefile` just before
 it's needed.
 
-#### Résumé
+#### Résumé and filename
 The résumé is a single page and not very full at that.  It shows the bare minimum information a
 harried screener wants to see:
 
  - What positions, at what companies, has this person held?
 
- - Did he do anything interesting there?
+ - Did he or she do anything interesting there?
 
  - Phone number and email address for the candidate.
 
 To be nice to people trying to process files with automated tools that might not properly
-handle non-ASCII characters in filenames, though, the file is called *resume*, not *résumé*.
+handle non-ASCII characters in filenames, the file is called *resume*, not *résumé*.
 
 #### CV
-This file is currently four pages long in PDF.  The first page is the résumé.  Keywords are
+This file is about four pages long in PDF.  The first page is the résumé.  Keywords are
 relegated to the last page where automated résumé filters will still find them, but they won't
 distract human readers.  Keywords are separated by commas and formatting is deliberately kept
 simple:
@@ -47,7 +47,7 @@ simple:
 Keywords are in no particular order, just arranged for even line length and colour when printed.  I
 thought about making this section invisible, the way SEO companies put `meta` keywords in web pages
 to get them indexed by search engines (and spammers use obfuscated text to evade mail filters) but
-decided it would be dishonest, like malware in a PDF.
+decided it would be dishonest, like malware in a PDF file.
 
 #### Ligatures
 Ligatures like *fi* and *ffl* look great on the printed page but they can be a barrier to
@@ -59,13 +59,14 @@ doesn't match a naïve regex.  The solution is to load the `cmap` package in LaT
 
 The `resetfonts` option is required when used with the Computer Modern fonts which by default
 are a little too clever with ligatures.  Remember, the goal here is to make things as easy
-as possible for keyword filters used by HR.  The same CMAP tables can do other useful tricks
-like transforming curly quotation marks to straight ones on copy to plain text; &#8220;proper
-quotation marks&#8221; tend to paste into plain text as Unicode, and that can also confuse a
-straightforward keyword search.  (It depends on the PDF reader; Adobe Acrobat X doesn't
-understand ligatures at all but pastes curly quotation marks as unicode characters, but on
-Mac OS X, the Preview programme gets ligatures right and its search function correctly matches
-quotation marks whether curly or straight.)
+as possible for keyword filters used by Human Resources.  The same CMAP tables can do other
+useful tricks like transforming curly quotation marks to straight ones upon copy to plain
+text; &#8220;proper quotation marks&#8221; tend to paste into plain text as Unicode, and
+that can also confuse a straightforward keyword search.  (It depends on the PDF reader; Adobe
+Acrobat Reader X doesn't understand ligatures at all and pastes curly quotation marks as
+unicode characters, but searches correctly across hyphens; in Mac OS X, the Preview programme
+gets ligatures right and its search function correctly matches quotation marks whether curly
+or straight.)
 
 To make sure **grep** finds *all* my keywords, I altered the default CMAP table that gets compiled
 into the PDF output, replacing every instance of `<201C>` (Unicode left double quotation mark)
@@ -75,7 +76,7 @@ quotation mark) with `<0027>` (ASCII single quotation mark).  This makes single 
 quotation marks in the PDF file copy and paste as straight quotes.  I further caused en dashes
 to be replaced by a single hyphen and em dashes by two hyphens, to match traditional
 typewriter usage.  The `ot1.cmap` file is written in PostScript; to override it, I simply made
-a copy of in the current directory and modified the copy:
+a copy in the current directory and modified the copy:
 
 	$ diff ot1.cmap.original ot1.cmap
 	21c21
@@ -105,8 +106,8 @@ a copy of in the current directory and modified the copy:
 	> <7B> <002D>
 	> <7C> <002D002D>
 
-PDFLaTeX preferentially uses the modified `ot1.cmap` file if it finds one in the current
-directory.
+This avoids having to install any software in the filesystem; PDFLaTeX preferentially uses
+the modified `ot1.cmap` file if it finds one in the current directory.
 
 A similar trick is done with LaTeX's bulleted lists, which use the *math mode* `\bullet`
 because bullets don't appear in TeX's OT1 font encoding.  The following modifications
@@ -150,19 +151,21 @@ I'm just going to rewrite the résumé to look good in 12pt type.  It's easier t
 the hiring manager in that size anyway.
 
 ### Machine-Readable Formatting
-PDF is basically PostScript and we can do some things to make the resulting binary file easier
-to parse.  Side-by-side columns can be problematic; they tend to interleave their text in a copy
-and paste to plain text, or a **grep**.  Small caps render correctly from PDF into plain text, I
-found.
+PDF is basically PostScript under the covers and we can do some things to make the resulting
+binary file easier to parse.  Side-by-side columns can be problematic for parsers; they tend
+to interleave their text in a copy and paste to plain text, or a **grep**.  Small caps render
+correctly from PDF into plain text, as mixed case, I have found.
 
 ### Build Instructions
 Make targets include the default **all** to emit the long-form CV, **edit** to quickly edit
 the source file, **resume** to emit the short form résumé, **clean** to remove temporary files
-(before commit), **allclean** to remove everything that can be regenerated, **help** give a
-quick overview of options, and **spell** to check spelling against a UK english dictionary.
+(before commit), **commit** to update the local Git repository, **sync** to push changes to
+GitHub and merge any non-local changes, **allclean** to remove everything that can be
+regenerated, **help** give a quick overview of options, and **spell** to check spelling
+against a UK english dictionary.
 
 ### Example
     % make
 
-For information contact the author: (joe.loughry@stx.ox.ac.uk)
+For information contact the author: (joe@call-with-current-continuation.com)
 
