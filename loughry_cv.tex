@@ -11,7 +11,7 @@
 % It is presently formatted for 8-1/2x11 inch US-letter paper.
 %
 
-\documentclass[12pt,letterpaper]{article}
+\documentclass[12pt,twoside,letterpaper]{article}
 
 % The cmap package avoids the problem of ligatures like 'ffi' disappearing from a
 % copy and paste operation where the destination is plain text.  This is important
@@ -52,6 +52,15 @@
 
 % The hyperref package makes links show up in generated PDF files.
 \usepackage{hyperref}
+
+% Tell Adobe Acrobat Reader not to display the bookmarks pane.
+\hypersetup{pdfpagemode=UseNone}
+
+% Fill in some other information in the PDF header.
+\hypersetup{pdfauthor=Joe Loughry}
+
+% Set it to print two-sided, if the printer supports it (user can override this setting)
+\hypersetup{pdfduplex=DuplexFlipLongEdge}
 
 \textheight=9.5in
 \raggedbottom
@@ -177,6 +186,18 @@ Email: \href{mailto:joe@call-with-current-continuation.com}{\nolinkurl{joe@call-
 
 % page 2
 
+\section*{Open Source Software}
+\vspace{-2mm}
+\begin{itemize}
+	\item OpenSolaris: \url{http://www.opensolaris.org} (2006) \emph{found a bug in password
+		retry limit of Trusted Solaris 8}, patch accepted.
+	\item The FreeBSD Project: \url{http://www.freebsd.org} (1999) \emph{contributed a new
+		console screen saver to FreeBSD 3.2.}
+	\item Fetchmail: \url{http://fetchmail.berlios.de} (1998) \emph{patch to handle multi-homed
+		machines.}
+\end{itemize}
+
+\vspace{-8mm}
 \section*{Refereed Journals}
 \vspace{-2mm}
 \begin{itemize}
@@ -208,18 +229,6 @@ Email: \href{mailto:joe@call-with-current-continuation.com}{\nolinkurl{joe@call-
     \item `\href{https://docs.google.com/viewer?a=v&q=cache:OjDo4H9Pj10J:citeseerx.ist.psu.edu/viewdoc/download%3Fdoi%3D10.1.1.10.4531%26rep%3Drep1%26type%3Dpdf+&hl=en&gl=uk&pid=bl&srcid=ADGEESgzzne2bVzWsUDU4ITF7lKKcGhA_k51PqkEVB7aiZgGgJ65C9VGGFIDIL2TQ_YUcdDO20UNkw-mnwZN71u0JDy5EYltrpjR_If5ZU8yyXc400Izs9ywtAeLkxHyxd02fNek-mj4&sig=AHIEtbQHRLT1rO3Eft0-P1LmHBrZ7zJL7w}{Use
 		of XML in the Specification and Development of a New High Assurance Controlled Interface}'.
 		\emph{Network Centric Warfare} conference, Washington, D.C., 2003.
-\end{itemize}
-
-\vspace{-8mm}
-\section*{Open Source Software}
-\vspace{-2mm}
-\begin{itemize}
-	\item OpenSolaris: \url{http://www.opensolaris.org} (2006) \emph{found a bug in password
-		retry limit of Trusted Solaris 8}, patch accepted.
-	\item The FreeBSD Project: \url{http://www.freebsd.org} (1999) \emph{contributed a new
-		console screen saver to FreeBSD 3.2.}
-	\item Fetchmail: \url{http://fetchmail.berlios.de} (1998) \emph{patch to handle multi-homed
-		machines.}
 \end{itemize}
 
 \vspace{-8mm}
