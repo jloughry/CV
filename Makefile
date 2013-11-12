@@ -22,7 +22,7 @@ temporary_files = $(CV).log $(CV).aux .pdf $(CV).out $(stop_here_file) \
 #
 timestamp = `date +%Y%m%d.%H%M`
 
-all: cv
+all: resume
 
 commit:
 	make clean
@@ -53,6 +53,8 @@ rename:
 resume: $(CV_source) Makefile
 	make set_résumé_flag
 	make $(CV_pdf_file)
+
+longform: cv
 
 cv: $(CV_source) Makefile
 	make clear_résumé_flag
