@@ -34,7 +34,7 @@
 
 % The titling package lets me control white space at the top of the first page.
 \usepackage{titling}
-\setlength{\droptitle}{-25mm}
+\setlength{\droptitle}{-30mm}
 
 % Used for graphics in the social networking bullets
 \usepackage{graphicx}
@@ -67,8 +67,6 @@
 \textheight=9.5in
 \raggedbottom
 \raggedright
-
-\newcommand{\redacted}{\textsc{[title redacted]}}
 
 % The following trick changes the margins in a \quote environment.  Source: \url{http://tex\
 % .stackexchange.com/questions/2396/how-can-i-change-the-indentation-in-quote-and-quotation-\
@@ -174,25 +172,28 @@ Email: \href{mailto:joe@call-with-current-continuation.com}{\nolinkurl{joe@call-
 		CISSP-ISSEP no.\ 10411.
 \end{itemize}
 
+\setlength{\fboxsep}{0pt}
+
 \vspace{-8mm}
 \section*{Security Vulnerabilities Discovered}
 \vspace{-2mm}
 \begin{itemize}
-	\item Unlimited password tries permitted in Solaris 8, Trusted Solaris 8, and OpenSolaris,
+	\item Unlimited password retry permitted in Solaris 8, Trusted Solaris 8, and OpenSolaris,
 		2006.\vspace{-2mm}
-	\item Light emitting diodes leak information from many types of data communication equipment,
-		including plaintext from certain cryptographic hardware modules, 2002.\vspace{-2mm}
-    \item Sun Microsystems, Inc.\ security advisory (software): [title redacted] classified S//NF,
-		1999.
+	\item Light emitting diodes leak information from many types of data communication equipment
+		(a side channel),
+		including plaintext from certain cryptographic hardware modules, 2002.\vspace{-1.5mm}
+    \item Sun Microsystems, Inc.\ security advisory (software):
+		\colorbox{black}{[title redacted]} classified S//NF, 1999.
 	\vspace{-2mm}
-	\item Sun Microsystems, Inc.\ security advisory (hardware): [redacted] classified S//NF,
-		1998.
+	\item Sun Microsystems, Inc.\ security advisory (hardware):
+		\colorbox{black}{[redacted]} classified S//NF, 1998.
 	\vspace{-2mm}
-	\item Sun Microsystems, Inc.\ security advisory (software): [title redacted] classified S//NF,
-		1998.
+	\item Sun Microsystems, Inc.\ security advisory (software):
+		\colorbox{black}{[title redacted]} classified S//NF, 1998.
 	\vspace{-2mm}
-	\item Sun Microsystems, Inc.\ security advisory (software): [redacted] classified TS//SI TK B,
-		'98.
+	\item Sun Microsystems, Inc.\ security advisory (software):
+		\colorbox{black}{[redact]} classified TS//SI TK B, 1998.
 \end{itemize}
 
 % page 2
