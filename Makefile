@@ -31,6 +31,11 @@ commit:
 	git pull --rebase
 	git push
 
+commit-only:
+	make clean
+	git add .
+	git commit -am "commit from Makefile $(timestamp)"
+
 increment_build_counter:
 	@echo $$(($$(cat $(counter_file)) + 1)) > $(counter_file)
 
