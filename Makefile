@@ -39,7 +39,9 @@ help:
 	@echo "'make cv' makes full CV"
 
 set_résumé_flag:
-	@echo "\end{document}" > $(stop_here_file)
+	@echo "\vfill" > $(stop_here_file)
+	@echo "{\tiny \LaTeX\ build \input{build_counter.txt}}" >> $(stop_here_file)
+	@echo "\end{document}" >> $(stop_here_file)
 
 clear_résumé_flag:
 	@echo > $(stop_here_file)
