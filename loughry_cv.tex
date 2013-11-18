@@ -43,6 +43,9 @@
 % \url{http://tex.stackexchange.com/questions/52503/sign-in-international-phone-numbers}.
 \newcommand{\plus}{\raisebox{.4\height}{\scalebox{.6}{+}}}
 
+% Modify the trademark symbol so it will paste to plain text the way I want it to.
+\providecommand{\rmtrademark}{\raisebox{\height}{\tiny\textsc{(tm)}}}
+
 % The xcolor package is used to grey out text in the Social Networking section at
 % the end (although it doesn't grey out the graphic icons on those lines).
 \usepackage{xcolor}
@@ -123,7 +126,7 @@ Email: \href{mailto:joe@call-with-current-continuation.com}{\nolinkurl{joe@call-
 			Proposed and won a \$960,000 Air Force Research Laboratory contract
 			for probabilistic redaction system; R\&D project completed on time
 			and in budget.  Security Target (ST) author for the Common Criteria (CC)
-			evaluation of Radiant Mercury\texttrademark\ with NSA.
+			evaluation of Radiant Mercury\rmtrademark\ with NSA.
 		\end{myquote}
 
 \vspace{-2.5mm}
@@ -131,11 +134,10 @@ Email: \href{mailto:joe@call-with-current-continuation.com}{\nolinkurl{joe@call-
 		\vspace{-2mm}
 		\begin{myquote}
 			Invented nested digital signatures for imagery files---patent application filed.
-			Discovered the optical TEMPEST effect and its
-			countermeasures---U.S.\ patent no.\ 6,987,461 issued.  Staff software developer,
-			security engineer, and security architect for
-			Radiant Mercury.  Experienced programmer in C and C++ on X11,
-			UNIX, Solaris and Trusted Solaris OS.
+			Discovered the optical TEMPEST effect and its countermeasures---U.S.\ patent
+			no.\ 6,987,461 issued.  Software developer, security architect, and security
+			engineer for Radiant Mercury\rmtrademark.  Experienced programmer in C and C++
+			on X11, UNIX, Solaris and Trusted Solaris OS.
 		\end{myquote}
 \vspace{-2.5mm}
     \item University Instructor, CSSE 591 (Computer Networks), Seattle University, 1998.
@@ -250,7 +252,7 @@ Email: \href{mailto:joe@call-with-current-continuation.com}{\nolinkurl{joe@call-
 \begin{itemize}
 	\item `\href{http://applied-math.org/Loughry2011.pdf}{Probabilistic Redaction' final
 		technical report}. Air Force Research Laboratory (AFRL), Rome, New York, 2012.
-		Available from the Defense Technical Information Centre (DTIC), Washington, D.C.
+		Available from the Defense Technical Information Center (DTIC), Washington, D.C.
 
 	\item `\href{http://oeis.org/A047869}{Subsets of an 8-element set in order by number
 		of elements in each subset}'. \emph{The On-line Encyclopedia of Integer Sequences},
