@@ -5,6 +5,7 @@ CV_source = $(CV).tex
 references_source = $(references).tex
 distribution_filename = Joe.Loughry_information_security.pdf
 references_distribution_filename = Joe.Loughry_references.pdf
+documentation = README.md
 
 latex_cmd = pdflatex
 counter_file = build_counter.txt
@@ -20,6 +21,7 @@ temporary_files = $(CV).log $(CV).aux .pdf $(CV).out $(stop_here_file) \
 #
 # Note: make requires that we set the value of a variable OUTSIDE any rules.
 #
+
 timestamp = `date +%Y%m%d.%H%M`
 
 all: resume
@@ -91,6 +93,7 @@ edit:
 spell:
 	aspell --lang=EN_GB check $(CV_source)
 	aspell --lang=EN_GB check $(references_source)
+	aspell --lang=EN_GB check $(documentation)
 
 notes:
 	(cd ../notes/ && make vi)
