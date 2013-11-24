@@ -5,7 +5,6 @@ CV_source = $(CV).tex
 references_source = $(references).tex
 distribution_filename = Joe.Loughry_information_security.pdf
 references_distribution_filename = Joe.Loughry_references.pdf
-documentation = README.md
 
 latex_cmd = pdflatex
 counter_file = build_counter.txt
@@ -18,23 +17,11 @@ pdf_files = $(CV_pdf_file) $(distribution_filename) $(references_distribution_fi
 temporary_files = $(CV).log $(CV).aux .pdf $(CV).out $(stop_here_file) \
 	$(references).aux $(references).log $(references).out texput.log
 
-#
-# Note: make requires that we set the value of a variable OUTSIDE any rules.
-#
-
-timestamp = `date +%Y%m%d.%H%M`
+include ../Makefiles/git1.mk
 
 all: resume
 
-commit:
-	make clean
-	git add .
-	git commit -am "commit from Makefile $(timestamp)"
-	make sync
-
-sync:
-	git pull --rebase
-	git push
+include ../Makefiles/git2.mk
 
 commit-only:
 	make clean
