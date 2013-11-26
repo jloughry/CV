@@ -17,16 +17,7 @@ pdf_files = $(CV_pdf_file) $(distribution_filename) $(references_distribution_fi
 temporary_files = $(CV).log $(CV).aux .pdf $(CV).out $(stop_here_file) \
 	$(references).aux $(references).log $(references).out texput.log
 
-include ../Makefiles/git1.mk
-
 all: resume
-
-include ../Makefiles/git2.mk
-
-commit-only:
-	make clean
-	git add .
-	git commit -am "commit from Makefile $(timestamp)"
 
 increment_build_counter:
 	@echo $$(($$(cat $(counter_file)) + 1)) > $(counter_file)
@@ -83,20 +74,13 @@ edit:
 spell:
 	aspell --lang=EN_GB check $(CV_source)
 	aspell --lang=EN_GB check $(references_source)
-	aspell --lang=EN_GB check $(documentation)
-
-notes:
-	(cd ../notes/ && make vi)
-
-quotes:
-	(cd ../notes/ && make quotes)
-
-bibtex:
-	(cd ../bibtex/ && make vi)
+	aspell --lang=EN_GB check README.md
 
 clean:
 	rm -f $(temporary_files)
 
 allclean: clean
 	rm -f $(pdf_files)
+
+include common.mk
 
