@@ -1,10 +1,11 @@
-[Joe Loughry] (joe.loughry@stx.ox.ac.uk)
-============
+[Joe Loughry](joe.loughry@stx.ox.ac.uk)
+=============
 
 Formatting a tactical résumé
 ----------------------------
 
 ### Concept
+
 Trying something different here, let's make two files: a long-form CV with all the details and
 a short-form résumé that just puts the exciting stuff on a single page.  Both are generated
 from a single LaTeX source file.
@@ -15,6 +16,7 @@ file unconditionally `\input`s a file that is dynamically created by the `Makefi
 it's needed.
 
 #### Résumé and filename
+
 The résumé is a single page and not very full at that.  It shows the bare minimum information a
 harried screener wants to see:
 
@@ -28,6 +30,7 @@ To be nice to people trying to process files with automated tools that might not
 handle non-ASCII characters in filenames, the file is called *resume*, not *résumé*.
 
 #### CV
+
 This file is about four pages long in PDF.  The first page is the résumé.  Keywords are
 relegated to the last page where automated résumé filters will still find them, but they won't
 distract human readers.  Keywords are separated by commas and formatting is deliberately kept
@@ -50,6 +53,7 @@ to get them indexed by search engines (and spammers use obfuscated text to evade
 decided it would be dishonest, like malware in a PDF file.
 
 #### Ligatures
+
 Ligatures like *fi* and *ffl* look great on the printed page but they can be a barrier to
 copy & paste.  Some PDF readers, notably Adobe Acrobat X, don't handle ligatures correctly when
 pasting to plain text.  The word *Certification* comes out **Certi cation** and that
@@ -151,12 +155,14 @@ I'm just going to rewrite the résumé to look good in 12pt type.  It's easier t
 the hiring manager in that size anyway.
 
 ### Machine-Readable Formatting
+
 PDF is basically PostScript under the covers and we can do some things to make the resulting
 binary file easier to parse.  Side-by-side columns can be problematic for parsers; they tend
 to interleave their text in a copy and paste to plain text, or a **grep**.  Small caps render
 correctly from PDF into plain text, as mixed case, I have found.
 
 ### Build Instructions
+
 Make targets include the default **all** to emit the long-form CV, **edit** to quickly edit
 the source file, **resume** to emit the short form résumé, **clean** to remove temporary files
 (before commit), **commit** to update the local Git repository, **sync** to push changes to
@@ -165,7 +171,8 @@ regenerated, **help** give a quick overview of options, and **spell** to check s
 against a UK english dictionary.
 
 ### Example
+
     % make
 
-For information contact the author: (joe@call-with-current-continuation.com)
+For information contact the author: joe@call-with-current-continuation.com
 
