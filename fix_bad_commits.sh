@@ -11,7 +11,11 @@
 #
 
 git filter-branch -f --commit-filter '
+<<<<<<< HEAD
 	if [ "$GIT_AUTHOR_EMAIL" = "rjl@applied-math.org" ] || [ "$GIT_AUTHOR_EMAIL" = "joe.loughry@stx.ox.ac.uk" ]
+=======
+	if [ "$GIT_AUTHOR_EMAIL" = "rjl@applied-math.org" ]
+>>>>>>> 62d661d499464dfa10ad791c372666a170fb70b2
 	then
 		GIT_AUTHOR_NAME="jloughry"
 		GIT_AUTHOR_EMAIL="joe.loughry@gmail.com"
