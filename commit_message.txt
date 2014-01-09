@@ -1,1 +1,1 @@
-improved link to #readme on URL for GitHub repository of Unicode proposal on page 2
+added script `fix_bad_commits.sh`
