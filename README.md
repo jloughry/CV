@@ -169,8 +169,11 @@ after building the file:
     ps2pdf -dPDFSETTINGS=/prepress $(ps_file)
     chmod a-x,a+r $(pdf_file)
 
-It makes the PDF file bigger, and seems to make TeX fonts lighter in weight, but the
-resulting PDF file will have *everything* embedded.
+It makes the PDF file bigger, and seems to make TeX fonts lighter in weight, and hyperlinks
+in the PDF file disappear, but the resulting PDF file will have all fonts embedded.
+Interestingly, the names of fonts are lost; when viewed in 'Properties' in Adobe Acrobat
+Reader, the fonts in the PDF file have names like 'T3Font_154' (Type 3) instead of 'CMBX12'
+(Type 1).
 
 ### Machine-Readable Formatting
 

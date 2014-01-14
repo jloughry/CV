@@ -1,3 +1,1 @@
-updated README with PDF font embedding justification
-
-(I still want to regression-test that technique thoroughly before depending on it to work)
+updated readme about what effect embedd forcing embedded fonts has.
