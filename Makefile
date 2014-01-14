@@ -1,3 +1,16 @@
+#
+# TODO: regression test the following lines to defend against problems
+# with embedded fonts in PDF files:
+#
+
+# ps_file = $(target).ps
+#
+# pdf2ps $(pdf_file)
+# rm -f $(pdf_file)
+# ps2pdf -dPDFSETTINGS=/prepress $(ps_file)
+# chmod a-x,a+r $(pdf_file)
+
+
 CV = loughry_cv
 references = references
 
