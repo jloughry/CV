@@ -154,6 +154,24 @@ Diffing the log files doesn't suggest any obvious reason why that should happen.
 I'm just going to rewrite the résumé to look good in 12pt type.  It's easier to read for
 the hiring manager in that size anyway.
 
+#### Embedded Fonts in PDF
+
+Embedded fonts in PDF files can cause problems later if displayed on a system that doesn't
+have the expected fonts installed. To me *sure* of embedded fonts in PDF files, do this
+after building the file:
+
+    ps_file = $(target).ps
+    #
+    # Now, make sure embedded fonts won't cause a problem for somebody else.
+    #
+    pdf2ps $(pdf_file)
+    rm -f $(pdf_file)
+    ps2pdf -dPDFSETTINGS=/prepress $(ps_file)
+    chmod a-x,a+r $(pdf_file)
+
+It makes the PDF file bigger, and seems to make TeX fonts lighter in weight, but the
+resulting PDF file will have *everything* embedded.
+
 ### Machine-Readable Formatting
 
 PDF is basically PostScript under the covers and we can do some things to make the resulting

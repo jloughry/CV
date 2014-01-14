@@ -1,1 +1,3 @@
-added TODO to Makefile to regression test the embedded font defence in PDF files
+updated README with PDF font embedding justification
+
+(I still want to regression-test that technique thoroughly before depending on it to work)
