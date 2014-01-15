@@ -1,1 +1,1 @@
-updated readme about what effect embedd forcing embedded fonts has.
+updated Unicode proposal; add Eric Burnett as a co-author on subsets paper
