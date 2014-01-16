@@ -1,1 +1,1 @@
-added Bruce Nordman as co-author on Unicode proposal
+improve spacing on p.2
