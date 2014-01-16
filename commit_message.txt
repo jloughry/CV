@@ -1,1 +1,1 @@
-updated Unicode proposal; add Eric Burnett as a co-author on subsets paper
+added Bruce Nordman as co-author on Unicode proposal
