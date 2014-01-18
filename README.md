@@ -169,11 +169,20 @@ after building the file:
     ps2pdf -dPDFSETTINGS=/prepress $(ps_file)
     chmod a-x,a+r $(pdf_file)
 
-It makes the PDF file bigger, and seems to make TeX fonts lighter in weight, and hyperlinks
-in the PDF file disappear, but the resulting PDF file will have all fonts embedded.
-Interestingly, the names of fonts are lost; when viewed in 'Properties' in Adobe Acrobat
-Reader, the fonts in the PDF file have names like 'T3Font_154' (Type 3) instead of 'CMBX12'
-(Type 1).
+It makes the PDF file bigger, and seems to make TeX fonts lighter in weight visually,
+and hyperlinks in the PDF file disappear, but the resulting PDF file will have all fonts
+embedded. It breaks the metadata that I like to insert in PDF files: author, title, key
+words, et cetera. Interestingly, the names of fonts are lost; when viewed in 'Properties'
+in Adobe Acrobat Reader, the fonts in the PDF file have names like 'T3Font_154' (Type 3)
+instead of 'CMBX12' (Type 1).
+
+It seems impossible to turn off *all* the PDF security options; 'document assembly' is
+always disallowed, although I wonder how many PDF display and manipulate programmes
+actually follow it, like Mac OS X *preview* for example, because I've never had problems
+inserting pages into PDF files because of it.
+
+Not recommended to use it for those reasons. There is no point putting visible hyperlinks
+in the PDF file only to disable them.
 
 ### Machine-Readable Formatting
 
