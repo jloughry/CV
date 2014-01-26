@@ -1,1 +1,1 @@
-updated readme to advise against using method to embed fonts in PDF
+add echo to clean:: target in Makefile

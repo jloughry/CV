@@ -91,6 +91,7 @@ spell::
 	aspell --lang=EN_GB check $(references_source)
 
 clean::
+	@echo "This is \"clean\" in the local Makefile."
 	rm -f $(temporary_files)
 
 allclean: clean
