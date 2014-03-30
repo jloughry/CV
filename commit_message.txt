@@ -1,1 +1,1 @@
-add echo to clean:: target in Makefile
+add detail about use of Bresenham's fast anti-aliased line drawing algorithm in FreeBSD
