@@ -1,1 +1,1 @@
-add detail about use of Bresenham's fast anti-aliased line drawing algorithm in FreeBSD
+it was Wu anti-aliasing, not Bresenham's algorithm
