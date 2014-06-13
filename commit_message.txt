@@ -1,1 +1,1 @@
-it was Wu anti-aliasing, not Bresenham's algorithm
+added RISKS 28.02
