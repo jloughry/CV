@@ -1,2 +1,1 @@
-fix italics in readme
-I hate Markdown
+move summary build information to top of README file

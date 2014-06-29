@@ -1,11 +1,11 @@
 [Joe Loughry](joe.loughry@stx.ox.ac.uk)
 =============
 
+*To make a short (two page) résumé in PDF format, use `make`. To see the full CV
+including social media and committee-ships, use `make longform`.*
+
 Formatting a tactical résumé
 ----------------------------
-
-*To make a short (two page) résumé, use `make`. To see the three-page CV including social
-media and committee-ships, use `make longform`.*
 
 ### Concept
 
