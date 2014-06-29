@@ -10,6 +10,12 @@
 # ps2pdf -dPDFSETTINGS=/prepress $(ps_file)
 # chmod a-x,a+r $(pdf_file)
 
+#
+# Useful targets:
+#
+# make resume (two pages)
+# make longform (three pages)
+#
 
 CV = loughry_cv
 references = references

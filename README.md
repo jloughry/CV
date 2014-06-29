@@ -4,6 +4,9 @@
 Formatting a tactical résumé
 ----------------------------
 
+*To make a short (two page) résumé, use `make`. To see the three-page CV including social
+media and committee-ships, use `make longform`.
+
 ### Concept
 
 Trying something different here, let's make two files: a long-form CV with all the details and
@@ -193,7 +196,9 @@ correctly from PDF into plain text, as mixed case, I have found.
 
 ### Build Instructions
 
-Make targets include the default **all** to emit the long-form CV, **edit** to quickly edit
+Make targets include the default **all** to emit the short-form CV (two pages), **longform**
+to emit the three-page version of the CV including social media logins and committee-ships,
+**edit** to quickly edit
 the source file, **resume** to emit the short form résumé, **clean** to remove temporary files
 (before commit), **commit** to update the local Git repository, **sync** to push changes to
 GitHub and merge any non-local changes, **allclean** to remove everything that can be

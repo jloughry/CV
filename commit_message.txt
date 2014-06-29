@@ -1,1 +1,1 @@
-added RISKS 28.02
+document build instructions for two-page and three-page versions of the PDF file
