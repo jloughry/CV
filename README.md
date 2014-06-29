@@ -5,7 +5,7 @@ Formatting a tactical résumé
 ----------------------------
 
 *To make a short (two page) résumé, use `make`. To see the three-page CV including social
-media and committee-ships, use `make longform`.
+media and committee-ships, use `make longform`.*
 
 ### Concept
 

@@ -1,1 +1,2 @@
-update references with current email addresses and phone numbers
+fix italics in readme
+I hate Markdown
