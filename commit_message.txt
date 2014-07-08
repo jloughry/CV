@@ -1,1 +1,1 @@
-move summary build information to top of README file
+add email address to second and following pages; update IT Officer dates
