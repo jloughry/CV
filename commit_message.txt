@@ -1,1 +1,1 @@
-add email address to second and following pages; update IT Officer dates
+list degrees in reverse chronological order for consistency
