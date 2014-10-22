@@ -49,7 +49,7 @@ set_résumé_flag:
 	@echo "\vfill" > $(stop_here_file)
 	@echo "{\tiny \LaTeX\ build \input{build_counter.txt}}" >> $(stop_here_file)
 	@echo "\hfill" >> $(stop_here_file)
-	@echo "PGP key fingerprint: \href{http://call-with-current-continuation.com/Joe.Loughry.pub}%" \
+	@echo "PGP key fingerprint: \href{http://call-with-current-continuation.com/Joe.Loughry.txt}%" \
 		>> $(stop_here_file)
 	@echo "{\texttt{5FA8 59BB EF44 BEBB 4ACD  FA39 E74A 9145 F847 3D33}} \\\\" >> $(stop_here_file)
 	@echo "\end{document}" >> $(stop_here_file)
