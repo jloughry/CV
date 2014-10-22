@@ -51,7 +51,7 @@ set_résumé_flag:
 	@echo "\hfill" >> $(stop_here_file)
 	@echo "PGP key fingerprint: \href{http://call-with-current-continuation.com/Joe.Loughry.txt}%" \
 		>> $(stop_here_file)
-	@echo "{\texttt{5FA8 59BB EF44 BEBB 4ACD  FA39 E74A 9145 F847 3D33}} \\\\" >> $(stop_here_file)
+	@echo "{\texttt{2C3B 11A1 CE7C 5B1F 87BC  F5D0 299D 7116 EDC2 ABE5}} \\\\" >> $(stop_here_file)
 	@echo "\end{document}" >> $(stop_here_file)
 
 clear_résumé_flag:
