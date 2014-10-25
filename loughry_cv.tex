@@ -4,8 +4,8 @@
 % Format: LaTeX
 %
 % For information about this file, contact the author by email at
-% mailto:joe.loughry@gmail.com or telephone: +1 303 221 4380.  The
-% time zone is GMT minus seven hours.  Mobile when I am in the UK
+% mailto:joe.loughry@gmail.com or telephone: +1 303 221 4380. The
+% time zone is GMT minus seven hours. Mobile when I am in the UK
 % is +44 (0)7984 147 430.
 %
 % It is presently formatted for 8-1/2x11 inch US-letter paper.
@@ -14,18 +14,18 @@
 \documentclass[12pt,twoside,letterpaper]{article}
 
 % The cmap package avoids the problem of ligatures like 'ffi' disappearing from a
-% copy and paste operation where the destination is plain text.  This is important
+% copy and paste operation where the destination is plain text. This is important
 % when sending out résumés in PDF if you want keywords to be spotted by automated
-% filters used by HR.  Without the `resetfonts' option it doesn't do the trick with
+% filters used by HR. Without the `resetfonts' option it doesn't do the trick with
 % Computer Modern Roman.
 %
 % I use a modified ot1.cmap and a modified oms.cmap and a modified cmap.sty file
 % in the current directory to tell PDF that in addition to the ligatures mentioned
 % above it should also replace curly quotes with straight quotes, en dashes and em
-% dashes with hyphens, and bullets with asterisks or other ASCII characters.  Copy
+% dashes with hyphens, and bullets with asterisks or other ASCII characters. Copy
 % and paste of text from the resulting PDF file will be 7-bit clean ASCII containing
-% no Unicode characters at all.  Be sure to load cmap immediately after the
-% documentclass line so it can see all the fonts as they are loaded.  This version
+% no Unicode characters at all. Be sure to load cmap immediately after the
+% documentclass line so it can see all the fonts as they are loaded. This version
 % of cmap.sty works with 11pt and 12pt options to documentclass unlike the original.
 \usepackage[resetfonts]{cmap}
 
@@ -34,7 +34,7 @@
 
 % The titling package lets me control white space at the top of the first page.
 \usepackage{titling}
-\setlength{\droptitle}{-33mm}
+\setlength{\droptitle}{-38mm}
 
 % Used for graphics in the social networking bullets
 \usepackage{graphicx}
@@ -71,7 +71,7 @@
 \raggedbottom
 \raggedright
 
-% The following trick changes the margins in a \quote environment.  Source: \url{http://tex\
+% The following trick changes the margins in a \quote environment. Source: \url{http://tex\
 % .stackexchange.com/questions/2396/how-can-i-change-the-indentation-in-quote-and-quotation-\
 % environments-and-command}.
 \newenvironment{myquote}{\list{}{\leftmargin=0.15in\rightmargin=0in}\item[]}{\endlist}
@@ -90,7 +90,7 @@
 \pagestyle{empty}
 \thispagestyle{empty}
 
-\vspace{-29mm}
+\vspace{-27mm}
 \emph{I do software development for cross domain systems, C\&A, project lead,
 and information security.}
 
@@ -108,18 +108,23 @@ Email: \href{mailto:joe@call-with-current-continuation.com}{\nolinkurl%
 \vspace{-10mm}
 \section*{Experience}
 \vspace{-2mm}
+
+Twenty-three years programming experience in C and UNIX under Trusted
+Solaris, plus Common Criteria, DIACAP, NIST SP 800-53 security controls,
+\& DCID 6/3 C\&A for cross domain (CDS).
+
 \begin{itemize}
 	\item University of Oxford: Postgraduate Research Student, 2007--present.
 		\vspace{-2mm}
 		\begin{myquote}
-			Discovered methods to control schedule and predict the outcome of
-			security certification and accreditation 
-			testing for cross domain systems (CDS) in intelligence community
-			(IC), collateral, and international environments, with applications
-			to health care.
-			Dissertation: \emph{Security Test and Evaluation of Cross Domain
-			Systems}; degree expected 2014.  23 years programming experience
-			in UNIX, plus Common Criteria, DIACAP, and DCID 6/3 C\&A.
+			Discovered methods to control the schedule and predict
+			outcomes of security Certification and Accreditation
+			(C\&A) testing of Cross Domain Solutions (CDS) and cross
+			domain systems for Intelligence Community (IC), collateral,
+			and international environments, with applications to
+			Electronic Health Records (EHR) privacy. Dissertation: \emph{Security
+			Test and Evaluation of Cross Domain Systems}; degree expected
+			in late 2014.
 		\end{myquote}
 \vspace{-2.5mm}
 	\item Lockheed Martin Corporation: Information Assurance Engineer, 2006--2012.
@@ -127,7 +132,7 @@ Email: \href{mailto:joe@call-with-current-continuation.com}{\nolinkurl%
 		\begin{myquote}
 			Proposed and won a \$968,000 Air Force Research Laboratory contract
 			for a probabilistic redaction application; the R\&D project was completed
-			on time and in budget.  Author of Security Target for Common Criteria
+			on time and in budget. Author of Security Target for Common Criteria
 			(CC) evaluation of Radiant Mercury\rmtrademark\ with
 			NSA.
 		\end{myquote}
@@ -135,15 +140,15 @@ Email: \href{mailto:joe@call-with-current-continuation.com}{\nolinkurl%
 	\item Lockheed Martin Missiles \& Space Company, Senior Software Engineer, 1998--2006.
 		\vspace{-2mm}
 		\begin{myquote}
-			Invented nested digital signatures for satellite imagery files---U.S.\ patent
-			no.~8,793,499 issued. Discovered the optical TEMPEST
-			effect and its countermeasures---U.S.\ patent no.~6,987,461 issued.
-			Software developer and security engineer for Radiant Mercury\rmtrademark.
-			Highly experienced programmer in C and assembly language on UNIX, X11,
-			FreeBSD, and Trusted Solaris.
+			Invented nested digital signatures for satellite imagery
+			files---U.S.\ patent no.~8,793,499 issued. Discovered the
+			optical TEMPEST effect and its countermeasures---U.S.\ patent
+			no.~6,987,461 issued. Software developer and security engineer
+			for Radiant Mercury\rmtrademark. Experienced programmer
+			in C and assembly language on Trusted Solaris and FreeBSD.
 		\end{myquote}
 \vspace{-2.5mm}
-    \item University Instructor, CSSE 591 (Computer Networks), Seattle University, 1998.
+	\item University Instructor, CSSE 591 (Computer Networks), Seattle University, 1998.
 \end{itemize}
 
 \vspace{-9mm}
@@ -153,7 +158,7 @@ Email: \href{mailto:joe@call-with-current-continuation.com}{\nolinkurl%
 	\item \href{http://google.com/patents/US8793499}{U.S.\ 8,793,499}
 		\emph{Nested Digital Signatures with Constant File Size}.
 	\vspace{-1mm}
-    \item \href{http://www.google.com/patents/US6987461}{U.S.\ 6,987,461}
+	\item \href{http://www.google.com/patents/US6987461}{U.S.\ 6,987,461}
 		\emph{System and Method for Addressing Optical Emanations from an
 		Information Processing Device}.
 	\vspace{-1mm}
@@ -230,7 +235,7 @@ Email: \href{mailto:joe@call-with-current-continuation.com}{\nolinkurl%
 \section*{Refereed Journals}
 \vspace{-2mm}
 \begin{itemize}
-    \item ``\href{http://dl.acm.org/citation.cfm?doid=545186.545189}{Information
+	\item ``\href{http://dl.acm.org/citation.cfm?doid=545186.545189}{Information
 		Leakage from Optical Emanations}'' by J.\ Loughry and D.A.\ Umphress.
 		\emph{ACM Transactions on Information and System Security} \textbf{5}(3)
 		pp.\ 262--289, 2002.
@@ -263,7 +268,7 @@ Cycle}. Nice, France, 2010.
 	%	\emph{Oxford University Computing Laboratory Student Conference}. Oxford,
 	%	U.K., 2008.
 
-    \item ``\href{http://call-with-current-continuation.com/papers/xml_paper.pdf}%
+	\item ``\href{http://call-with-current-continuation.com/papers/xml_paper.pdf}%
 {Use of XML in the Specification and Development of a New High Assurance
 Controlled Interface}.'' \emph{Proc.\ 2nd Network Centric Warfare Conf.},
 Washington, D.C., 22nd Jan.\ 2003.
@@ -279,37 +284,37 @@ Washington, D.C., 22nd Jan.\ 2003.
 
 	\item ``\href{http://call-with-current-continuation.com/papers/Loughry2011.pdf}%
 {Probabilistic Redaction'' final technical report}. US Air Force, Rome,
-New York, 2012.  Available from the Defense Technical Information Center
+New York, 2012. Available from the Defense Technical Information Center
 (DTIC), Washington, D.C.
 
 	\item ``\href{http://oeis.org/A047869}{Subsets of an 8-element set
 		in order by number of elements in each subset}.'' \emph{The On-line
 		Encyclopedia of Integer Sequences}, AT\&T Research, 2003.
 
-    \item RISKS \emph{(ACM Forum on Risks to the Public in Computers
-    and Related Systems)} vols
-	\href{http://catless.ncl.ac.uk/Risks/17.31.html}{17.31},
-	\href{http://catless.ncl.ac.uk/Risks/21.94.html}{21.94}--\href{http://catless.ncl.ac.uk/Risks/21.95.html}{5},
-	\href{http://catless.ncl.ac.uk/Risks/21.81.html}{22.81},
-	\href{http://catless.ncl.ac.uk/Risks/24.07.html}{24.07},
-    \href{http://catless.ncl.ac.uk/Risks/24.22.html}{24.22}--\href{http://catless.ncl.ac.uk/Risks/24.23.html}{3},
-	\href{http://catless.ncl.ac.uk/Risks/24.55.html}{24.55},
-	\href{http://catless.ncl.ac.uk/Risks/24.87.html}{24.87},
-	\href{http://catless.ncl.ac.uk/Risks/25.73.html}{25.73},
-	\href{http://catless.ncl.ac.uk/Risks/26.46.html}{26.46},
-	\href{http://catless.ncl.ac.uk/Risks/27.19.html}{27.19},
-	and \href{http://catless.ncl.ac.uk/Risks/28.02.html}{28.02}.
+	\item RISKS \emph{(ACM Forum on Risks to the Public in Computers
+		and Related Systems)} vols
+		\href{http://catless.ncl.ac.uk/Risks/17.31.html}{17.31},
+		\href{http://catless.ncl.ac.uk/Risks/21.94.html}{21.94}--\href{http://catless.ncl.ac.uk/Risks/21.95.html}{5},
+		\href{http://catless.ncl.ac.uk/Risks/21.81.html}{22.81},
+		\href{http://catless.ncl.ac.uk/Risks/24.07.html}{24.07},
+		\href{http://catless.ncl.ac.uk/Risks/24.22.html}{24.22}--\href{http://catless.ncl.ac.uk/Risks/24.23.html}{3},
+		\href{http://catless.ncl.ac.uk/Risks/24.55.html}{24.55},
+		\href{http://catless.ncl.ac.uk/Risks/24.87.html}{24.87},
+		\href{http://catless.ncl.ac.uk/Risks/25.73.html}{25.73},
+		\href{http://catless.ncl.ac.uk/Risks/26.46.html}{26.46},
+		\href{http://catless.ncl.ac.uk/Risks/27.19.html}{27.19},
+		and \href{http://catless.ncl.ac.uk/Risks/28.02.html}{28.02}.
 \end{itemize}
 
 \vspace{-8mm}
 \section*{Education}
 \vspace{-2mm}
 \begin{itemize}
-    \item Doctoral student, University of Oxford, Department of
-		Computer Science.  Thesis: \emph{Security Test and
+	\item Doctoral student, University of Oxford, Department of
+		Computer Science. Thesis: \emph{Security Test and
 		Evaluation of Cross Domain Systems}, degree expected in 2014.
-    \item Master of Software Engineering (M.S.E.) degree, Seattle University, 1996.
-    \item Bachelor of Arts (B.A.) in mathematics, University of Colorado at Boulder, 1986.
+	\item Master of Software Engineering (M.S.E.) degree, Seattle University, 1996.
+	\item Bachelor of Arts (B.A.) in mathematics, University of Colorado at Boulder, 1986.
 \end{itemize}
 
 \input{stop_here.tex}
