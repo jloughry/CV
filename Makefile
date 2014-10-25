@@ -34,7 +34,8 @@ CV_pdf_file = $(CV).pdf
 pdf_files = $(CV_pdf_file) $(distribution_filename) $(references_distribution_filename)
 
 temporary_files = $(CV).log $(CV).aux .pdf $(CV).out $(stop_here_file) \
-	$(references).aux $(references).log $(references).out texput.log
+	$(references).aux $(references).log $(references).out texput.log \
+	$(CV_source).bak
 
 all:: resume
 
