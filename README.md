@@ -2,7 +2,7 @@
 =============
 
 *To make a short (two page)
-[résumé](https://github.com/jloughry/CV/blob/master/Joe.Loughry_references.pdf?raw=true)
+[résumé](https://github.com/jloughry/CV/blob/master/Joe.Loughry_information_security.pdf?raw=true)
 in PDF format, use `make`. To see the full CV including social media and
 committee-ships, use `make longform`.*
 
