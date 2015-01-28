@@ -48,7 +48,7 @@ help:
 
 set_résumé_flag:
 	@echo "\vfill" > $(stop_here_file)
-	@echo "{\tiny \LaTeX\ build \input{build_counter.txt}}" >> $(stop_here_file)
+	@echo "{\noindent\tiny \LaTeX\ build \input{build_counter.txt}}" >> $(stop_here_file)
 	@echo "\hfill" >> $(stop_here_file)
 	@echo "PGP key fingerprint: \href{http://call-with-current-continuation.com/Joe.Loughry.txt}%" \
 		>> $(stop_here_file)
