@@ -62,7 +62,7 @@
 \hypersetup{pdfauthor=Joe Loughry}
 \hypersetup{pdftitle=R\'{e}sum\'{e}}
 \hypersetup{pdfsubject=computer security}
-\hypersetup{pdfkeywords=Software development and Certification and Accreditation (C\&A) of Cross Domain Systems (CDS)}
+\hypersetup{pdfkeywords=Software development and Certification and Accreditation (C\&A) of Cross Domain Systems (CDS) and project lead}
 
 % Set it to print two-sided, if the printer supports it (user can override this setting)
 \hypersetup{pdfduplex=DuplexFlipLongEdge}
@@ -88,9 +88,13 @@
 \pagestyle{empty}
 \thispagestyle{empty}
 
+%
+% Use the following trick to justify the last line of a paragraph.
+%
+
 \vspace{-26mm}\noindent
-\emph{I do software development for cross domain systems, C\&A, project
-lead, and information security.}
+{\emph{Software development for cross domain systems, CDS C\&A, project
+lead, and information security.}\unskip\parfillskip 0pt \par}
 
 % Note: don't put the second part of a mailto: link inside \url{} because
 % the resulting hyperlink in the PDF will not point to the right place (it
@@ -192,10 +196,8 @@ counterintelligence polygraph; last investigation date: 5th August 2009
 		certain cryptographic hardware modules, 2002.\vspace{-2.5mm}
 	\item Privilege escalation in \verb,crontab, yields root shell on Trusted
 		Solaris 8 version 4/01, 2000.\vspace{-2.5mm}
-	\item Cross-platform EEPROM boot password bypass on Sun workstation
-		hardware, 1999.\vspace{-2.5mm}
-	\item Insecure storage and extraction of plaintext passwords on Sun workstation
-		hardware, 1998.\vspace{-2.5mm}
+    \item Time-of-check/time-of-use gap is exploitable in EEPROM boot
+        password across Sun Microsystems UltraSPARC hardware, 1999.\vspace{-2.5mm}
 	\item Full control of Trusted Path indicator from unprivileged process,
 		Trusted Solaris 2.5, 1998.\vspace{-2.5mm}
 \end{itemize}
@@ -404,19 +406,6 @@ public speaking,
 funding,
 research,
 and teaching experience.
-
-\vspace{-4mm}
-\section*{Softcopy}
-\vspace{-2mm}
-
-The latest version of this document is always available here:
-\url{https://github.com/jloughry/CV/blob/master/Joe.Loughry_information_security.pdf?raw=true}
-
-\vspace{-4mm}
-\section*{References}
-\vspace{-2mm}
-
-References available upon request.
 
 \vfill
 {\noindent\tiny \LaTeX\ build \input{build_counter.txt}}
