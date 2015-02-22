@@ -25,6 +25,26 @@ references_source = $(references).tex
 distribution_filename = Joe.Loughry_information_security.pdf
 references_distribution_filename = Joe.Loughry_references.pdf
 
+section_sources = section_clearance.tex section_header.tex \
+    section_patents.tex section_conferences.tex \
+    section_journals.tex section_preamble.tex \
+    section_education.tex section_open_source.tex \
+    section_leadership.tex section_experience.tex \
+    section_other_published_reports.tex section_security_vuln.tex
+
+section_education               = section_education.tex
+section_clearance               = section_clearance.tex
+section_header                  = section_header.tex
+section_other_published_reports = section_other_published_reports.tex
+section_conferences             = section_conferences.tex
+section_journals                = section_journals.tex
+section_patents                 = section_patents.tex
+section_leadership              = section_leadership.tex
+section_preamble                = section_preamble.tex
+section_experience              = section_experience.tex
+section_open_source             = section_open_source.tex
+section_security_vuln           = section_security_vuln.tex
+
 latex_cmd = pdflatex
 counter_file = build_counter.txt
 stop_here_file = stop_here.tex
@@ -64,11 +84,11 @@ rename:
 	mv $(references).pdf Joe.Loughry_references.pdf
 	chmod a-x,a+r Joe.Loughry_references.pdf
 
-resume: $(CV_source) Makefile
+resume: $(CV_source) $(section_sources) Makefile
 	make set_résumé_flag
 	make $(CV_pdf_file)
 
-longform: $(CV_source) Makefile
+longform: $(CV_source) $(section_sources) Makefile
 	make clear_résumé_flag
 	make $(CV_pdf_file)
 
@@ -92,6 +112,36 @@ vi:
 
 edit:
 	vi $(CV_source)
+
+leadership:
+	vi $(section_leadership)
+
+patents:
+	vi $(section_patents)
+
+experience:
+	vi $(section_experience)
+
+security_vulns:
+	vi $(section_security_vulns)
+
+open_source:
+	vi $(section_open_source)
+
+journals:
+	vi $(section_journals)
+
+conferences:
+	vi $(section_conferences)
+
+other_published_reports:
+	vi $(section_other_published_reports)
+
+clearance:
+	vi $(section_clearance)
+
+education:
+	vi $(section_education)
 
 #
 # spell and clean have a double colon because the common makefile extends them.
