@@ -67,6 +67,9 @@
 % Set it to print two-sided, if the printer supports it (user can override this setting)
 \hypersetup{pdfduplex=DuplexFlipLongEdge}
 
+% For commenting out sections:
+\usepackage{comment}
+
 \textheight=9.5in
 \raggedbottom
 
@@ -108,90 +111,17 @@ Email: \href{mailto:joe@call-with-current-continuation.com}{\nolinkurl%
 
 \hfill Centennial, Colorado
 
-\vspace{-10mm}
-\section*{Leadership, Proposal Wins, and Funding}
-\vspace{-2mm}
-
-Principal Investigator, awarded \$968,412 for a ``Probabilistic Redaction''
-system, USAF Rome Laboratory contract no.\ FA8750-09-C-0006, for period of
-performance 2009--2012; the project was completed on time and under budget.
+\vspace{-8mm}
+\input{section_proposal_wins.tex}
 
 \vspace{-5mm}
-\section*{Patents}
-\vspace{-2mm}
+\input{section_patents.tex}
 
-\href{http://google.com/patents/US8793499}{U.S.\ patent 8,793,499}
-for \emph{Nested Digital Signatures with Constant File Size.}
-\href{http://www.google.com/patents/US6987461}{U.S.\ patent
-6,987,461} for \emph{System and Method for Addressing Optical
-Emanations from an Information Processing Device.}
+\vspace{-8mm}
+\input{section_experience.tex}
 
 \vspace{-5mm}
-\section*{Experience}
-\vspace{-2mm}
-
-Twenty-three years of programming experience in C and UNIX, multi-level
-programming under Trusted Solaris, and
-up-to-the-minute knowledge of Common Criteria, DIACAP, NIST SP 800-53
-security controls, and DCID 6/3 C\&A for cross domain systems (CDS).
-
-\begin{itemize}
-	\item University of Oxford, England: Ph.D.\ student, 2007--2015.
-		\vspace{-2mm}
-		\begin{myquote}
-            Discovered methods to control the schedule and predict
-            outcomes of security Certification and Accreditation (C\&A)
-            testing of cross domain solutions and cross domain systems for
-            Intelligence Community (IC), collateral, and international
-            environments, with application to privacy protection
-            of Electronic Health Record (EHR) systems. Dissertation:
-            \emph{Security Test and Evaluation of Cross Domain Systems},
-            submitted Michaelmas term 2014.
-		\end{myquote}
-\vspace{-2.5mm}
-	\item Lockheed Martin Corporation: Information Assurance Engineer, 2006--2012.
-		\vspace{-2mm}
-		\begin{myquote}
-            Proposed and won a \$968,000 Air Force Research Laboratory
-            contract for a probabilistic redaction application; the
-            R\&D project was completed on time and in budget. Author of
-            Security Target for Common Criteria (CC) evaluation of Radiant
-            Mercury\rmtrademark\ with NSA.
-		\end{myquote}
-\vspace{-2.5mm}
-	\item Lockheed Martin Missiles \& Space Company, Senior Software Engineer, 1998--2006.
-		\vspace{-2mm}
-		\begin{myquote}
-            Invented nested digital signatures for satellite imagery
-            files---U.S.\ patent no.~8,793,499 issued. Discovered the
-            optical TEMPEST effect and its countermeasures---U.S.\ patent
-            no.~6,987,461 issued. Software developer and security engineer
-            for Radiant Mercury\rmtrademark. Experienced programmer in C
-            and assembly language on Trusted Solaris and FreeBSD.
-		\end{myquote}
-\vspace{-2.5mm}
-	\item University Instructor, CSSE 591 (Computer Networks), Seattle University, 1998.
-\end{itemize}
-
-\vspace{-6mm}
-\section*{Security Vulnerabilities Reported}
-\vspace{-2mm}
-
-\begin{itemize}
-    \item Silent reversion to insecure defaults in Mac OS X `Yosemite'
-        \texttt{/etc/sshd\_config} file, 2014.\vspace{-2.5mm}
-	\item Unlimited password retries permitted in Trusted Solaris 8 HW 2/04
-		Certified Edition, 2006.\vspace{-2.5mm}
-	\item Light emitting diodes leak information from many types of data
-		communication equipment (a side channel), including plaintext from
-		certain cryptographic hardware modules, 2002.\vspace{-2.5mm}
-	\item Privilege escalation in \verb,crontab, yields root shell on Trusted
-		Solaris 8 version 4/01, 2000.\vspace{-2.5mm}
-    \item Time-of-check/time-of-use gap is exploitable in EEPROM boot
-        password across Sun Microsystems UltraSPARC hardware, 1999.\vspace{-2.5mm}
-	\item Full control of Trusted Path indicator from unprivileged process,
-		Trusted Solaris 2.5, 1998.\vspace{-2.5mm}
-\end{itemize}
+\input{section_security_vuln.tex}
 
 \newpage
 
