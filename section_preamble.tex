@@ -1,0 +1,79 @@
+% The cmap package avoids the problem of ligatures like 'ffi' disappearing from a
+% copy and paste operation where the destination is plain text. This is important
+% when sending out résumés in PDF if you want keywords to be spotted by automated
+% filters used by HR. Without the `resetfonts' option it doesn't do the trick with
+% Computer Modern Roman.
+%
+% I use a modified ot1.cmap and a modified oms.cmap and a modified cmap.sty file
+% in the current directory to tell PDF that in addition to the ligatures mentioned
+% above it should also replace curly quotes with straight quotes, en dashes and em
+% dashes with hyphens, and bullets with asterisks or other ASCII characters. Copy
+% and paste of text from the resulting PDF file will be 7-bit clean ASCII containing
+% no Unicode characters at all. Be sure to load cmap immediately after the
+% documentclass line so it can see all the fonts as they are loaded. This version
+% of cmap.sty works with 11pt and 12pt options to documentclass unlike the original.
+\usepackage[resetfonts]{cmap}
+
+% The geometry package lets me control the page margins.
+\usepackage[margin=0.75in,top=1in]{geometry}
+
+% The titling package lets me control white space at the top of the first page.
+\usepackage{titling}
+\setlength{\droptitle}{-37mm}
+
+% Used for graphics in the social networking bullets
+\usepackage{graphicx}
+
+% Used to typeset a plus sign that looks right in text mode, not math mode. Source:
+% \url{http://tex.stackexchange.com/questions/52503/sign-in-international-phone-numbers}.
+\providecommand{\plus}{\raisebox{.4\height}{\scalebox{.6}{+}}}
+
+% Modify the trademark symbol so it will paste to plain text the way I want it to.
+\providecommand{\rmtrademark}{\raisebox{\height}{\tiny (TM)}}
+
+% The xcolor package is used to grey out text in the Social Networking section at
+% the end (although it doesn't grey out the graphic icons on those lines).
+\usepackage{xcolor}
+
+% The url package formats URLs and works with hyperref (which must be loaded last).
+\usepackage{url}
+
+% The hyperref package makes links show up in generated PDF files.
+\usepackage{hyperref}
+
+% Fill in some information in the PDF header. Note: if the pdfkeywords line is split,
+% then it will end up with quotation marks placed around it. No commas allowed.
+
+\hypersetup{pdfauthor=Joe Loughry}
+\hypersetup{pdftitle=R\'{e}sum\'{e}}
+\hypersetup{pdfsubject=computer security}
+\hypersetup{pdfkeywords=Software development and Certification and Accreditation (C\&A) of Cross Domain Systems (CDS) and project lead}
+
+% Set it to print two-sided, if the printer supports it (user can override this setting)
+\hypersetup{pdfduplex=DuplexFlipLongEdge}
+
+% For commenting out sections:
+\usepackage{comment}
+
+\textheight=9.5in
+\raggedbottom
+
+% The following trick changes the margins in a \quote environment. Source: \url{http://tex\
+% .stackexchange.com/questions/2396/how-can-i-change-the-indentation-in-quote-and-quotation-\
+% environments-and-command}.
+\newenvironment{myquote}{\list{}{\leftmargin=0.15in\rightmargin=0in}\item[]}{\endlist}
+
+% Tell \LaTeX\ not to complain about missing date.
+\def\nodate{\@makedatefalse}
+\date{}
+
+\title{\textsc{Joe Loughry}}
+\author{}
+
+\begin{document}
+\maketitle
+
+% turn off page numbers
+\pagestyle{empty}
+\thispagestyle{empty}
+
