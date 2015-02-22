@@ -15,24 +15,9 @@
 
 \input{section_preamble.tex}
 
-%
-% Use the following trick to justify the last line of a paragraph.
-%
+\begin{document}
 
-\vspace{-26mm}\noindent
-{\emph{Software development for cross domain systems, CDS C\&A, project
-lead, and information security.}\unskip\parfillskip 0pt \par}
-
-% Note: don't put the second part of a mailto: link inside \url{} because
-% the resulting hyperlink in the PDF will not point to the right place (it
-% will be a broken relative http: link instead). This may only be a bug in
-% Adobe Acrobat Reader. Use \nolinkurl{} in the RHS as shown here instead.
-
-\vspace{3mm}\noindent
-Email: \href{mailto:joe@call-with-current-continuation.com}{\nolinkurl%
-{joe@call-with-current-continuation.com}}\hfill Mobile phone (720) 277-7800
-
-\hfill Centennial, Colorado
+\input{section_header.tex}
 
 \vspace{-8mm}
 \input{section_proposal_wins.tex}
@@ -54,124 +39,24 @@ Email: \href{mailto:joe@call-with-current-continuation.com}{\nolinkurl%
 {\nolinkurl{joe@call-with-current-continuation.com}}
 
 \vspace{-12mm}
-\section*{Open Source Software}
-\vspace{-2mm}
-
-\begin{itemize}
-	\item Terence Eden, Joe Loughry, and Bruce Nordman. \emph{Unicode
-		Technical Committee} (San Jose, CA: February 3--6, 2014)
-		\url{https://github.com/jloughry/Unicode/#readme} \emph{added
-		the IEC 60417-5007, -8, -9, and -10 (ISO 7000:2012) and
-		IEEE-Std-1621:2004 symbols to Unicode.}\vspace{-1mm}
-	\item OpenSolaris: \url{http://www.opensolaris.org} (2006)
-		\emph{found a bug in password retry limit of Solaris 8, Solaris 10,
-		and Trusted Solaris; patch provided to Sun Microsystems and accepted.}\vspace{-1mm}
-	\item The FreeBSD Project: \url{http://www.freebsd.org} (1999)
-		\emph{contributed a new console screen saver based on Wu's fast
-		anti-aliased line drawing algorithm to FreeBSD 3.2.}\vspace{-1mm}
-	\item Fetchmail: \url{http://www.fetchmail.info/} (1998)
-		\emph{patch to handle multi-homed machines.}
-\end{itemize}
+\input{section_open_source.tex}
 
 \vspace{-6.5mm}
-\section*{Refereed Journals}
-\vspace{-2mm}
-
-\begin{itemize}
-	\item ``\href{http://dl.acm.org/citation.cfm?doid=545186.545189}{Information
-		Leakage from Optical Emanations}'' by J.\ Loughry and D.A.\ Umphress.
-		\emph{ACM Transactions on Information and System Security} \textbf{5}(3)
-		pp.\ 262--289, 2002.
-\end{itemize}
+\input{section_journals.tex}
 
 \vspace{-6.5mm}
-\section*{Peer-Reviewed Conference Presentations}
-\vspace{-2mm}
-
-\begin{itemize}
-	\item ``\href{http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6699004}%
-{A Model of Certifier and Accreditor Risk Calculation for Multi-Level
-Systems}.'' \emph{Proc.\ 13th IEEE International Conference on Technologies
-for Homeland Security (HST'13)}. Boston, Massachusetts, 12--14 November,
-2013.\vspace{-1mm}
-
-	\item
-``\href{http://call-with-current-continuation.com/papers/CESAR2012_information_asymmetry.pdf}%
-{Information Asymmetry in Classified Cross Domain System Accreditation}.''
-\emph{19th Comp.\ \& Elec.\ Sec.\ Appl.\ Rend.\ (C\&ESAR 2012)}. Rennes,
-France, 20--22 Nov.\ 2012, pp.\ 19--28, 2012.\vspace{-1mm}
-
-	\item
-``\href{http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5617171}%
-{Unsteady Ground: Certification to Unstable Criteria}.'' \emph{Second
-International Conference on Advances in System Testing and Validation Life
-Cycle}. Nice, France, 2010.\vspace{-1mm}
-
-	% \item ``\href{http://www.cs.ox.ac.uk/files/1328/RR-08-10.pdf}{Evaluation of
-	%	Existing IT Systems Under the Common Criteria at Levels Above EAL4}.''
-	%	\emph{Oxford University Computing Laboratory Student Conference}. Oxford,
-	%	U.K., 2008.
-
-	\item ``\href{http://call-with-current-continuation.com/papers/xml_paper.pdf}%
-{Use of XML in the Specification and Development of a New High Assurance
-Controlled Interface}.'' \emph{Proc.\ 2nd Network Centric Warfare Conf.},
-Washington, D.C., 22nd Jan.\ 2003.
-\end{itemize}
+\input{section_conferences.tex}
 
 \vspace{-6.5mm}
-\section*{Other Published Reports}
-\vspace{-2mm}
-
-\begin{itemize}
-	\item ``\href{http://www.call-with-current-continuation.com/papers/subset.pdf}%
-{Efficiently enumerating the subsets of a set}'' by J.\ Loughry,
-{\it et al.} (in preparation).\vspace{-1mm}
-
-	\item ``\href{http://call-with-current-continuation.com/papers/Loughry2011.pdf}%
-{Probabilistic Redaction'' final technical report}. US Air Force, Rome,
-New York, 2012. Available from the Defense Technical Information Center
-(DTIC), Washington, D.C.\vspace{-1mm}
-
-	\item ``\href{http://oeis.org/A047869}{Subsets of an 8-element set
-		in order by number of elements in each subset}.'' \emph{The On-line
-		Encyclopedia of Integer Sequences}, AT\&T Research, 2003.\vspace{-1mm}
-
-	\item RISKS \emph{(ACM Forum on Risks to the Public in Computers
-		and Related Systems)} vols
-		\href{http://catless.ncl.ac.uk/Risks/17.31.html}{17.31},
-		\href{http://catless.ncl.ac.uk/Risks/21.94.html}{21.94}--\href{http://catless.ncl.ac.uk/Risks/21.95.html}{5},
-		\href{http://catless.ncl.ac.uk/Risks/21.81.html}{22.81},
-		\href{http://catless.ncl.ac.uk/Risks/24.07.html}{24.07},
-		\href{http://catless.ncl.ac.uk/Risks/24.22.html}{24.22}--\href{http://catless.ncl.ac.uk/Risks/24.23.html}{3},
-		\href{http://catless.ncl.ac.uk/Risks/24.55.html}{24.55},
-		\href{http://catless.ncl.ac.uk/Risks/24.87.html}{24.87},
-		\href{http://catless.ncl.ac.uk/Risks/25.73.html}{25.73},
-		\href{http://catless.ncl.ac.uk/Risks/26.46.html}{26.46},
-		\href{http://catless.ncl.ac.uk/Risks/27.19.html}{27.19},
-		and \href{http://catless.ncl.ac.uk/Risks/28.02.html}{28.02}.
-\end{itemize}
+\input{section_other_published_reports.tex}
 
 \setlength{\fboxsep}{0pt}
 
 \vspace{-6.5mm}
-\section*{Security Clearance}
-\vspace{-2mm}
-
-U.S.\ citizen, cleared to Top Secret/SCI (inactive) with
-counterintelligence polygraph; last investigation date: 5th August 2009
-(SSBI PR); last CI poly 26th May 2010. CISSP-ISSEP no.\ 10411.
+\input{section_clearance.tex}
 
 \vspace{-4.5mm}
-\section*{Education}
-\vspace{-2mm}
-
-\begin{itemize}
-	\item Doctoral student, University of Oxford, Department of
-		Computer Science. Thesis: \emph{Security Test and
-		Evaluation of Cross Domain Systems}, thesis submitted; degree expected in 2015.\vspace{-1mm}
-	\item Master of Software Engineering (M.S.E.) degree, Seattle University, 1996.\vspace{-1mm}
-	\item Bachelor of Arts (B.A.) in mathematics, University of Colorado at Boulder, 1986.
-\end{itemize}
+\input{section_education.tex}
 
 \noindent
 \input{stop_here.tex}
