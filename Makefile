@@ -30,7 +30,7 @@ section_sources = section_clearance.tex section_header.tex \
     section_journals.tex section_preamble.tex \
     section_education.tex section_open_source.tex \
     section_leadership.tex section_experience.tex \
-    section_other_published_reports.tex section_security_vuln.tex
+    section_other_published_reports.tex section_security_vulns.tex
 
 section_education               = section_education.tex
 section_clearance               = section_clearance.tex
@@ -43,7 +43,7 @@ section_leadership              = section_leadership.tex
 section_preamble                = section_preamble.tex
 section_experience              = section_experience.tex
 section_open_source             = section_open_source.tex
-section_security_vuln           = section_security_vuln.tex
+section_security_vulns          = section_security_vulns.tex
 
 latex_cmd = pdflatex
 counter_file = build_counter.txt
@@ -67,7 +67,8 @@ help:
 	@echo "'make longform' makes full CV"
 
 set_résumé_flag:
-	@echo "\vfill" > $(stop_here_file)
+	@echo > $(stop_here_file)
+	@echo "\vfill" >> $(stop_here_file)
 	@echo "{\noindent\tiny \LaTeX\ build \input{build_counter.txt}}" >> $(stop_here_file)
 	@echo "\hfill" >> $(stop_here_file)
 	@echo "PGP key fingerprint: \href{http://call-with-current-continuation.com/Joe.Loughry.txt}%" \
