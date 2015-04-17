@@ -114,6 +114,12 @@ vi:
 edit:
 	vi $(CV_source)
 
+header:
+	vi $(section_header)
+
+preamble:
+	vi $(section_preamble)
+
 leadership:
 	vi $(section_leadership)
 
