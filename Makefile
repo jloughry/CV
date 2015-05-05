@@ -88,6 +88,8 @@ rename:
 resume: $(CV_source) $(section_sources) Makefile
 	make set_résumé_flag
 	make $(CV_pdf_file)
+	@echo
+	@echo "If printing this on US-LETTER paper, be sure to set printer paper size!"
 
 longform: $(CV_source) $(section_sources) Makefile
 	make clear_résumé_flag
