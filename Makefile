@@ -162,10 +162,10 @@ spell::
 
 clean::
 	@echo "This is \"clean\" in the local Makefile."
-	rm -f $(temporary_files)
+	rm -fv $(temporary_files)
 
 allclean: clean
-	rm -f $(pdf_files)
+	rm -fv $(pdf_files)
 
 include common.mk
 
