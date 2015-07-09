@@ -158,6 +158,20 @@ education:
 
 spell::
 	aspell --lang=EN_GB check $(CV_source)
+
+	aspell --lang=EN_GB check $(section_education)
+	aspell --lang=EN_GB check $(section_clearance)
+	aspell --lang=EN_GB check $(section_header)
+	aspell --lang=EN_GB check $(section_other_published_reports)
+	aspell --lang=EN_GB check $(section_conferences)
+	aspell --lang=EN_GB check $(section_journals)
+	aspell --lang=EN_GB check $(section_patents)
+	aspell --lang=EN_GB check $(section_leadership)
+	aspell --lang=EN_GB check $(section_preamble)
+	aspell --lang=EN_GB check $(section_experience)
+	aspell --lang=EN_GB check $(section_open_source)
+	aspell --lang=EN_GB check $(section_security_vulns)
+
 	aspell --lang=EN_GB check $(references_source)
 
 clean::
