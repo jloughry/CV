@@ -128,6 +128,9 @@ leadership:
 patents:
 	vi $(section_patents)
 
+skills:
+	vi $(section_experience)
+
 experience:
 	vi $(section_experience)
 
