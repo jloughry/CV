@@ -16,7 +16,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="20151212.1306_colour_business_card.svg">
+   sodipodi:docname="20151212.1306_colour_business_card.svg"
+   inkscape:export-filename="C:\Documents and Settings\rjl\My Documents\thesis\github\CV\business_cards\20151212.1306_colour_business_card.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
   <defs
      id="defs4">
     <inkscape:path-effect
@@ -250,7 +253,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -296,25 +299,25 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30px;line-height:104.99999523%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="120.30262"
+       x="119.08298"
        y="960.87701"
        id="text3811"
        sodipodi:linespacing="105%"><tspan
          sodipodi:role="line"
-         x="120.30262"
+         x="119.08298"
          y="960.87701"
          style="font-size:22.5px;line-height:104.99999523%"
          id="tspan3490">Joe Loughry<tspan
-   style="font-size:12.5px;line-height:104.99999523%"
-   id="tspan4202">, D.Phil. (oxon.)</tspan></tspan><tspan
+   style="font-size:11.25px;line-height:104.99999523%"
+   id="tspan4202">, PhD CISSP-ISSEP</tspan></tspan><tspan
          sodipodi:role="line"
-         x="120.30262"
-         y="978.62469"
-         style="font-size:15px;line-height:104.99999523%"
-         id="tspan4192">Cross Domain Solutions Specialist</tspan><tspan
+         x="119.08298"
+         y="976.66559"
+         style="font-size:12.5px;line-height:104.99999523%;letter-spacing:-0.08px"
+         id="tspan3431">SABI/TSABI Cross Domain (CDS) C&amp;A</tspan><tspan
          sodipodi:role="line"
-         x="120.30262"
-         y="994.37469"
+         x="119.08298"
+         y="991.74969"
          style="font-size:15px;line-height:104.99999523%"
          id="tspan4198">+1 720.277.7800</tspan></text>
     <text
@@ -369,7 +372,7 @@
        inkscape:path-effect="#path-effect3380" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:0.37px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="117.71388"
        y="929.36218"
        id="text4176"
@@ -378,6 +381,6 @@
          id="tspan4178"
          x="117.71388"
          y="929.36218"
-         style="font-size:11.25px;letter-spacing:0.40000001px;fill:#000080">Certification and Accreditation Consulting</tspan></text>
+         style="font-size:11.25px;letter-spacing:0.38px;fill:#000080">Certification and Accreditation Consulting</tspan></text>
   </g>
 </svg>
