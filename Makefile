@@ -22,7 +22,7 @@ references = references
 
 CV_source = $(CV).tex
 references_source = $(references).tex
-distribution_filename = Joe.Loughry_information_security.pdf
+distribution_filename = Joe_Loughry_information_security.pdf
 references_distribution_filename = Joe.Loughry_references.pdf
 
 section_sources = section_clearance.tex section_header.tex \
