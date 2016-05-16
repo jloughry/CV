@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="3.6199999in"
-   height="2.1199999in"
-   viewBox="0 0 325.79999 190.79999"
+   width="3.5in"
+   height="2in"
+   viewBox="0 0 315 180"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="20160504.2136_spring_business_cards_safe_margins.svg"
+   sodipodi:docname="20160508.1358_spring_business_cards_really_safe_margin.svg"
    inkscape:export-filename="C:\Documents and Settings\rjl\My Documents\thesis\github\CV\business_cards\20151212.1306_colour_business_card.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300">
@@ -381,9 +381,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.5081263"
-     inkscape:cx="172.57658"
-     inkscape:cy="96.14519"
+     inkscape:zoom="2.425482"
+     inkscape:cx="163.73134"
+     inkscape:cy="83.992433"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -408,7 +408,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -416,7 +416,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-861.5622)">
+     transform="translate(0,-872.36218)">
     <g
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30px;line-height:125%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text3476" />
@@ -432,7 +432,7 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot6344"
-       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Doves Type;font-style:normal;font-weight:normal;font-size:10px;-inkscape-font-specification:Doves Type;font-stretch:normal;font-variant:normal;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:125%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
          id="flowRegion6346"><rect
            id="rect6348"
            width="136.59334"
@@ -440,10 +440,105 @@
            x="269.20822"
            y="11.106821" /></flowRegion><flowPara
          id="flowPara6350" /></flowRoot>    <g
-       id="g3445"
-       transform="translate(4.1432523,0)">
+       id="g3443"
+       transform="translate(-0.60739467,0)">
+      <text
+         sodipodi:linespacing="95.999998%"
+         id="text6338"
+         y="906.34033"
+         x="287.15765"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:95.99999785%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-size:22.5px;line-height:80.00000119%;text-align:end;text-anchor:end"
+           y="906.34033"
+           x="287.15765"
+           id="tspan6340"
+           sodipodi:role="line"> Joe Loughry<tspan
+   id="tspan3415"
+   style="font-size:13.75px"> PhD</tspan></tspan><tspan
+           dx="0"
+           id="tspan6486"
+           style="font-size:12.5px;line-height:95.99999785%;text-align:end;letter-spacing:0.2px;text-anchor:end"
+           y="919.86237"
+           x="287.35767"
+           sodipodi:role="line">720.277.7800</tspan></text>
+      <text
+         transform="matrix(0,-1,1,0,0,0)"
+         sodipodi:linespacing="125%"
+         id="text6490"
+         y="285.08969"
+         x="-1032.2416"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.57226563px;line-height:125%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-size:15px"
+           y="285.08969"
+           x="-1032.2416"
+           id="tspan6492"
+           sodipodi:role="line">help@CnAdocs.com</tspan></text>
       <g
-         transform="matrix(2.595842,0,0,2.595842,-1320.3815,189.17723)"
+         id="g3430">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.92847347px;line-height:125%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="103.55416"
+           y="1031.4662"
+           id="text3502-6"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3504-5"
+             x="103.55416"
+             y="1031.4662"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:115.99999666%;font-family:'1942 report';-inkscape-font-specification:'1942 report';letter-spacing:-0.12px;word-spacing:-2.5px">...Approval to Connect<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:115.99999666%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:-0.12px;word-spacing:-2.5px"
+   id="tspan3508-8">™</tspan></tspan></text>
+        <g
+           id="g4357"
+           transform="translate(0,-2)">
+          <path
+             d="m 113.25432,947.53941 c 0,-13.29048 8.59452,-22.41661 20.73315,-22.41661 7.79709,0 15.23976,3.80994 17.98645,10.45518 0.17721,0.53162 0.44302,0.53162 1.24045,0.35441 0.70883,-0.1772 0.97463,-0.35441 0.97463,-0.79743 l -1.06323,-12.05003 c -0.0886,-0.79743 -0.17721,-0.97464 -0.97464,-0.97464 l -0.35441,0 c -0.44302,0 -1.06324,0.0886 -1.06324,0.70883 0,2.7467 -1.24045,2.03787 -2.30368,1.50625 -4.25296,-1.94927 -7.97429,-3.45552 -14.53093,-3.45552 -15.50556,0 -27.99861,11.34121 -27.99861,28.70743 0,16.92322 12.84746,26.93538 27.7328,26.93538 6.73385,0 13.9107,-1.68346 18.34086,-4.07575 0.44302,-0.26581 0.70883,-0.53162 0.88604,-1.32905 l 1.68346,-9.83495 c 0.0886,-0.62022 0,-0.97464 -0.70883,-0.97464 -1.32905,0 -1.32905,0 -1.77206,0.97464 -3.27832,7.26546 -8.50591,10.89819 -17.18902,10.89819 -13.8221,0 -21.61919,-10.72099 -21.61919,-24.63169 z"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.60320282px;line-height:284.99999046%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:-10.68071365px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="path4348"
+             inkscape:connector-curvature="0" />
+          <path
+             d="m 166.85171,931.41363 c 3.10111,0 5.22759,2.9239 5.22759,6.37943 0,2.56949 -0.79743,4.78457 -4.34156,6.99965 -3.54413,-1.32905 -6.91105,-3.80994 -6.91105,-6.99965 0,-3.98715 2.6581,-6.37943 6.02502,-6.37943 z m 30.92252,36.94753 c -0.26581,-0.1772 -0.70883,-0.0886 -1.15184,0.26581 -1.24045,0.97464 -2.5695,1.41765 -4.16436,1.41765 -2.8353,0 -6.37943,-2.39228 -9.12613,-8.06289 4.87318,-5.31619 9.39194,-12.49305 12.40445,-22.50521 0.0886,-0.26581 0.26581,-0.44302 0.70883,-0.44302 l 3.45552,0 c 0.97464,0 1.06324,-0.26581 1.06324,-1.06323 l 0,-1.86067 c 0,-0.79743 0,-1.06324 -0.97463,-1.06324 0,0 -2.7467,0.0886 -6.02502,0.0886 -3.01251,0 -6.46803,-0.0886 -6.46803,-0.0886 -0.97464,0 -1.06324,0.26581 -1.06324,1.06324 l 0,1.86067 c 0,0.79742 0.0886,1.06323 1.06324,1.06323 l 3.18971,0 c 0.26581,0 0.35441,0.17721 0.35441,0.26581 0,0 0,0.44302 -0.0886,0.88604 -1.32905,6.91105 -4.60737,13.11327 -9.03753,18.69527 -2.7467,-6.82245 -5.31619,-10.27797 -11.69562,-13.02467 4.43016,-2.39229 6.73384,-6.02502 6.73384,-9.12613 0,-4.60737 -3.36692,-8.68311 -8.94892,-8.68311 -6.02502,0 -11.164,5.4934 -11.164,10.54378 0,4.07575 1.68346,6.64524 3.80993,8.68311 -6.29082,2.56949 -10.72098,8.50591 -10.72098,15.32836 0,7.35406 4.60736,13.73349 13.11327,13.73349 6.37943,0 12.75886,-5.75921 16.12578,-9.39194 2.12648,5.05039 5.75921,9.39194 11.16401,9.39194 3.54413,0 7.17686,-3.98714 7.79708,-6.91105 0.0886,-0.53162 -0.0886,-0.88603 -0.35441,-1.06324 z m -34.73246,-19.4041 c 7.08826,2.39229 12.13864,7.79708 14.79674,14.53093 -3.72134,3.63273 -7.79709,6.55663 -13.46769,6.55663 -4.87318,0 -9.83496,-4.69596 -9.83496,-10.36657 0,-3.80994 2.12648,-8.50591 8.50591,-10.72099 z"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:285.99998951%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:-10.68071365px;word-spacing:0px;baseline-shift:baseline;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="path4350"
+             inkscape:connector-curvature="0" />
+          <path
+             d="m 202.31755,971.87456 c -0.62023,0 -0.97464,-0.0886 -0.97464,-0.35442 0,-0.1772 0.0886,-0.44301 0.17721,-0.70882 l 4.34155,-12.05004 21.08757,0 4.43016,12.05004 c 0.0886,0.26581 0.1772,0.53162 0.1772,0.70882 0,0.26581 -0.26581,0.35442 -0.88603,0.35442 l -3.10111,0 c -0.88603,0 -0.97464,0.26581 -0.97464,0.97463 l 0,2.48089 c 0,0.70883 0.0886,0.97464 0.97464,0.97464 1.68346,0 5.582,-0.0886 7.79708,-0.0886 l 7.79708,0.0886 c 0.88603,0 0.97464,-0.26581 0.97464,-0.97464 l 0,-2.48089 c 0,-0.70882 -0.0886,-0.97463 -0.97464,-0.97463 l -3.18971,0 c -0.70883,0 -0.88604,-0.35442 -1.06324,-0.79743 -0.35441,-0.70883 -18.78388,-49.26338 -18.78388,-49.26338 -0.17721,-0.44302 -0.35441,-0.62023 -0.88603,-0.62023 l -3.80994,0 c -0.53162,0 -0.70883,0.17721 -0.88603,0.62023 l -18.42947,49.26338 c -0.26581,0.62022 -0.53162,0.79743 -1.06324,0.79743 l -3.18971,0 c -0.88603,0 -0.97464,0.26581 -0.97464,0.97463 l 0,2.48089 c 0,0.70883 0.0886,0.97464 0.97464,0.97464 1.68346,0 3.54413,-0.0886 5.75921,-0.0886 2.21508,0 5.40479,0.0886 7.08825,0.0886 0.88603,0 0.97464,-0.26581 0.97464,-0.97464 l 0,-2.48089 c 0,-0.70882 -0.0886,-0.97463 -0.97464,-0.97463 l -2.39228,0 z m 5.05038,-17.36623 8.68311,-24.27728 c 0,0 9.03753,23.56845 9.21473,24.27728 l -17.89784,0 z"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.60320282px;line-height:284.99999046%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:-10.68071365px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="path4352"
+             inkscape:connector-curvature="0" />
+        </g>
+        <text
+           transform="scale(0.99404211,1.0059936)"
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:100.08557892px;line-height:125%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="104.23302"
+           y="1011.5385"
+           id="text4723"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4725"
+             x="104.23302"
+             y="1011.5385"
+             style="font-size:100.08557892px;letter-spacing:-3.24057722px;fill:#000000"
+             dx="0 -0.84071881 -0.14412326 0.98484218">docs</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.88917017px;line-height:125%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="248.71541"
+           y="1017.9573"
+           id="text6512"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan6514"
+             x="248.71541"
+             y="1017.9573"
+             style="font-size:12.10852051px">Inc.</tspan></text>
+      </g>
+      <g
+         transform="matrix(2.2752199,0,0,2.2752199,-1147.5078,292.25048)"
          id="g4216-5-4">
         <g
            id="g4453-8">
@@ -530,115 +625,21 @@
         </g>
       </g>
       <text
-         transform="matrix(0,-1,1,0,0,0)"
-         sodipodi:linespacing="125%"
-         id="text6490"
-         y="293.26794"
-         x="-1034.9453"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.57226563px;line-height:125%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           style="font-size:16.75146484px"
-           y="293.26794"
-           x="-1034.9453"
-           id="tspan6492"
-           sodipodi:role="line">help@CnAdocs.com</tspan></text>
-      <g
-         id="g3432">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.24946976px;line-height:125%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="88.237717"
-           y="1032.0472"
-           id="text3502-6"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan3504-5"
-             x="88.237717"
-             y="1032.0472"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;font-family:'1942 report';-inkscape-font-specification:'1942 report'">...Approval to Connect<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;font-family:'Doves Type';-inkscape-font-specification:'Doves Type'"
-   id="tspan3508-8">™</tspan></tspan></text>
-        <g
-           id="g6494"
-           transform="matrix(0.83055858,0,0,0.83055858,19.429328,167.05319)">
-          <text
-             sodipodi:linespacing="284.99999%"
-             id="text4719"
-             y="965.76233"
-             x="94.511566"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.18676567px;line-height:284.99999046%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             xml:space="preserve"><tspan
-               dx="0 0 -0.86997652"
-               style="font-size:119.62176514px;letter-spacing:-14.41986084px;fill:#808080"
-               y="965.76233"
-               x="94.511566"
-               id="tspan4721"
-               sodipodi:role="line">C<tspan
-   dx="0.86997652"
-   id="tspan3520"
-   style="line-height:285.99998951%;letter-spacing:-14.41986084px;baseline-shift:baseline">&amp;</tspan>A</tspan></text>
-          <text
-             sodipodi:linespacing="125%"
-             id="text4723"
-             y="1027.5928"
-             x="87.933464"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:135.93382263px;line-height:125%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             xml:space="preserve"><tspan
-               dx="0 -1.141844 -0.19574472 1.3375889"
-               style="font-size:135.93382263px;letter-spacing:-3.25153685px;fill:#000000"
-               y="1027.5928"
-               x="87.933464"
-               id="tspan4725"
-               sodipodi:role="line">docs</tspan></text>
-        </g>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.11190319px;line-height:125%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="259.2428"
-           y="1018.8759"
-           id="text6512"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan6514"
-             x="259.2428"
-             y="1018.8759"
-             style="font-size:12.5px">Inc.</tspan></text>
-      </g>
-      <text
-         sodipodi:linespacing="80.000001%"
-         id="text6338"
-         y="897.22437"
-         x="298.11075"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:80.00000119%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           style="font-size:27.5px;line-height:80.00000119%;text-align:end;text-anchor:end"
-           y="897.22437"
-           x="298.11075"
-           id="tspan6340"
-           sodipodi:role="line">Joe Loughry<tspan
-   id="tspan4264"
-   style="font-size:13.75px;line-height:80.00000119%"> PhD</tspan></tspan><tspan
-           id="tspan6486"
-           style="font-size:12.5px;line-height:80.00000119%;text-align:end;text-anchor:end"
-           y="910.26849"
-           x="298.11075"
-           sodipodi:role="line">720.277.7800</tspan></text>
-      <text
          sodipodi:linespacing="100%"
          id="text4310"
-         y="888.29327"
-         x="20.544531"
+         y="900.65814"
+         x="27.44943"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:100%;font-family:'Doves Type';-inkscape-font-specification:'Doves Type';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
            style="font-size:13.75px;line-height:100%"
            id="tspan4316"
-           y="888.29327"
-           x="20.544531"
+           y="900.65814"
+           x="27.44943"
            sodipodi:role="line">Compliance with Federal</tspan><tspan
            id="tspan4477"
-           style="font-size:13.75px;line-height:100%"
-           y="902.04327"
-           x="20.544531"
+           style="font-size:13.75px;line-height:100%;letter-spacing:0.07px"
+           y="914.40814"
+           x="27.44943"
            sodipodi:role="line">cybersecurity regulations</tspan></text>
     </g>
   </g>
