@@ -211,5 +211,5 @@ against a UK english dictionary.
 
     % make
 
-For information contact the author: joe@call-with-current-continuation.com
+For information contact the author: Joe.Loughry@cnadocs.com
 
