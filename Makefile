@@ -20,6 +20,8 @@
 CV = loughry_cv
 references = references
 
+editor_cmd = /usr/bin/vi
+
 CV_source = $(CV).tex
 references_source = $(references).tex
 distribution_filename = Joe_Loughry_cybersecurity.pdf
@@ -98,7 +100,7 @@ longform: $(CV_source) $(section_sources) Makefile
 	make $(CV_pdf_file)
 
 references:
-	vi $(references_source)
+	$(editor_cmd) $(references_source)
 
 $(CV_pdf_file): $(CV_source)
 	$(latex_cmd) $(CV_source)
@@ -113,49 +115,49 @@ $(CV_pdf_file): $(CV_source)
 	@echo "Build `cat $(counter_file)`"
 
 vi:
-	vi $(CV_source)
+	$(editor_cmd) $(CV_source)
 
 edit:
-	vi $(CV_source)
+	$(editir_cmd) $(CV_source)
 
 header:
-	vi $(section_header)
+	$(editir_cmd) $(section_header)
 
 preamble:
-	vi $(section_preamble)
+	$(editir_cmd) $(section_preamble)
 
 leadership:
-	vi $(section_leadership)
+	$(editor_cmd) $(section_leadership)
 
 patents:
-	vi $(section_patents)
+	$(editor_cmd) $(section_patents)
 
 skills:
-	vi $(section_experience)
+	$(editor_cmd) $(section_experience)
 
 experience:
-	vi $(section_experience)
+	$(editor_cmd) $(section_experience)
 
 security_vulns:
-	vi $(section_security_vulns)
+	$(editor_cmd) $(section_security_vulns)
 
 open_source:
-	vi $(section_open_source)
+	$(editor_cmd) $(section_open_source)
 
 journals:
-	vi $(section_journals)
+	$(editor_cmd) $(section_journals)
 
 conferences:
-	vi $(section_conferences)
+	$(editor_cmd) $(section_conferences)
 
 other_published_reports:
-	vi $(section_other_published_reports)
+	$(editor_cmd) $(section_other_published_reports)
 
 clearance:
-	vi $(section_clearance)
+	$(editor_cmd) $(section_clearance)
 
 education:
-	vi $(section_education)
+	$(editor_cmd) $(section_education)
 
 #
 # spell and clean have a double colon because the common makefile extends them.
