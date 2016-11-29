@@ -100,7 +100,8 @@ longform: $(CV_source) $(section_sources) Makefile
 	make $(CV_pdf_file)
 
 references:
-	$(editor_cmd) $(references_source)
+	@$(editor_cmd) $(references_source) \
+		&& echo "OK" || echo "return code from vi was $$?"
 
 $(CV_pdf_file): $(CV_source)
 	$(latex_cmd) $(CV_source)
@@ -115,49 +116,64 @@ $(CV_pdf_file): $(CV_source)
 	@echo "Build `cat $(counter_file)`"
 
 vi:
-	$(editor_cmd) $(CV_source)
+	@$(editor_cmd) $(CV_source) \
+		&& echo "OK" || echo "return code from vi was $$?"
 
 edit:
-	$(editir_cmd) $(CV_source)
+	@$(editir_cmd) $(CV_source) \
+		 && echo "OK" || echo "return code from vi was $$?"
 
 header:
-	$(editir_cmd) $(section_header)
+	@$(editir_cmd) $(section_header) \
+		 && echo "OK" || echo "return code from vi was $$?"
 
 preamble:
-	$(editir_cmd) $(section_preamble)
+	@$(editir_cmd) $(section_preamble) \
+		 && echo "OK" || echo "return code from vi was $$?"
 
 leadership:
-	$(editor_cmd) $(section_leadership)
+	@$(editor_cmd) $(section_leadership) \
+		 && echo "OK" || echo "return code from vi was $$?"
 
 patents:
-	$(editor_cmd) $(section_patents)
+	@$(editor_cmd) $(section_patents) \
+		 && echo "OK" || echo "return code from vi was $$?"
 
 skills:
-	$(editor_cmd) $(section_experience)
+	@$(editor_cmd) $(section_experience) \
+		 && echo "OK" || echo "return code from vi was $$?"
 
 experience:
-	$(editor_cmd) $(section_experience)
+	@$(editor_cmd) $(section_experience) \
+		 && echo "OK" || echo "return code from vi was $$?"
 
 security_vulns:
-	$(editor_cmd) $(section_security_vulns)
+	@$(editor_cmd) $(section_security_vulns) \
+		 && echo "OK" || echo "return code from vi was $$?"
 
 open_source:
-	$(editor_cmd) $(section_open_source)
+	@$(editor_cmd) $(section_open_source) \
+		 && echo "OK" || echo "return code from vi was $$?"
 
 journals:
-	$(editor_cmd) $(section_journals)
+	@$(editor_cmd) $(section_journals) \
+		 && echo "OK" || echo "return code from vi was $$?"
 
 conferences:
-	$(editor_cmd) $(section_conferences)
+	@$(editor_cmd) $(section_conferences) \
+		 && echo "OK" || echo "return code from vi was $$?"
 
 other_published_reports:
-	$(editor_cmd) $(section_other_published_reports)
+	@$(editor_cmd) $(section_other_published_reports) \
+		 && echo "OK" || echo "return code from vi was $$?"
 
 clearance:
-	$(editor_cmd) $(section_clearance)
+	@$(editor_cmd) $(section_clearance) \
+		 && echo "OK" || echo "return code from vi was $$?"
 
 education:
-	$(editor_cmd) $(section_education)
+	@$(editor_cmd) $(section_education) \
+		 && echo "OK" || echo "return code from vi was $$?"
 
 #
 # spell and clean have a double colon because the common makefile extends them.
