@@ -1,1 +1,1 @@
-/Users/rjl/thesis/github/Makefiles/get_commit_message.sh
+../Makefiles/get_commit_message.sh
