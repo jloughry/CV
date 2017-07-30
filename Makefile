@@ -105,10 +105,9 @@ references:
 
 $(CV_pdf_file): $(CV_source)
 	$(latex_cmd) $(CV_source)
-	while ( \
+	while grep "Rerun to get" $(CV).log ; do \
 		$(latex_cmd) $(CV) ; \
-		grep "Rerun to get" $(CV).log > /dev/null \
-	) do true ; done
+	done
 	pdflatex $(references_source)
 	pdflatex $(references)
 	make rename
