@@ -203,5 +203,8 @@ clean::
 allclean: clean
 	rm -fv $(pdf_files)
 
+.PHONY common.mk:
+	ln -fs ../Makefiles/common.mk
+
 include common.mk
 
