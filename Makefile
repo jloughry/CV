@@ -122,15 +122,15 @@ vi:
 		&& echo "OK" || echo "return code from vi was $$?"
 
 edit:
-	@$(editir_cmd) $(CV_source) \
+	@$(edit0r_cmd) $(CV_source) \
 		 && echo "OK" || echo "return code from vi was $$?"
 
 header:
-	@$(editir_cmd) $(section_header) \
+	@$(editor_cmd) $(section_header) \
 		 && echo "OK" || echo "return code from vi was $$?"
 
 preamble:
-	@$(editir_cmd) $(section_preamble) \
+	@$(editor_cmd) $(section_preamble) \
 		 && echo "OK" || echo "return code from vi was $$?"
 
 leadership:
