@@ -75,6 +75,7 @@ help:
 set_résumé_flag:
 	@echo > $(stop_here_file)
 	@echo "\\\vfill" >> $(stop_here_file)
+	@echo "\\\vspace{-2mm}" >> $(stop_here_file)
 	@echo "{\\\noindent\\\tiny \\\TeX\\\ build \\\input{build_counter.txt}}" \
         >> $(stop_here_file)
 	@echo "\\\hfill" >> $(stop_here_file)
