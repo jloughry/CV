@@ -205,7 +205,7 @@ the source file, **resume** to emit the short form résumé, **clean** to remove
 (before commit), **commit** to update the local Git repository, **sync** to push changes to
 GitHub and merge any non-local changes, **allclean** to remove everything that can be
 regenerated, **help** give a quick overview of options, and **spell** to check spelling
-against a UK english dictionary.
+against a UK English dictionary.
 
 ### Example
 
