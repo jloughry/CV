@@ -33,7 +33,7 @@ section_sources = section_clearance.tex section_header.tex \
     section_education.tex section_open_source.tex \
     section_leadership.tex section_experience.tex \
     section_other_published_reports.tex section_security_vulns.tex \
-	section_side_projects.tex section_blog.tex
+    section_side_projects.tex section_blog.tex section_books.tex
 
 
 section_education               = section_education.tex
@@ -49,7 +49,8 @@ section_experience              = section_experience.tex
 section_open_source             = section_open_source.tex
 section_security_vulns          = section_security_vulns.tex
 section_side_projects           = section_side_projects.tex
-section_blog					= section_blog.tex
+section_blog                    = section_blog.tex
+section_books                   = section_books.tex
 
 latex_cmd = pdflatex
 counter_file = build_counter.txt
@@ -151,6 +152,10 @@ experience:
 	@$(editor_cmd) $(section_experience) \
 		 && echo "OK" || echo "return code from vi was $$?"
 
+books:
+	@$(editor_cmd) $(section_books) \
+		 && echo "OK" || echo "return code from vi was $$?"
+
 security_vulns:
 	@$(editor_cmd) $(section_security_vulns) \
 		 && echo "OK" || echo "return code from vi was $$?"
@@ -208,6 +213,7 @@ spell::
 	aspell --lang=EN_GB check $(section_security_vulns)
 	aspell --lang=EN_GB check $(section_side_projects)
 	aspell --lang=EN_GB check $(section_blog)
+	aspell --lang=EN_GB check $(section_books)
 
 	aspell --lang=EN_GB check $(references_source)
 
