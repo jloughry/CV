@@ -84,7 +84,7 @@ set_résumé_flag:
 	@echo "\\\hfill" >> $(stop_here_file)
 	@echo "PGP key fingerprint: \href{http://cnadocs.com/Joe.Loughry.txt}%" \
 		>> $(stop_here_file)
-	@echo "{\\\texttt{2C3B 11A1 CE7C 5B1F 87BC\ \ F5D0 299D 7116 EDC2 ABE5}} \\\\\\" \
+	@echo "{\\\texttt{E0F4 8A32 A439 27AC 653C\ \ DF95 7C33 48D4 A337 BCB8}} \\\\\\" \
         >> $(stop_here_file)
 	@echo "\\\end{document}" >> $(stop_here_file)
 
